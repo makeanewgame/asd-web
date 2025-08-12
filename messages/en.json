@@ -1,0 +1,10 @@
+{
+    "MainMenu": {
+        "MainPage": "Main Page",
+        "FieldsOfActivity": "Fields Of Activity",
+        "Projects": "Projects",
+        "Enterprise": "Enterprise",
+        "Contact": "Contact",
+        "ProjectsOnSale": "Projects On Sale"
+    }
+}
