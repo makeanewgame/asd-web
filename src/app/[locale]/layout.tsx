@@ -1,59 +1,57 @@
-import type { Metadata } from "next";
-import { Geist } from "next/font/google";
-import { ThemeProvider } from "next-themes";
-import "../../app/globals.css";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
-import { notFound } from 'next/navigation';
-import { routing } from "../../i18n/routing";
-import TopBar from "../../components/top-bar";
-import Footer from "../../components/footer";
+import { notFound } from "next/navigation";
+import { routing } from "@/i18n/routing";
+import "../globals.css";
+import { Metadata } from "next";
+import { Jost, Onest, Roboto } from "next/font/google";
+import Navbar from "@/component/Navbar";
+import Footer from "@/component/Footer";
 
-
-const defaultUrl = process.env.VERCEL_URL
-  ? `https://${process.env.VERCEL_URL}`
-  : "http://localhost:3000";
-
-export const metadata: Metadata = {
-  metadataBase: new URL(defaultUrl),
-  title: "Next.js and Supabase Starter Kit",
-  description: "The fastest way to build apps with Next.js and Supabase",
-};
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  display: "swap",
+const onest = Onest({
+  variable: "--font-onest-sans",
   subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800"],
 });
 
-export default async function RootLayout({
+const roboto = Roboto({
+  variable: "--font-roboto-sans",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800"],
+})
+
+export const metadata: Metadata = {
+  title: "ASD",
+  description:
+    "ASD",
+  keywords:
+    "",
+};
+
+
+export default async function LocaleLayout({
   children,
-  params
+  params,
 }: {
   children: React.ReactNode;
   params: Promise<{ locale: string }>;
 }) {
+  // Ensure that the incoming `locale` is valid
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
 
   return (
-    <html lang={locale} suppressHydrationWarning>
-      <body className={`${geistSans.className} antialiased`}>
+    <html lang={locale}>
+      <head>
+        <meta name="apple-mobile-web-app-title" content="ASD" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </head>
+      <body className={`${onest.variable} ${roboto.variable} antialiased`}>
         <NextIntlClientProvider>
-
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-            <div className="flex flex-col">
-              <TopBar />
-              {children}
-              <Footer />
-            </div>
-          </ThemeProvider>
+          <Navbar />
+          {children}
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>

@@ -1,10 +1,10 @@
 {
-    "MainMenu": {
-        "MainPage": "Anasayfa",
-        "FieldsOfActivity": "Faaliyet Alanları",
-        "Projects": "Projeler",
-        "Enterprise": "Kurumsal",
-        "Contact": "İletişim",
-        "ProjectsOnSale": "Satışdaki Projeler"
-    }
+  "Menu": {
+    "MainPage": "Ana Sayfa",
+    "Projects": "Projeler",
+    "FieldOfActivity": "Faaliyet Alanları",
+    "About": "Hakkımızda",
+    "Contact": "İletişim",
+    "ProjectOnSale": "Satışdaki Projeler"
+  }
 }

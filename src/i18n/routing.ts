@@ -6,11 +6,16 @@ export const routing = defineRouting({
 
     // Used when no locale matches
     defaultLocale: 'tr',
+
+    // The locale is always the first segment of the path
     pathnames: {
         '/': '/',
-        'about': {
+        '/about': {
             tr: '/hakkinda',
-            en: '/about'
-        }
+        },
+        '/contact': {
+            tr: '/iletisim',
+        },
+
     }
 });

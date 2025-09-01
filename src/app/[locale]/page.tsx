@@ -1,29 +1,25 @@
+import { createClient } from '@/utils/supabase/server'
+import { cookies } from 'next/headers'
+import Image from 'next/image';
 
+export default async function HomePage() {
 
-import { ThemeSwitcher } from "@/components/theme-switcher";
-import Link from "next/link";
+  const supabase = await createClient()
 
-export default function Home() {
+  const { data: projects } = await supabase.from('Projects').select()
+
   return (
-    <main className="min-h-screen flex flex-col items-center">
-      <div className="flex-1 w-full flex flex-col gap-20 items-center">
+    <div className='text-2xl min-h-[2000px]'>
 
+      30 yılı aşkın tecrübeyi, ileri cephe teknolojileri ve kusursuz proje yönetim anlayışını birleştirerek, mimari vizyonunuzu estetik, dayanıklı ve enerji verimli yapılara dönüştürür.
+      <Image src={"/test.jpg"} width={2500} height={300} />
 
-        <footer className="w-full flex items-center justify-center border-t mx-auto text-center text-xs gap-8 py-16">
-          <p>
-            Powered by{" "}
-            <a
-              href="https://supabase.com/?utm_source=create-next-app&utm_medium=template&utm_term=nextjs"
-              target="_blank"
-              className="font-bold hover:underline"
-              rel="noreferrer"
-            >
-              Supabase
-            </a>
-          </p>
-          <ThemeSwitcher />
-        </footer>
-      </div>
-    </main>
+      {projects.map(project => (
+        <div key={project.id}>
+          <h2>{project.name}</h2>
+          <p>{project.description}</p>
+        </div>
+      ))}
+    </div>
   );
 }

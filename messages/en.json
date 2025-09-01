@@ -1,10 +1,9 @@
 {
-    "MainMenu": {
-        "MainPage": "Main Page",
-        "FieldsOfActivity": "Fields Of Activity",
-        "Projects": "Projects",
-        "Enterprise": "Enterprise",
-        "Contact": "Contact",
-        "ProjectsOnSale": "Projects On Sale"
-    }
+  "Menu": {
+    "MainPage": "Main Page",
+    "Projects": "Projects",
+    "FieldOfActivity": "Field Of Activity",
+    "About": "About",
+    "Contact": "Contact"
+  }
 }
