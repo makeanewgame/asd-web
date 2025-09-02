@@ -19,7 +19,6 @@ export const siteNavigation = [
         href: "/about",
         icon: "envelope",
     },
-    ,
     {
         name: "Contact",
         href: "/contact",

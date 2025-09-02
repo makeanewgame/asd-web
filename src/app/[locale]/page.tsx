@@ -1,5 +1,4 @@
 import { createClient } from '@/utils/supabase/server'
-import { cookies } from 'next/headers'
 import Image from 'next/image';
 
 export default async function HomePage() {
@@ -12,9 +11,9 @@ export default async function HomePage() {
     <div className='text-2xl min-h-[2000px]'>
 
       30 yılı aşkın tecrübeyi, ileri cephe teknolojileri ve kusursuz proje yönetim anlayışını birleştirerek, mimari vizyonunuzu estetik, dayanıklı ve enerji verimli yapılara dönüştürür.
-      <Image src={"/test.jpg"} width={2500} height={300} />
+      <Image src={"/test.jpg"} width={2500} height={300} alt="Hero görseli" />
 
-      {projects.map(project => (
+      {(projects ?? []).map(project => (
         <div key={project.id}>
           <h2>{project.name}</h2>
           <p>{project.description}</p>

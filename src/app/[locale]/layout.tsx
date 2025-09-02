@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import "../globals.css";
 import { Metadata } from "next";
-import { Jost, Onest, Roboto } from "next/font/google";
+import { Onest, Roboto } from "next/font/google";
 import Navbar from "@/component/Navbar";
 import Footer from "@/component/Footer";
 
