@@ -16,6 +16,9 @@ export const routing = defineRouting({
         '/contact': {
             tr: '/iletisim',
         },
+        '': ''
 
     }
 });
+
+export const sitePaths = routing.pathnames;

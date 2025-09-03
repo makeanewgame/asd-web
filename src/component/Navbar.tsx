@@ -11,8 +11,14 @@ export default function Navbar() {
 
   return (
 
-    <div className="p-4 w-full flex justify-center">
-      <div className="GlassContainer fixed container z-50 rounded-full">
+    <div className="w-full flex justify-center relative">
+
+
+      <div className='h-[200px] w-full fixed top-0' style={{
+        background: 'linear-gradient(180deg, #071329 10%, rgba(24, 66, 143, 0.00) 100%)',
+      }}></div>
+
+      <div className="GlassContainer fixed container z-50 rounded-full mt-4">
         <div className="GlassContent flex justify-between items-center px-10">
           <Link href="/">
             <Image src={"/logo.svg"} alt="Logo" width={152} height={45} priority />
@@ -22,7 +28,7 @@ export default function Navbar() {
             {siteNavigation.map(navigation => {
               return (
                 <div key={navigation.name} className="text-[#ADD2FF] uppercase my-4 tracking-widest">
-                  <Link href={navigation.href}>
+                  <Link href={navigation.href as "/" | "/about" | "/contact"}>
                     {t(navigation.name)}
                   </Link>
                 </div>
