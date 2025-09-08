@@ -6,6 +6,7 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import GlassButton from "./GlassButton";
 import { Link } from "@/i18n/navigation";
+import TDiv from "./TranslateSpan";
 export default function Navbar() {
   const t = useTranslations("Menu")
 
@@ -36,8 +37,13 @@ export default function Navbar() {
             })}
 
             <div className="flex gap-2">
-              <GlassButton icon />
-              <GlassButton name="ProjectOnSale" />
+              <GlassButton size="large">
+                <Image src={"/phone.svg"} alt="Chevron Right" width={24} height={24} />
+              </GlassButton>
+
+              <GlassButton size="large">
+                <TDiv>{'"Satışdaki Projeler":"Projects On Sale"'}</TDiv>
+              </GlassButton>
             </div>
 
           </div>

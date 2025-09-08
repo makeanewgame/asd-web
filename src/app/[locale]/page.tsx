@@ -1,31 +1,79 @@
+import CarouselCard from '@/component/CarouselCard';
+import GlassButton from '@/component/GlassButton';
 import SocialMediaBar from '@/component/SocialMediaBar';
+import TDiv from '@/component/TranslateSpan';
 import { createClient } from '@/utils/supabase/server'
-import Image from 'next/image';
 
 export default async function HomePage() {
 
   const supabase = await createClient()
 
-  const { data: projects } = await supabase.from('Projects').select()
+  // const { data: projects } = await supabase.from('Projects').select()
+
+
+  const cardMock = [
+    {
+      title: <TDiv>{'"Didabra Villas Safranbolu":"Didabra Villas Safranbolu"'}</TDiv>,
+      description: <TDiv>{'"Ultra lüks detayları ile tasarlanmış olan DADİBRA VILLAS SAFRANBOLU, en yüksek standartlarda konfor ve güzellik sunuyor.":"Designed with ultra-luxury details, DADİBRA VILLAS SAFRANBOLU offers the highest standards of comfort and beauty."'}</TDiv>,
+      id: 1,
+      image: "/didabra_card.webp"
+    },
+    {
+      title: <TDiv>{'"Didabra Villas Safranbolu":"Didabra Villas Safranbolu"'}</TDiv>,
+      description: <TDiv>{'"Ultra lüks detayları ile tasarlanmış olan DADİBRA VILLAS SAFRANBOLU, en yüksek standartlarda konfor ve güzellik sunuyor.":"Designed with ultra-luxury details, DADİBRA VILLAS SAFRANBOLU offers the highest standards of comfort and beauty."'}</TDiv>,
+      id: 2,
+      image: "/didabra_card.webp"
+    },
+  ]
 
   return (
     <>
 
-
-
       <div className='h-screen w-full'>
         <video className='w-full h-full object-cover' src="/asd-slider.mp4" autoPlay loop muted />
         <SocialMediaBar />
-        <div className='h-[300px] w-full bottom-0 absolute z-10' style={{
+        <div className='h-[800px] w-full bottom-0 absolute z-10' style={{
           background: 'linear-gradient(180deg, rgba(24, 66, 143, 0%), #071329 100%)',
         }}></div>
+
+        <div className='flex container gap-4 relative z-20 mx-auto  -mt-[550px] text-white px-4' style={{
+          height: "calc(100vh / 2 - 100px)",
+        }}>
+          <div className='flex flex-col basis-3/5 gap-2'>
+            <div className='text-[20px] text-[#ADD2FF]'><TDiv>{'"ASD GRUP":"ASD GROUP"'}</TDiv></div>
+            <div className='text-[66px] font-bold leading-18 whitespace-pre-line'><TDiv>{'"YARINLAR İÇİN\nİNŞA EDİYORUZ":"WE BUILD FOR TOMORROW"'}</TDiv></div>
+            <div className='text-[28px]'><TDiv>{'"30 yılı aşkın tecrübeyi, ileri cephe teknolojileri ve kusursuz proje yönetim anlayışını birleştirerek, mimari vizyonunuzu estetik, dayanıklı ve enerji verimli yapılara dönüştürür.":"By combining over 30 years of experience, advanced façade technologies and flawless project management approach, it transforms your architectural vision into aesthetic, durable and energy-efficient structures."'}</TDiv></div>
+            <div className='w-fit'>
+
+              <GlassButton>
+                <TDiv>{'"Bize Ulaşın ":"Contact Us"'}</TDiv>
+                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                  <path d="M31 15.5C31 24.0604 24.0604 31 15.5 31C6.93959 31 0 24.0604 0 15.5C0 6.93959 6.93959 0 15.5 0C24.0604 0 31 6.93959 31 15.5Z" fill="#2587EF" />
+                  <path d="M9 15H19.844L15.737 10.146L17.263 8.854L23.31 16L17.263 23.146L15.737 21.854L19.844 17H9V15Z" fill="#08132A" />
+                </svg>
+              </GlassButton>
+            </div>
+          </div>
+          <div className='basis-2/5 flex justify-end'>
+            <div style={{ position: 'relative' }}>
+              <CarouselCard
+                items={cardMock}
+                autoplay={true}
+                autoplayDelay={5000}
+                pauseOnHover={true}
+                loop={true}
+                round={false}
+              />
+            </div>
+          </div>
+        </div>
+
+
+
       </div>
 
 
-      <div className='text-2xl min-h-[2000px]'>
-
-        30 yılı aşkın tecrübeyi, ileri cephe teknolojileri ve kusursuz proje yönetim anlayışını birleştirerek, mimari vizyonunuzu estetik, dayanıklı ve enerji verimli yapılara dönüştürür.
-        <Image src={"/test.jpg"} width={2500} height={300} alt="Hero görseli" />
+      {/* <div className='text-2xl min-h-[2000px]'>
 
         {(projects ?? []).map(project => (
           <div key={project.id}>
@@ -33,7 +81,7 @@ export default async function HomePage() {
             <p>{project.description}</p>
           </div>
         ))}
-      </div>
+      </div> */}
     </>
 
   );

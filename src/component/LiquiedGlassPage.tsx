@@ -1,8 +1,9 @@
-export default function LiquiedGlassCard({ children, className, contentClassName, radius }: { children: React.ReactNode; className?: string; contentClassName?: string; radius?: string }) {
+export default function LiquiedGlassCard({ children, className, contentClassName, radius }: { children: React.ReactNode; className?: string; contentClassName?: string; radius?: string | number }) {
 
-    const style = {
-        ['--corner-radius' as any]: typeof radius === 'number' ? `${radius}px` : radius, // örn: 24 -> "24px" ya da "1.5rem"
-    } as React.CSSProperties;
+    const style: React.CSSProperties & { ['--corner-radius']?: string } = {};
+    if (radius !== undefined) {
+        style['--corner-radius'] = typeof radius === 'number' ? `${radius}px` : radius;
+    }
 
     return (
         <div className={`GlassContainer ${className}`} style={style}>
