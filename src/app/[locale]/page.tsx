@@ -1,8 +1,11 @@
+import AccordionComp from '@/component/AccordionComp';
 import CarouselCard from '@/component/CarouselCard';
 import GlassButton from '@/component/GlassButton';
 import SocialMediaBar from '@/component/SocialMediaBar';
 import TDiv from '@/component/TranslateSpan';
 import { createClient } from '@/utils/supabase/server'
+import { Accordion, AccordionItem } from "@heroui/react";
+
 
 export default async function HomePage() {
 
@@ -15,7 +18,7 @@ export default async function HomePage() {
     {
       title: <TDiv>{'"Didabra Villas Safranbolu":"Didabra Villas Safranbolu"'}</TDiv>,
       description: <TDiv>{'"Ultra lüks detayları ile tasarlanmış olan DADİBRA VILLAS SAFRANBOLU, en yüksek standartlarda konfor ve güzellik sunuyor.":"Designed with ultra-luxury details, DADİBRA VILLAS SAFRANBOLU offers the highest standards of comfort and beauty."'}</TDiv>,
-      id: 1,
+      id: 3,
       image: "/didabra_card.webp"
     },
     {
@@ -26,9 +29,26 @@ export default async function HomePage() {
     },
   ]
 
+  const accordionMock = [
+    {
+      id: 1,
+      title: <TDiv>{'"Neden ASD?":"Why ASD?"'}</TDiv>,
+      description: <TDiv>{'"ASD Grup, 30 yılı aşkın süredir inşaat sektöründe faaliyet gösteren köklü bir firmadır. Müşteri memnuniyetini ön planda tutarak, kaliteli ve yenilikçi projeler geliştirmektedir.":"ASD Group is a well-established company that has been operating in the construction sector for over 30 years. Prioritizing customer satisfaction, it develops quality and innovative projects."'}</TDiv>
+    },
+    {
+      id: 2,
+      title: <TDiv>{'"Vizyonumuz nedir?":"What is our vision?"'}</TDiv>,
+      description: <TDiv>{'"ASD Grup olarak vizyonumuz, sürdürülebilir ve çevre dostu projelerle sektörde lider konuma gelmektir. Teknolojiyi yakından takip ederek, modern ve estetik yapılar inşa etmeyi hedefliyoruz.":"As ASD Group, our vision is to become a leader in the sector with sustainable and environmentally friendly projects. By closely following technology, we aim to build modern and aesthetic structures."'}</TDiv>
+    },
+    {
+      id: 3,
+      title: <TDiv>{'"Hizmetlerimiz nelerdir?":"What are our services?"'}</TDiv>,
+      description: <TDiv>{'"ASD Grup, konut, ticari ve endüstriyel projelerde geniş bir hizmet yelpazesi sunmaktadır. Proje yönetimi, tasarım, inşaat ve danışmanlık gibi alanlarda uzman ekibimizle müşterilerimize en iyi çözümleri sunuyoruz.":"ASD Group offers a wide range of services in residential, commercial, and industrial projects. With our expert team in areas such as project management, design, construction, and consulting, we provide the best solutions to our clients."'}</TDiv>
+    }
+  ]
+
   return (
     <>
-
       <div className='h-screen w-full'>
         <video className='w-full h-full object-cover' src="/asd-slider.mp4" autoPlay loop muted />
         <SocialMediaBar />
@@ -67,8 +87,10 @@ export default async function HomePage() {
             </div>
           </div>
         </div>
+      </div>
 
-
+      <div className='container'>
+        <AccordionComp data={accordionMock} />
 
       </div>
 
@@ -82,6 +104,13 @@ export default async function HomePage() {
           </div>
         ))}
       </div> */}
+
+
+
+
+
+
+
     </>
 
   );

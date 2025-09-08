@@ -6,6 +6,7 @@ import { Metadata } from "next";
 import { Onest, Roboto } from "next/font/google";
 import Navbar from "@/component/Navbar";
 import Footer from "@/component/Footer";
+import { Providers } from "./providers";
 
 const onest = Onest({
   variable: "--font-onest-sans",
@@ -42,16 +43,18 @@ export default async function LocaleLayout({
   }
 
   return (
-    <html lang={locale}>
+    <html lang={locale} className="dark">
       <head>
         <meta name="apple-mobile-web-app-title" content="ASD" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
       <body className={`${onest.variable} ${roboto.variable} antialiased`}>
         <NextIntlClientProvider>
-          <Navbar />
-          {children}
-          <Footer />
+          <Providers>
+            <Navbar />
+            {children}
+            <Footer />
+          </Providers>
         </NextIntlClientProvider>
       </body>
     </html>

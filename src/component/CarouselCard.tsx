@@ -24,39 +24,6 @@ export interface CarouselProps {
     round?: boolean;
 }
 
-// const DEFAULT_ITEMS: CarouselItem[] = [
-//     {
-//         title: 'Text Animations',
-//         description: 'Cool text animations for your projects.',
-//         id: 1,
-//         icon: <FiFileText className="h-[16px] w-[16px] text-white" />
-//     },
-//     {
-//         title: 'Animations',
-//         description: 'Smooth animations for your projects.',
-//         id: 2,
-//         icon: <FiCircle className="h-[16px] w-[16px] text-white" />
-//     },
-//     {
-//         title: 'Components',
-//         description: 'Reusable components for your projects.',
-//         id: 3,
-//         icon: <FiLayers className="h-[16px] w-[16px] text-white" />
-//     },
-//     {
-//         title: 'Backgrounds',
-//         description: 'Beautiful backgrounds and patterns for your projects.',
-//         id: 4,
-//         icon: <FiLayout className="h-[16px] w-[16px] text-white" />
-//     },
-//     {
-//         title: 'Common UI',
-//         description: 'Common UI components are coming soon!',
-//         id: 5,
-//         icon: <FiCode className="h-[16px] w-[16px] text-white" />
-//     }
-// ];
-
 const DRAG_BUFFER = 0;
 const VELOCITY_THRESHOLD = 500;
 const GAP = 16;
@@ -183,20 +150,24 @@ export default function CarouselCard({
                     onAnimationComplete={handleAnimationComplete}
                 >
 
-                    {carouselItems.map((item, index) => (
-                        <CarouselSlide
-                            key={item?.id ?? index}
-                            item={item}
-                            index={index}
-                            round={round}
-                            itemWidth={itemWidth}
-                            trackItemOffset={trackItemOffset}
-                            x={x}
-                            effectiveTransition={effectiveTransition}
-                        />
-                    ))}
+                    {carouselItems.map((item, index) => {
+                        return (
+                            <CarouselSlide
+                                key={item.id * Math.random()}
+                                valkey={index * Math.random()}
+                                item={item}
+                                index={index}
+                                round={round}
+                                itemWidth={itemWidth}
+                                trackItemOffset={trackItemOffset}
+                                x={x}
+                                effectiveTransition={effectiveTransition}
+                            />
+                        )
+                    })}
 
-                </motion.div>   <div className={`flex w-full justify-center ${round ? 'absolute z-20 bottom-12 left-1/2 -translate-x-1/2' : ''}`}>
+                </motion.div>
+                <div className={`flex w-full justify-center ${round ? 'absolute z-20 bottom-12 left-1/2 -translate-x-1/2' : ''}`}>
                     <div className="mt-4 flex w-[150px] justify-center gap-2 px-8">
                         {items.length > 0 && items.map((_, index) => (
                             <motion.div
@@ -228,6 +199,7 @@ export default function CarouselCard({
 
 type SlideProps = {
     item: CarouselItem;
+    valkey: number | string;
     index: number;
     round: boolean;
     itemWidth: number;
@@ -236,13 +208,15 @@ type SlideProps = {
     effectiveTransition: Transition;
 };
 
-function CarouselSlide({ item, index, round, itemWidth, trackItemOffset, x, effectiveTransition }: SlideProps) {
+function CarouselSlide({ item, index, round, itemWidth, trackItemOffset, x, effectiveTransition, valkey }: SlideProps) {
+
     const range = [-(index + 1) * trackItemOffset, -index * trackItemOffset, -(index - 1) * trackItemOffset];
     const outputRange = [90, 0, -90];
     const rotateY = motionUseTransform(x, range, outputRange, { clamp: false });
 
     return (
         <motion.div
+            key={valkey}
             className={`relative shrink-0 flex flex-col ${round
                 ? 'items-center justify-center text-center  border-0'
                 : 'items-start justify-between rounded-[12px]'
