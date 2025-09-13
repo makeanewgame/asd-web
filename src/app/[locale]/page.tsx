@@ -1,10 +1,13 @@
+import AboutUsComp from '@/component/AboutUsComp';
 import AccordionComp from '@/component/AccordionComp';
 import CarouselCard from '@/component/CarouselCard';
 import GlassButton from '@/component/GlassButton';
+import LiquiedGlassCard from '@/component/LiquiedGlassPage';
 import SocialMediaBar from '@/component/SocialMediaBar';
 import TDiv from '@/component/TranslateSpan';
 import { createClient } from '@/utils/supabase/server'
-import { Accordion, AccordionItem } from "@heroui/react";
+import { Accordion, AccordionItem, Tab, Tabs } from "@heroui/react";
+import Image from 'next/image';
 
 
 export default async function HomePage() {
@@ -91,7 +94,46 @@ export default async function HomePage() {
 
       <div className='container'>
         <AccordionComp data={accordionMock} />
+      </div>
 
+
+      <div className='relative h-screen flex items-center'>
+        <div className='absolute w-full h-[1200px] bottom-0 left-0 right-0'>
+          <Image src={"/aboutus_bg.webp"} alt='aboutus_bg' fill className='mt-8 object-cover mix-blend-overlay absolute' />
+        </div>
+        <div className='container flex flex-col relative'>
+
+          <div className='flex justify-between text-sm mt-8'>
+            <div><TDiv>"30+ Yıllık Deneyim":"30+ Years of Experience"</TDiv></div>
+            <div><TDiv>"Hayatın Kendisinden İlham Alıyoruz":"We Draw Inspiration from Life Itself"</TDiv></div>
+          </div>
+          <h2 className='text-[68px] font-bold my-8'><TDiv>"Hakkımızda":"About Us"</TDiv></h2>
+          <div className='text-[40px] leading-10 font-light mb-8'>
+
+            <TDiv>"“tecrübe ve bilginin birbirini tamamladığı bir ortamda, yeniliklere açık bir yaklaşım benimsemektedir. Teknolojiyi sürekli takip eden düşünce yapımız ve alanında uzmanlaşmış seçkin kadromuzla, her geçen gün yeni tasarımlar üzerinde çalışarak sektördeki gelişmelere öncülük ediyoruz.”":""In an environment where experience and knowledge complement each other, we adopt an approach open to innovation. With our mindset that constantly follows technological advancements and our distinguished team of experts in their fields, we are pioneering developments in the sector by working on new designs every day.""</TDiv>
+          </div>
+
+          <div className='flex gap-2'>
+            <Image src="/cert001-asd.webp" alt="cert001-asd" width={256} height={326} />
+            <Image src="/cert002-asd.webp" alt="cert002-asd" width={256} height={326} />
+            <Image src="/cert003-asd.webp" alt="cert003-asd" width={256} height={326} />
+          </div>
+          <div className='absolute right-0 top-100 mt-16'>
+            <LiquiedGlassCard className="flex flex-col relative w-fit p-4" contentClassName="px-6 py-4 z-0" radius="14px">
+              <AboutUsComp />
+            </LiquiedGlassCard>
+          </div>
+
+        </div>
+
+      </div >
+
+      <div className='container'>
+        <h2 className='text-[68px] font-bold my-8'><TDiv>"Rakamlarla Biz":"Us by the Numbers"</TDiv></h2>
+        <div>
+
+
+        </div>
       </div>
 
 
