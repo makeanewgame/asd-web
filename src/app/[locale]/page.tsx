@@ -1,8 +1,10 @@
 import AboutUsComp from '@/component/AboutUsComp';
 import AccordionComp from '@/component/AccordionComp';
 import CarouselCard from '@/component/CarouselCard';
+import FloatImage from '@/component/FloatImages';
 import GlassButton from '@/component/GlassButton';
 import LiquiedGlassCard from '@/component/LiquiedGlassPage';
+import NumbersComp from '@/component/NumbersComp';
 import SocialMediaBar from '@/component/SocialMediaBar';
 import TDiv from '@/component/TranslateSpan';
 import { createClient } from '@/utils/supabase/server'
@@ -48,6 +50,43 @@ export default async function HomePage() {
       title: <TDiv>{'"Hizmetlerimiz nelerdir?":"What are our services?"'}</TDiv>,
       description: <TDiv>{'"ASD Grup, konut, ticari ve endüstriyel projelerde geniş bir hizmet yelpazesi sunmaktadır. Proje yönetimi, tasarım, inşaat ve danışmanlık gibi alanlarda uzman ekibimizle müşterilerimize en iyi çözümleri sunuyoruz.":"ASD Group offers a wide range of services in residential, commercial, and industrial projects. With our expert team in areas such as project management, design, construction, and consulting, we provide the best solutions to our clients."'}</TDiv>
     }
+  ]
+
+  const workflowMock = [
+    {
+      id: 10,
+      title: <TDiv>{'"İhtiyacın Belirlenmesi":"Needs Assessment"'}</TDiv>,
+      description: <TDiv>{'"İş birliği süreci, müşterilerimizle gerçekleştirdiğimiz detaylı ihtiyaç analiziyle başlar. Talep edilen ürün ya da hizmetin teknik ve operasyonel gereksinimleri net bir şekilde belirlenir.":"The collaboration process begins with a detailed needs analysis conducted with our clients. The technical and operational requirements of the requested product or service are clearly defined."}'}</TDiv>
+    },
+    {
+      id: 11,
+      title: <TDiv>{'"Teklif ve Sözleşme":"Proposal and Contract"'}</TDiv>,
+      description: <TDiv>{'"İhtiyaçların belirlenmesinin ardından, müşterilerimize özel olarak hazırlanan teklif sunulur. Teklifin kabul edilmesi durumunda, taraflar arasında resmi bir sözleşme imzalanır.":"Following the identification of needs, a proposal tailored specifically for our clients is presented. Upon acceptance of the proposal, a formal contract is signed between the parties."'}</TDiv>
+    },
+    {
+      id: 12,
+      title: <TDiv>{'"Proje Yönetimi":"Project Management"'}</TDiv>,
+      description: <TDiv>{'"Sözleşmenin imzalanmasının ardından, projenin planlanması ve yönetimi için uzman ekibimiz devreye girer. Proje süreci boyunca düzenli olarak ilerleme raporları hazırlanır ve müşterilerimizle paylaşılır.":"After the contract is signed, our expert team takes over for the planning and management of the project. Regular progress reports are prepared throughout the project process and shared with our clients."'}</TDiv>
+    },
+    {
+      id: 13,
+      title: <TDiv>{'"Teslimat ve Destek":"Delivery and Support"'}</TDiv>,
+      description: <TDiv>{'"Proje tamamlandığında, ürün ya da hizmet müşteriye teslim edilir. Teslimat sonrası destek hizmetleri de sunularak, müşterilerimizin memnuniyeti sağlanır.":"When the project is completed, the product or service is delivered to the customer. Post-delivery support services are also provided to ensure customer satisfaction."'}</TDiv>
+    }
+  ]
+
+  const logos = [
+    { id: 1, logo: "/logos/logo001.webp", name: "logo001" },
+    { id: 2, logo: "/logos/logo002.webp", name: "logo002" },
+    { id: 3, logo: "/logos/logo003.webp", name: "logo003" },
+    { id: 4, logo: "/logos/logo004.webp", name: "logo004" },
+    { id: 5, logo: "/logos/logo005.webp", name: "logo005" },
+    { id: 6, logo: "/logos/logo006.webp", name: "logo006" },
+    { id: 7, logo: "/logos/logo007.webp", name: "logo007" },
+    { id: 8, logo: "/logos/logo008.webp", name: "logo008" },
+    { id: 9, logo: "/logos/logo009.webp", name: "logo009" },
+    { id: 10, logo: "/logos/logo010.webp", name: "logo010" },
+
   ]
 
   return (
@@ -128,12 +167,45 @@ export default async function HomePage() {
 
       </div >
 
-      <div className='container'>
+      <div className='container py-16'>
         <h2 className='text-[68px] font-bold my-8'><TDiv>"Rakamlarla Biz":"Us by the Numbers"</TDiv></h2>
         <div>
-
-
+          <NumbersComp />
         </div>
+      </div>
+
+
+      <div className='bg-[#F3F9FF]'>
+        <div className='container py-16'>
+          <h2 className='text-[68px] font-bold my-8 text-[#08132A]'><TDiv>"İş Akışımız":"Our Workflow"</TDiv></h2>
+          <div className='text-[28px] text-[#08132A] mb-8 leading-10 font-light'>
+            <TDiv>"“her projeye özel çözümler üretirken standartlarımızdan ödün vermeden sistematik bir iş akışı izliyoruz. Tüm süreçlerimizde müşteri memnuniyetini merkeze alıyor, esnek ve hızlı çözümler sunarak katma değer yaratıyoruz.”":""</TDiv>
+          </div>
+          <div className='flex gap-4'>
+            <div className='basis-1/2'>
+              <AccordionComp data={workflowMock} dark={true} />
+            </div>
+            <div className='basis-1/2 p-4'>
+              <Image src="/workflow_image.webp" alt="workflow_image" width={600} height={400} className='mix-blend-multiply' />
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div className='bg-white'>
+        <div className='container flex flex-col overflow-clip'>
+          <FloatImage data={logos} />
+          {/* <h2 className='text-[68px] text-black font-bold my-8'><TDiv>"Sosyal Medya":"Social Media"</TDiv></h2>
+          <div className='flex justify-between'>
+            <Image src="/instagram-asd.webp" alt="instagram-asd" width={600} height={400} />
+            <Image src="/linkedin-asd.webp" alt="linkedin-asd" width={600} height={400} />
+            <Image src="/twitter-asd.webp" alt="twitter-asd" width={600} height={400} />
+            <Image src="/youtube-asd.webp" alt="youtube-asd" width={600} height={400} />
+
+          </div> */}
+        </div>
+
       </div>
 
 
@@ -146,12 +218,6 @@ export default async function HomePage() {
           </div>
         ))}
       </div> */}
-
-
-
-
-
-
 
     </>
 
