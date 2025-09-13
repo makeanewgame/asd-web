@@ -7,6 +7,8 @@ import Image from "next/image";
 import GlassButton from "./GlassButton";
 import { Link } from "@/i18n/navigation";
 import TDiv from "./TranslateSpan";
+import DropdownMenu from "./DropdownMenu";
+
 export default function Navbar() {
   const t = useTranslations("Menu")
 
@@ -27,6 +29,24 @@ export default function Navbar() {
           <div className="flex gap-8 font-display py-2 items-center">
 
             {siteNavigation.map(navigation => {
+              // Eğer alt menü varsa DropdownMenu kullan
+              if (navigation.subMenus && navigation.subMenus.length > 0) {
+                const dropdownItems = navigation.subMenus.map(subMenu => ({
+                  name: t(subMenu.name),
+                  href: subMenu.href
+                }));
+
+                return (
+                  <DropdownMenu
+                    key={navigation.name}
+                    title={t(navigation.name)}
+                    items={dropdownItems}
+                    className="text-[#ADD2FF] uppercase my-4 tracking-widest"
+                  />
+                );
+              }
+
+              // Alt menü yoksa normal Link kullan
               return (
                 <div key={navigation.name} className="text-[#ADD2FF] uppercase my-4 tracking-widest">
                   <Link href={navigation.href as "/" | "/about" | "/contact"}>

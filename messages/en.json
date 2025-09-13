@@ -5,6 +5,12 @@
     "FieldOfActivity": "Field Of Activity",
     "About": "About",
     "Contact": "Contact",
-    "ProjectOnSale": "Project On Sale"
+    "ProjectOnSale": "Project On Sale",
+    "IndustrialFacilities": "Industrial Facilities",
+    "Construction": "Construction",
+    "BuildingRealEstate": "Building – Real Estate",
+    "FacadeSystems": "Facade Systems",
+    "AluminumProcessing": "Aluminum Processing",
+    "MetalProcessing": "Metal Processing"
   }
 }
