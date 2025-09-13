@@ -85,6 +85,7 @@ export default function AccordionComp({ data, dark }: { data: AccordionItemData[
             {
                 data.map(item => (
                     <AccordionItem
+                        className='whitespace-pre-line'
                         indicator={({ isOpen }) => (isOpen ? dark ? <MinusIconDark /> : <MinusIcon /> : dark ? <PlusIconDark /> : <PlusIcon />)}
                         key={item.id} textValue={item.id.toString()} title={item.title}>{item.description}</AccordionItem>
                 ))

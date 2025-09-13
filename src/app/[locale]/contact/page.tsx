@@ -1,12 +1,8 @@
 "use client";
 
 import LiquiedGlassCard from "@/component/LiquiedGlassPage";
+import TDiv from "@/component/TranslateSpan";
 import React, { useState } from "react";
-
-// Figma asset placeholders (served by local Dev Mode server if available)
-const IMG_1852 = "http://localhost:3845/assets/ce920d84d08c08ed5f455a4c3903d23fa8944e2f.png";
-const IMG_BUILDING_MASK = "http://localhost:3845/assets/c072d5a48ae1813887143dee37fe2b3c949b1693.svg";
-const IMG_REVIZE = "http://localhost:3845/assets/c98077fd79af8df6e7c96c8041132b03e9eeeb46.png";
 
 export default function Contact() {
     const [name, setName] = useState("");
@@ -60,9 +56,11 @@ export default function Contact() {
                 <div
                     className="pointer-events-none absolute right-0 top-0 h-[452px] w-[392px] bg-no-repeat"
                     style={{
-                        backgroundImage: `url('${IMG_1852}')`,
-                        backgroundSize: "312.89% 143.14%",
-                        backgroundPosition: "48.44% 40.51%",
+                        backgroundImage: `url('/contact-title.webp')`,
+                        backgroundSize: "contain",
+                        backgroundPosition: "top right",
+                        //backgroundSize: "312.89% 143.14%",
+                        //backgroundPosition: "25% 25%",
                     }}
                 />
 
@@ -71,31 +69,33 @@ export default function Contact() {
                 <div
                     className="pointer-events-none absolute top-[800px] h-[600px] left-0 right-0 opacity-90"
                     style={{
-                        WebkitMaskImage: `url('${IMG_BUILDING_MASK}')`,
-                        maskImage: `url('${IMG_BUILDING_MASK}')`,
-                        WebkitMaskRepeat: "no-repeat",
-                        maskRepeat: "no-repeat",
                         WebkitMaskPosition: "bottom",
                         maskPosition: "bottom",
-                        backgroundImage: `url('${IMG_REVIZE}')`,
+                        backgroundImage: `url('/contact-bg.webp')`,
                         backgroundRepeat: "no-repeat",
                         backgroundSize: "cover",
                         backgroundPosition: "bottom",
                     }}
                 />
 
-                <div className="container pt-[480px] "
-
-                >
+                <div className="container pt-[480px]">
                     <div className="flex flex-col">
-
-
                         <LiquiedGlassCard className="flex flex-col relative w-fit p-4" contentClassName="px-6 py-4 z-0" radius="14px">
-                            <div className="text-4xl md:text-5xl font-extrabold tracking-tight">İletişim</div>
+                            <div className="text-4xl md:text-5xl font-extrabold tracking-tight">
+                                <TDiv>"İletişim":"Contact"</TDiv>
+                            </div>
                             <div className="mt-2 flex items-center gap-2 text-sm text-white/90">
-                                <span className="opacity-80">Anasayfa</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M21 19V12.267C21 11.7245 20.8896 11.1876 20.6756 10.689C20.4616 10.1905 20.1483 9.74069 19.755 9.36701L13.378 3.31001C13.0063 2.9569 12.5132 2.76001 12.0005 2.76001C11.4878 2.76001 10.9947 2.9569 10.623 3.31001L4.245 9.36701C3.85165 9.74069 3.53844 10.1905 3.3244 10.689C3.11037 11.1876 3 11.7245 3 12.267V19C3 19.5304 3.21071 20.0392 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H19C19.5304 21 20.0391 20.7893 20.4142 20.4142C20.7893 20.0392 21 19.5304 21 19Z" stroke="white" strokeWidth="2" strokeLinecap="round" stroke-linejoin="round" />
+                                </svg>
                                 <span className="opacity-70">›</span>
-                                <span className="opacity-100">İletişim</span>
+                                <span className="opacity-80">
+                                    <TDiv>"Anasayfa":"Home"</TDiv>
+                                </span>
+                                <span className="opacity-70">›</span>
+                                <span className="opacity-100">
+                                    <TDiv>"İletişim":"Contact"</TDiv>
+                                </span>
                             </div>
                         </LiquiedGlassCard>
 

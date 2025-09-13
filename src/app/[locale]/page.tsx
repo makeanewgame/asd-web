@@ -37,19 +37,34 @@ export default async function HomePage() {
   const accordionMock = [
     {
       id: 1,
-      title: <TDiv>{'"Neden ASD?":"Why ASD?"'}</TDiv>,
-      description: <TDiv>{'"ASD Grup, 30 yılı aşkın süredir inşaat sektöründe faaliyet gösteren köklü bir firmadır. Müşteri memnuniyetini ön planda tutarak, kaliteli ve yenilikçi projeler geliştirmektedir.":"ASD Group is a well-established company that has been operating in the construction sector for over 30 years. Prioritizing customer satisfaction, it develops quality and innovative projects."'}</TDiv>
+      title: <TDiv>{'"Endüstriyel Tesisler":"Why ASD?"'}</TDiv>,
+      description: <TDiv>{'"ASD olarak endüstriyel tesislerin dış cephelerinde, sektörün en ağır çalışma koşullarına ve çevresel etkilere dayanacak çözümler geliştiriyoruz. Üretim kapasitesi yüksek, yoğun faaliyet gösteren endüstriyel alanlarda cephe sistemlerinin yalnızca estetik değil, aynı zamanda uzun ömürlü ve güvenli olması gerektiğinin bilincindeyiz.":"At ASD, we develop solutions for the exterior facades of industrial facilities that withstand the harshest operating conditions and environmental impacts. We understand that in industrial areas with high production capacity and high activity, facade systems must not only be aesthetically pleasing but also long-lasting and safe."'}</TDiv>
     },
     {
       id: 2,
-      title: <TDiv>{'"Vizyonumuz nedir?":"What is our vision?"'}</TDiv>,
-      description: <TDiv>{'"ASD Grup olarak vizyonumuz, sürdürülebilir ve çevre dostu projelerle sektörde lider konuma gelmektir. Teknolojiyi yakından takip ederek, modern ve estetik yapılar inşa etmeyi hedefliyoruz.":"As ASD Group, our vision is to become a leader in the sector with sustainable and environmentally friendly projects. By closely following technology, we aim to build modern and aesthetic structures."'}</TDiv>
+      title: <TDiv>{'"İnşaat":"Construction"'}</TDiv>,
+      description: <TDiv>{'"ASD, inşaat sektöründe çok yönlü uzmanlığıyla konut, ticari ve endüstriyel projelerde temelden anahtar teslim bitirmeye kadar tüm süreçleri yönetir. Deneyimli mühendislik kadromuz ve güçlü çözüm ortaklıklarımız sayesinde her ölçekten projeyi güvenle hayata geçiriyoruz.":"With its multifaceted expertise in the construction industry, ASD manages all aspects of residential, commercial, and industrial projects, from foundation to turnkey completion. Our experienced engineering team and strong solution partnerships enable us to confidently implement projects of all sizes."'}</TDiv>
     },
     {
       id: 3,
-      title: <TDiv>{'"Hizmetlerimiz nelerdir?":"What are our services?"'}</TDiv>,
-      description: <TDiv>{'"ASD Grup, konut, ticari ve endüstriyel projelerde geniş bir hizmet yelpazesi sunmaktadır. Proje yönetimi, tasarım, inşaat ve danışmanlık gibi alanlarda uzman ekibimizle müşterilerimize en iyi çözümleri sunuyoruz.":"ASD Group offers a wide range of services in residential, commercial, and industrial projects. With our expert team in areas such as project management, design, construction, and consulting, we provide the best solutions to our clients."'}</TDiv>
-    }
+      title: <TDiv>{'"Yapı & Gayrimenkul":"Construction & Real Estate"'}</TDiv>,
+      description: <TDiv>{'"In construction and real estate development, ASD not only constructs buildings but also creates contemporary living spaces with high investment value. Our residential, office, and commercial projects, developed with a modern urban approach, are designed to meet both user needs and investor expectations.":"In construction and real estate development, ASD not only constructs buildings but also creates contemporary living spaces with high investment value. Our residential, office, and commercial projects, developed with a modern urban approach, are designed to meet both user needs and investor expectations."'}</TDiv>
+    },
+    {
+      id: 4,
+      title: <TDiv>{'"Cephe Sistemleri":"Facade Systems"'}</TDiv>,
+      description: <TDiv>{'"Cephe sistemleri, bir yapının ilk izlenimini belirleyen en önemli unsur olmakla birlikte, estetik görünümün yanı sıra enerji verimliliği, güvenlik ve dayanıklılık açısından da kritik rol oynar. ASD, projelere özel geliştirdiği cephe çözümleriyle mimarinin ruhunu yansıtan, dayanıklı ve fonksiyonel sistemler sunar.":"Facade systems are the most important element that determines the first impression of a building, and they also play a critical role in terms of energy efficiency, security and durability, as well as aesthetic appearance. ASD offers durable and functional systems that reflect the spirit of architecture with its custom-designed façade solutions."'}</TDiv>
+    },
+    {
+      id: 5,
+      title: <TDiv>{'"Aluminyum İşleme":"Aluminum Processing"'}</TDiv>,
+      description: <TDiv>{'"Alüminyum, hafifliği, korozyon direnci ve estetik özellikleriyle çağdaş mimarinin en önemli malzemelerinden biridir. ASD, alüminyum işleme alanındaki yüksek teknolojiye sahip üretim altyapısı sayesinde her ölçekte projeye özel çözümler sunar.":"Aluminum, with its light weight, corrosion resistance, and aesthetic properties, is one of the most important materials in contemporary architecture. ASD offers customized solutions for projects of all sizes thanks to its high-tech aluminum processing infrastructure."'}</TDiv>
+    },
+    {
+      id: 6,
+      title: <TDiv>{'"Metal İşleme":"Metal Processing"'}</TDiv>,
+      description: <TDiv>{'"ASD, metal işleme sektöründe çelik, paslanmaz ve demir-dışı metaller için yüksek hassasiyetli üretim kabiliyetine sahiptir. Geniş makine parkurumuz sayesinde prototip üretimden seri üretime kadar her ölçekte projeye hizmet veririz.":"ASD offers high-precision manufacturing capabilities for steel, stainless steel, and non-ferrous metals in the metalworking industry. Our extensive machinery allows us to handle projects of all sizes, from prototypes to mass production."'}</TDiv>
+    },
   ]
 
   const workflowMock = [
