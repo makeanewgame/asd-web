@@ -9,8 +9,8 @@ export default function FloatImage({ data }: any) {
                 initial={{ opacity: 0, scale: 1, y: +100 }}
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 transition={{
-                    duration: 5,
-                    delay: 2,
+                    duration: 1,
+                    delay: 0,
                     ease: [0, 0.71, 0.2, 1.01],
                 }}
             >

@@ -5,6 +5,7 @@ import FloatImage from '@/component/FloatImages';
 import GlassButton from '@/component/GlassButton';
 import LiquiedGlassCard from '@/component/LiquiedGlassPage';
 import NumbersComp from '@/component/NumbersComp';
+import ProjectsSlider from '@/component/ProjectsSlider';
 import SocialMediaBar from '@/component/SocialMediaBar';
 import TDiv from '@/component/TranslateSpan';
 import { createClient } from '@/utils/supabase/server'
@@ -145,11 +146,11 @@ export default async function HomePage() {
           </div>
         </div>
       </div>
-
       <div className='container'>
+        <h2 className='text-[68px] font-bold'><TDiv>"Projelerimiz":"Our Projects"</TDiv></h2>
+        <ProjectsSlider />
         <AccordionComp data={accordionMock} />
       </div>
-
 
       <div className='relative h-screen flex items-center'>
         <div className='absolute w-full h-[1200px] bottom-0 left-0 right-0'>
@@ -209,7 +210,7 @@ export default async function HomePage() {
       </div>
 
       <div className='bg-white'>
-        <div className='container flex flex-col overflow-clip'>
+        <div className='container flex flex-col overflow-clip py-32'>
           <FloatImage data={logos} />
           {/* <h2 className='text-[68px] text-black font-bold my-8'><TDiv>"Sosyal Medya":"Social Media"</TDiv></h2>
           <div className='flex justify-between'>

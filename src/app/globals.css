@@ -288,7 +288,7 @@ body {
   filter: grayscale(0);
 }
 .slider[reverse="true"] .item {
-  animation: reversePlay 10s linear infinite;
+  animation: reversePlay 30s linear infinite;
 }
 @keyframes reversePlay {
   from {
@@ -297,4 +297,22 @@ body {
   to {
     left: 100%;
   }
+}
+
+/* ProjectsSlider Animations */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 10s linear infinite;
+}
+
+.animate-scroll:hover {
+  animation-play-state: paused;
 }
