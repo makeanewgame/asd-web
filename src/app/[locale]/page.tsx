@@ -11,6 +11,7 @@ import TDiv from '@/component/TranslateSpan';
 import { createClient } from '@/utils/supabase/server'
 import { Accordion, AccordionItem, Tab, Tabs } from "@heroui/react";
 import Image from 'next/image';
+import Link from 'next/link';
 
 
 export default async function HomePage() {
@@ -147,7 +148,20 @@ export default async function HomePage() {
         </div>
       </div>
       <div className='container'>
-        <h2 className='text-[68px] font-bold'><TDiv>"Projelerimiz":"Our Projects"</TDiv></h2>
+        <div className='flex justify-between items-center'>
+
+
+          <h2 className='text-[68px] font-bold'><TDiv>"Projelerimiz":"Our Projects"</TDiv></h2>
+          <GlassButton>
+            <Link href="/projects" className='flex gap-2 items-center'>
+              <TDiv>"Tüm Projeler ":"All Projects"</TDiv>
+              <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                <path d="M31 15.5C31 24.0604 24.0604 31 15.5 31C6.93959 31 0 24.0604 0 15.5C0 6.93959 6.93959 0 15.5 0C24.0604 0 31 6.93959 31 15.5Z" fill="#2587EF" />
+                <path d="M9 15H19.844L15.737 10.146L17.263 8.854L23.31 16L17.263 23.146L15.737 21.854L19.844 17H9V15Z" fill="#08132A" />
+              </svg>
+            </Link>
+          </GlassButton>
+        </div>
         <ProjectsSlider />
         <AccordionComp data={accordionMock} />
       </div>

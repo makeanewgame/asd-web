@@ -2,7 +2,6 @@ enum ProjectType {
   Konut = "Konut",
   Ustyapı = "Üstyapı",
   EndüstriyelYapi = "Endüstriyel Yapı",
-  Ofis = "Ofis",
   CepheAluminyum = "Cephe & Alüminyum",
   Restorasyon = "Restorasyon",
 }
@@ -12,6 +11,44 @@ enum ProjectStatus {
   Satista = "Satışta",
   YeniProje = "Yeni Proje",
 }
+
+const ProjectBanners = [
+  {
+    id: 1,
+    title: ProjectType.Konut,
+    image: "/banners/konut.webp",
+    headline: "Konut Projeleri",
+    description: "Yaşam alanlarınızı hayallerinizle buluşturuyoruz.",
+  },
+  {
+    id: 2,
+    title: ProjectType.Ustyapı,
+    image: "/banners/ustyapi.webp",
+    headline: "Üstyapı Projeleri",
+    description: "Şehirlerin geleceğini şekillendiriyoruz.",
+  },
+  {
+    id: 3,
+    title: ProjectType.EndüstriyelYapi,
+    image: "/banners/endustriyel.webp",
+    headline: "Endüstriyel Yapılar",
+    description: "Geleceğin sanayi tesislerini inşa ediyoruz.",
+  },
+  {
+    id: 4,
+    title: ProjectType.CepheAluminyum,
+    image: "/banners/cephe.webp",
+    headline: "Cephe & Alüminyum Projeleri",
+    description: "Binaların estetiğini ve enerji verimliliğini artırıyoruz.",
+  },
+  {
+    id: 5,
+    title: ProjectType.Restorasyon,
+    image: "/banners/restorasyon.webp",
+    headline: "Restorasyon Projeleri",
+    description: "Tarihi ve kültürel mirasları geleceğe taşıyoruz.",
+  },
+]
 
 const projects = [
   {
@@ -186,7 +223,7 @@ const projects = [
   {
     id: 14,
     title: "ASD Office",
-    type: ProjectType.Ofis,
+    type: ProjectType.Ustyapı,
     status: ProjectStatus.Tamamlanan,
     location: "",
     heroImage: "/heroImage/asdoffice.webp",
@@ -423,7 +460,7 @@ const projects = [
     type: ProjectType.CepheAluminyum,
     status: ProjectStatus.Tamamlanan,
     location: "",
-    heroImage: "/heroImage/yildizpremium.webp",
+    heroImage: "/heroImage/yildizlifepremium.webp",
     content: "",
     imageList: [
       ""
@@ -627,4 +664,4 @@ const projects = [
   },
 ]
 
-export { ProjectType, ProjectStatus, projects };
+export { ProjectType, ProjectStatus, projects, ProjectBanners };

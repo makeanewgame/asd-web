@@ -19,7 +19,7 @@ interface Project {
 
 export default function ProjectsSlider() {
     const router = useRouter()
-    const [selectedType, setSelectedType] = useState<string>('all')
+    const [selectedType, setSelectedType] = useState<string>('Konut')
 
     // Filtreli projeleri hesapla
     const filteredProjects = useMemo(() => {
@@ -28,6 +28,17 @@ export default function ProjectsSlider() {
         }
         return projects.filter(project => project.type === selectedType)
     }, [selectedType])
+
+    // Animasyon süresini proje sayısına göre hesapla
+    const animationDuration = useMemo(() => {
+        // Her proje 320px genişlik + 32px margin (mx-4 = 16px * 2)
+        const projectWidth = 320 + 32
+        const totalWidth = filteredProjects.length * projectWidth
+        // Hız: saniyede yaklaşık 60px (yumuşak kaydırma için)
+        const speed = 60
+        // Minimum 15 saniye, maksimum 120 saniye
+        return Math.min(Math.max(totalWidth / speed, 15), 120)
+    }, [filteredProjects.length])
 
     // Proje tiplerini al
     const projectTypes = Object.values(ProjectType)
@@ -91,12 +102,11 @@ export default function ProjectsSlider() {
                         tabContent: "group-data-[selected=true]:text-[#ADD2FF] text-default-500 font-medium"
                     }}
                 >
-                    <Tab key="all" title="Tümü" />
+                    {/* <Tab key="all" title="Tümü" /> */}
                     {projectTypes.map(type => (
                         <Tab key={type} title={
                             <div>
                                 <div>{type}</div>
-                                <span>{filteredProjects.length}</span>
                             </div>
                         } />
                     ))}
@@ -105,7 +115,13 @@ export default function ProjectsSlider() {
 
             {/* Infinite Scrolling Gallery */}
             <div className="relative overflow-hidden">
-                <div className="flex animate-scroll hover:animation-play-state-paused">
+                <div
+                    className="flex hover:animation-play-state-paused"
+                    style={{
+                        animation: `scroll ${animationDuration}s linear infinite`,
+                        width: `${filteredProjects.length * 2 * (320 + 32)}px` // 320px + 32px margin per project * 2 sets
+                    }}
+                >
                     {/* İlk set */}
                     {filteredProjects.map((project, index) => (
                         <div
@@ -147,6 +163,13 @@ export default function ProjectsSlider() {
                     ))}
                 </div>
             </div>
+
+            {/* Proje sayısı bilgisi */}
+            {/* <div className="text-center mt-6">
+                <p className="text-gray-400 text-sm">
+                    Toplam {filteredProjects.length} proje görüntüleniyor
+                </p>
+            </div> */}
         </div>
     )
 }
