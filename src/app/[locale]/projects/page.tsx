@@ -66,7 +66,6 @@ function ProjectsContent() {
             {/* Tabs Section */}
             <div className="container">
                 <div className="flex justify-start my-8">
-
                     <Tabs
                         selectedKey={selectedTab}
                         onSelectionChange={(key) => setSelectedTab(key as string)}
@@ -78,7 +77,6 @@ function ProjectsContent() {
                             tabContent: "group-data-[selected=true]:text-[#ADD2FF] text-default-500 font-medium"
                         }}
                     >
-
                         <Tab key="Konut" title="Konutlar" />
                         <Tab key="Üstyapı" title="Üstyapı" />
                         <Tab key="Endüstriyel Yapı" title="Endüstriyel Yapı" />
@@ -89,6 +87,10 @@ function ProjectsContent() {
 
                 {/* Projects Gallery */}
                 <ProjectGallery selectedType={selectedTab} />
+
+                <h2 className="text-3xl my-16 font-bold">
+                    <TDiv>"Satıştaki Projelerimiz":"Projects on Sale"</TDiv>
+                </h2>
             </div>
         </div>
     );
