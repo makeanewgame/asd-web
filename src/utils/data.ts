@@ -18,7 +18,7 @@ const ProjectBanners = [
     title: ProjectType.Konut,
     image: "/banners/konut.webp",
     headline: "Yaşam Alanları, Hayallerle Şekillenir",
-    description: "Bir ev, sadece duvarlardan ve çatılardan ibaret değildir; içinde huzur, sıcaklık ve gelecek nesillere bırakılacak anılar barındırır.",
+    description: "Bir ev, sadece duvarlardan ve çatıdan ibaret değildir; içinde huzur, sıcaklık ve gelecek nesillere bırakılacak anılar barındırır.",
   },
   {
     id: 2,
@@ -53,6 +53,7 @@ const ProjectBanners = [
 const projects = [
   {
     id: 1,
+    slug: "mirador-villa-lofts",
     title: "Mirador Villa & Lofts",
     type: ProjectType.Konut,
     status: ProjectStatus.YeniProje,
@@ -66,6 +67,7 @@ const projects = [
   },
   {
     id: 2,
+    slug: "vianor-supreme",
     title: "Vianor Supreme",
     type: ProjectType.Konut,
     status: ProjectStatus.YeniProje,
@@ -79,6 +81,7 @@ const projects = [
   },
   {
     id: 3,
+    slug: "5000-evler-okul",
     title: "5000 Evler Okul",
     type: ProjectType.Ustyapı,
     status: ProjectStatus.YeniProje,
@@ -92,6 +95,7 @@ const projects = [
   },
   {
     id: 4,
+    slug: "park-flora",
     title: "Park Flora",
     type: ProjectType.Konut,
     status: ProjectStatus.Tamamlanan,
@@ -105,6 +109,7 @@ const projects = [
   },
   {
     id: 5,
+    slug: "dadibra-villas",
     title: "Dadibra Villas",
     type: ProjectType.Konut,
     status: ProjectStatus.Tamamlanan,
@@ -118,6 +123,7 @@ const projects = [
   },
   {
     id: 6,
+    slug: "inovia",
     title: "Inovia",
     type: ProjectType.Konut,
     status: ProjectStatus.Tamamlanan,
@@ -131,6 +137,7 @@ const projects = [
   },
   {
     id: 7,
+    slug: "azure-park",
     title: "Azure Park",
     type: ProjectType.Konut,
     status: ProjectStatus.Tamamlanan,
@@ -144,6 +151,7 @@ const projects = [
   },
   {
     id: 8,
+    slug: "isiklar",
     title: "Işıklar",
     type: ProjectType.Konut,
     status: ProjectStatus.Tamamlanan,
@@ -157,6 +165,7 @@ const projects = [
   },
   {
     id: 9,
+    slug: "camkent",
     title: "Çamkent",
     type: ProjectType.Ustyapı,
     status: ProjectStatus.Tamamlanan,
@@ -170,6 +179,7 @@ const projects = [
   },
   {
     id: 10,
+    slug: "belen",
     title: "Belen",
     type: ProjectType.Ustyapı,
     status: ProjectStatus.Tamamlanan,
@@ -183,6 +193,7 @@ const projects = [
   },
   {
     id: 11,
+    slug: "melike-yesilyurt-kres",
     title: "Melike Yeşilyurt Kreş",
     type: ProjectType.Ustyapı,
     status: ProjectStatus.Tamamlanan,
@@ -196,6 +207,7 @@ const projects = [
   },
   {
     id: 12,
+    slug: "yesilyurt-ss",
     title: "Yeşilyurt S.S.",
     type: ProjectType.EndüstriyelYapi,
     status: ProjectStatus.Tamamlanan,
@@ -209,6 +221,7 @@ const projects = [
   },
   {
     id: 13,
+    slug: "regnum-hill",
     title: "Regnum Hill",
     type: ProjectType.Konut,
     status: ProjectStatus.Tamamlanan,
@@ -222,6 +235,7 @@ const projects = [
   },
   {
     id: 14,
+    slug: "asd-office",
     title: "ASD Office",
     type: ProjectType.Ustyapı,
     status: ProjectStatus.Tamamlanan,
@@ -235,6 +249,7 @@ const projects = [
   },
   {
     id: 15,
+    slug: "ermersa-dukkanlari",
     title: "Ermersa Dükkanları",
     type: ProjectType.CepheAluminyum,
     status: ProjectStatus.Tamamlanan,
@@ -248,6 +263,7 @@ const projects = [
   },
   {
     id: 16,
+    slug: "uzuner",
     title: "Uzuner",
     type: ProjectType.Ustyapı,
     status: ProjectStatus.Tamamlanan,
@@ -261,6 +277,7 @@ const projects = [
   },
   {
     id: 17,
+    slug: "mescier",
     title: "Mescier",
     type: ProjectType.CepheAluminyum,
     status: ProjectStatus.Tamamlanan,
@@ -274,6 +291,7 @@ const projects = [
   },
   {
     id: 18,
+    slug: "han-arkasi",
     title: "Han Arkası",
     type: ProjectType.Restorasyon,
     status: ProjectStatus.Tamamlanan,
@@ -287,6 +305,7 @@ const projects = [
   },
   {
     id: 19,
+    slug: "cankaya-parki",
     title: "Çankaya Parkı",
     type: ProjectType.Ustyapı,
     status: ProjectStatus.Tamamlanan,
@@ -300,6 +319,7 @@ const projects = [
   },
   {
     id: 20,
+    slug: "safranbolu-meydan",
     title: "Safranbolu Meydan",
     type: ProjectType.Restorasyon,
     status: ProjectStatus.Tamamlanan,
@@ -313,6 +333,7 @@ const projects = [
   },
   {
     id: 21,
+    slug: "kent-meydani",
     title: "Kent Meydanı",
     type: ProjectType.Ustyapı,
     status: ProjectStatus.Tamamlanan,
@@ -326,6 +347,7 @@ const projects = [
   },
   {
     id: 22,
+    slug: "sanat-merkezi",
     title: "Sanat Merkezi",
     type: ProjectType.Ustyapı,
     status: ProjectStatus.Tamamlanan,
@@ -339,6 +361,7 @@ const projects = [
   },
   {
     id: 23,
+    slug: "asansorler",
     title: "Asansörler",
     type: ProjectType.CepheAluminyum,
     status: ProjectStatus.Tamamlanan,
@@ -352,6 +375,7 @@ const projects = [
   },
   {
     id: 24,
+    slug: "ahmetler-ilkokulu",
     title: "Ahmetler İlkokulu",
     type: ProjectType.Ustyapı,
     status: ProjectStatus.Tamamlanan,
@@ -365,6 +389,7 @@ const projects = [
   },
   {
     id: 25,
+    slug: "bilginler-4-blok",
     title: "Bilginler 4 Blok",
     type: ProjectType.CepheAluminyum,
     status: ProjectStatus.Tamamlanan,
@@ -378,6 +403,7 @@ const projects = [
   },
   {
     id: 26,
+    slug: "kanyon-dugoon-salonu-restaurant",
     title: "Kanyon(düğün,salonu,restaurant)",
     type: ProjectType.Ustyapı,
     status: ProjectStatus.Tamamlanan,
@@ -391,6 +417,7 @@ const projects = [
   },
   {
     id: 27,
+    slug: "manisa-saruhani-genclik",
     title: "Manisa Saruhanlı Gençlik",
     type: ProjectType.CepheAluminyum,
     status: ProjectStatus.Tamamlanan,
@@ -404,6 +431,7 @@ const projects = [
   },
   {
     id: 28,
+    slug: "gebze-askin-demir-celik",
     title: "Gebze Aşkın Demir Çelik",
     type: ProjectType.EndüstriyelYapi,
     status: ProjectStatus.Tamamlanan,
@@ -417,6 +445,7 @@ const projects = [
   },
   {
     id: 29,
+    slug: "topcugiller-opet",
     title: "Topçugiller Opet",
     type: ProjectType.CepheAluminyum,
     status: ProjectStatus.Tamamlanan,
@@ -430,6 +459,7 @@ const projects = [
   },
   {
     id: 30,
+    slug: "massey-fergusan-beypazari",
     title: "Massey Fergusan Beypazarı",
     type: ProjectType.EndüstriyelYapi,
     status: ProjectStatus.Tamamlanan,
@@ -443,6 +473,7 @@ const projects = [
   },
   {
     id: 31,
+    slug: "yildiz-life-2",
     title: "Yıldız Life",
     type: ProjectType.CepheAluminyum,
     status: ProjectStatus.Tamamlanan,
@@ -456,6 +487,7 @@ const projects = [
   },
   {
     id: 32,
+    slug: "yildiz-preminium",
     title: "Yıldız Preminium",
     type: ProjectType.CepheAluminyum,
     status: ProjectStatus.Tamamlanan,
@@ -469,6 +501,7 @@ const projects = [
   },
   {
     id: 33,
+    slug: "azupirano",
     title: "Azupirano",
     type: ProjectType.CepheAluminyum,
     status: ProjectStatus.Tamamlanan,
@@ -482,6 +515,7 @@ const projects = [
   },
   {
     id: 34,
+    slug: "park-diamond-2",
     title: "Park Diamond",
     type: ProjectType.Konut,
     status: ProjectStatus.Tamamlanan,
@@ -495,6 +529,7 @@ const projects = [
   },
   {
     id: 35,
+    slug: "verona-garden-2",
     title: "Verona Garden",
     type: ProjectType.Konut,
     status: ProjectStatus.Tamamlanan,
@@ -508,6 +543,7 @@ const projects = [
   },
   {
     id: 36,
+    slug: "yasli-bakim-merkezi-karabuk",
     title: "Yaşlı Bakım Merkezi KARABÜK",
     type: ProjectType.Ustyapı,
     status: ProjectStatus.Tamamlanan,
@@ -521,6 +557,7 @@ const projects = [
   },
   {
     id: 37,
+    slug: "senkron-2",
     title: "Senkron",
     type: ProjectType.EndüstriyelYapi,
     status: ProjectStatus.Tamamlanan,
@@ -534,6 +571,7 @@ const projects = [
   },
   {
     id: 38,
+    slug: "eskipazar-green-aluminyum",
     title: "Eskipazar Green Alüminyum",
     type: ProjectType.EndüstriyelYapi,
     status: ProjectStatus.Tamamlanan,
@@ -547,6 +585,7 @@ const projects = [
   },
   {
     id: 39,
+    slug: "hadrianapolice",
     title: "Hadrianapolice",
     type: ProjectType.Restorasyon,
     status: ProjectStatus.Tamamlanan,
@@ -560,6 +599,7 @@ const projects = [
   },
   {
     id: 40,
+    slug: "tso",
     title: "TSO",
     type: ProjectType.Ustyapı,
     status: ProjectStatus.Tamamlanan,
@@ -573,6 +613,7 @@ const projects = [
   },
   {
     id: 41,
+    slug: "il-saglik-merkezi",
     title: "İl Sağlık Merkezi",
     type: ProjectType.CepheAluminyum,
     status: ProjectStatus.Tamamlanan,
@@ -586,6 +627,7 @@ const projects = [
   },
   {
     id: 42,
+    slug: "hayrettin-aydin",
     title: "Hayrettin Aydın",
     type: ProjectType.CepheAluminyum,
     status: ProjectStatus.Tamamlanan,
@@ -599,6 +641,7 @@ const projects = [
   },
   {
     id: 43,
+    slug: "akbank-2",
     title: "Akbank",
     type: ProjectType.CepheAluminyum,
     status: ProjectStatus.Tamamlanan,
@@ -612,6 +655,7 @@ const projects = [
   },
   {
     id: 44,
+    slug: "kargisan-konaklari",
     title: "Kargisan Konakları",
     type: ProjectType.Konut,
     status: ProjectStatus.Tamamlanan,
@@ -625,6 +669,7 @@ const projects = [
   },
   {
     id: 45,
+    slug: "kgm-binasi",
     title: "KGM Binası",
     type: ProjectType.CepheAluminyum,
     status: ProjectStatus.Tamamlanan,
@@ -638,6 +683,7 @@ const projects = [
   },
   {
     id: 46,
+    slug: "anadolu-petrol-opet",
     title: "Anadolu Petrol Opet",
     type: ProjectType.CepheAluminyum,
     status: ProjectStatus.Tamamlanan,
@@ -651,6 +697,7 @@ const projects = [
   },
   {
     id: 47,
+    slug: "112-acil",
     title: "112 Acil",
     type: ProjectType.CepheAluminyum,
     status: ProjectStatus.Tamamlanan,

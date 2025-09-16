@@ -149,12 +149,12 @@ function ProjectCard({ project }: { project: typeof projects[0] }) {
 
     const handleProjectClick = () => {
         // Create slug from project title
-        const slug = project.title
-            .toLowerCase()
-            .replace(/\s+/g, '-')
-            .replace(/[^a-z0-9-]/g, '');
+        // const slug = project.title
+        //     .toLowerCase()
+        //     .replace(/\s+/g, '-')
+        //     .replace(/[^a-z0-9-]/g, '');
 
-        router.push(`${pathname}/${slug}`);
+        router.push(`${pathname}/${project.slug}`);
     };
 
     return (

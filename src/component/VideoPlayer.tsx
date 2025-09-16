@@ -31,6 +31,7 @@ export default function VideoPlayer({ src, poster, className = "" }: VideoPlayer
     const hideControlsTimeoutRef = useRef<NodeJS.Timeout | null>(null);
     const videoRef = useRef<HTMLVideoElement>(null);
 
+
     useEffect(() => {
         const video = videoRef.current;
         if (!video) return;
@@ -77,6 +78,7 @@ export default function VideoPlayer({ src, poster, className = "" }: VideoPlayer
             video.removeEventListener('loadstart', handleLoadStart);
             video.removeEventListener('canplay', handleCanPlay);
         };
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [isPlaying]); // hideControlsAfterDelay'i dependency olarak eklemeye gerek yok çünkü fonksiyon içinde tanımlı
 
     // Cleanup timer on unmount

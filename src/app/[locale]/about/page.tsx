@@ -141,7 +141,7 @@ export default function page() {
                 background: "url('/about-us-bg.webp') no-repeat center",
                 backgroundSize: "contain",
                 backgroundPosition: "left",
-                height: "calc(100vh - 500px)"
+                height: "calc(100vh - 400px)"
             }}>
                 <div className='container'>
 

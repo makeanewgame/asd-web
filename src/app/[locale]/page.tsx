@@ -8,15 +8,14 @@ import NumbersComp from '@/component/NumbersComp';
 import ProjectsSlider from '@/component/ProjectsSlider';
 import SocialMediaBar from '@/component/SocialMediaBar';
 import TDiv from '@/component/TranslateSpan';
-import { createClient } from '@/utils/supabase/server'
-import { Accordion, AccordionItem, Tab, Tabs } from "@heroui/react";
+//import { createClient } from '@/utils/supabase/server'
 import Image from 'next/image';
 import Link from 'next/link';
 
 
 export default async function HomePage() {
 
-  const supabase = await createClient()
+  //const supabase = await createClient()
 
   // const { data: projects } = await supabase.from('Projects').select()
 

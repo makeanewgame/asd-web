@@ -1,26 +1,8 @@
-import React from 'react'
 import TDiv from './TranslateSpan';
-
-// Image constants from Figma
-const img511 = "http://localhost:3845/assets/fdf9a800538ead20bd4b1d07a127b4b6faa0c987.png";
-const imgEngineeringConstructionSiteTeamOutdoor600Nw23022607171 = "http://localhost:3845/assets/77003b3cd2ccfb9329c7e2e7b97c9cb5b952a04c.png";
-const imgBw2311202337685793641 = "http://localhost:3845/assets/27439e92b371aaf31a7c57d22706ebce28b7802b.png";
-const img551 = "http://localhost:3845/assets/58f8910e682e5a87efd002580fe2c99d8a9be4bf.png";
-const imgBlog89BekoLoder21 = "http://localhost:3845/assets/18c4a6089b6e8e5bdf279a251fb698cc3b5b5639.png";
-const imgKarabukKentMeydaniMilletBahcesi6381562071952808991 = "http://localhost:3845/assets/4bb938083fa5b81ceb7fcaa2dca92d30fae0275d.png";
-// SVG masks from Figma
-const img512 = "http://localhost:3845/assets/01520230bb4c2e447737f6627b763add514f6630.svg";
-const imgEngineeringConstructionSiteTeamOutdoor600Nw23022607172 = "http://localhost:3845/assets/cc66f08a16e655b750886241a9fd23a5af552a2f.svg";
-const imgBw2311202337685794000 = "http://localhost:3845/assets/5862635c90439461658b6d93ddc7842073b9f158.svg";
-const img552 = "http://localhost:3845/assets/2f2527b1a5b57e90a73afcc48cc1cb8253f5bdd3.svg";
-const imgBlog89BekoLoder22 = "http://localhost:3845/assets/ecf61574542b34eb73e6573f22696c973c813d45.svg";
-const imgKarabukKentMeydaniMilletBahcesi6381562071952809000 = "http://localhost:3845/assets/27aae53db93c0198565ce9eebb08fa59d33f6b57.svg";
 
 export default function NumbersComp() {
     return (
         <div className="w-full h-min-[600px]">
-            {/* Bento Grid Layout */}
-
             <div className='flex gap-2 min-h-[550px]'>
                 <div className='flex flex-col grow basis-1/3 gap-2'>
                     <div className="grow bg-transparent rounded-3xl p-6 relative overflow-hidden group hover:scale-105 transition-transform duration-300">

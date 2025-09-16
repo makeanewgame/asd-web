@@ -8,6 +8,7 @@ import Image from 'next/image'
 interface Project {
     id: number
     title: string
+    slug: string
     type: ProjectType
     status: string
     location: string
@@ -44,19 +45,19 @@ export default function ProjectsSlider() {
     const projectTypes = Object.values(ProjectType)
 
     // Slug oluştur
-    const createSlug = (title: string) => {
-        return title
-            .toLowerCase()
-            .replace(/[^a-z0-9 -]/g, '') // Özel karakterleri kaldır
-            .replace(/\s+/g, '-') // Boşlukları tire ile değiştir
-            .replace(/-+/g, '-') // Birden fazla tireyi tek tire yap
-            .trim()
-    }
+    // const createSlug = (title: string) => {
+    //     return title
+    //         .toLowerCase()
+    //         .replace(/[^a-z0-9 -]/g, '') // Özel karakterleri kaldır
+    //         .replace(/\s+/g, '-') // Boşlukları tire ile değiştir
+    //         .replace(/-+/g, '-') // Birden fazla tireyi tek tire yap
+    //         .trim()
+    // }
 
     // Proje tıklama handler'ı
     const handleProjectClick = (project: Project) => {
-        const slug = createSlug(project.title)
-        router.push(`/projects/${slug}`)
+        //const slug = createSlug(project.title)
+        router.push(`/projects/${project.slug}`)
     }
 
     // Video/resim render fonksiyonu
@@ -123,7 +124,7 @@ export default function ProjectsSlider() {
                     }}
                 >
                     {/* İlk set */}
-                    {filteredProjects.map((project, index) => (
+                    {filteredProjects.map((project) => (
                         <div
                             key={`first-${project.id}`}
                             className="flex-shrink-0 w-80 h-60 mx-4 relative rounded-lg overflow-hidden cursor-pointer transition-transform hover:scale-105 group"
@@ -143,7 +144,7 @@ export default function ProjectsSlider() {
                     ))}
 
                     {/* İkinci set (sonsuz döngü için) */}
-                    {filteredProjects.map((project, index) => (
+                    {filteredProjects.map((project) => (
                         <div
                             key={`second-${project.id}`}
                             className="flex-shrink-0 w-80 h-60 mx-4 relative rounded-lg overflow-hidden cursor-pointer transition-transform hover:scale-105 group"

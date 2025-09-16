@@ -1,8 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
-export default function FloatImage({ data }: any) {
+type FloatImagesProps = {
+    data: { id: number; logo: string; name: string }[];
+};
+
+export default function FloatImage({ data }: FloatImagesProps) {
     return (
         <div className="flex">
             <motion.div
@@ -24,9 +29,9 @@ export default function FloatImage({ data }: any) {
                     <div
                         className="slider mt-20"
                         style={{
-                            ["--width" as any]: "200px",
-                            ["--height" as any]: "100px",
-                            ["--quantity" as any]: "10",
+                            ["--width" as string]: "200px",
+                            ["--height" as string]: "100px",
+                            ["--quantity" as string]: "10",
                         }}
                     >
                         <div className="list">
@@ -39,10 +44,10 @@ export default function FloatImage({ data }: any) {
                                         className="item"
                                         key={item.id}
                                         style={{
-                                            ["--position" as any]: index,
+                                            ["--position" as string]: index,
                                         }}
                                     >
-                                        <img
+                                        <Image
                                             src={item.logo}
                                             alt={item.name}
                                             width={100}
