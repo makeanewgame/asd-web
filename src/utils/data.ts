@@ -135,7 +135,7 @@ Doğa ile iç içe şehrin gürültüsünden uzak modern yapı elemanları v
     status: ProjectStatus.DevamEden,
     location: "",
     heroImage: "/heroImage/dadibravilla.webp",
-    content: `# DADİBRA (DEVAM)
+    content: `# DADİBRA VILLAS
 
 Homeros'un İlyada'sı... Yani insanlığa ait bilinen en eski destanda adı geçen, Paflagonya'da kurulan en önemli 6 şehirden biri... Safranbolu'nun antik çağlarda bilinen ilk ismi, ilk kimliği, Dadibra…
 
@@ -161,7 +161,14 @@ Yaşamın En İyisi İçin Hazır Mısınız? DADİBRA VILLAS, Safranbolu'nun en
 
 [Instagram'da Görüntüle](https://www.instagram.com/p/C7eS0ZasfYW/)`,
     imageList: [
-      ""
+      "001.webp",
+      "002.webp",
+      "003.webp",
+      "004.webp",
+      "005.webp",
+      "006.webp",
+      "007.webp",
+      "008.webp",
     ],
     description: "",
   },
@@ -440,7 +447,12 @@ ASD Office olarak, projelerimizde güçlü bir ilk izlenim için modern ve dikka
 - Mantolama sıva mineral
 - 2500 m²`,
     imageList: [
-      ""
+      "001.webp",
+      "002.webp",
+      "003.webp",
+      "004.webp",
+      "005.webp",
+      "006.webp",
     ],
     description: "",
   },
