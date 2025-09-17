@@ -263,12 +263,18 @@ Zonguldak’ın en değerli konumlarından biri - 3 yatak odası, ebeveyn banyos
     slug: "camkent",
     title: "Çamkent",
     type: ProjectType.Ustyapı,
-    status: ProjectStatus.Tamamlanan,
+    status: ProjectStatus.DevamEden,
     location: "",
     heroImage: "/heroImage/camkent.webp",
-    content: "",
+    content: `# OSMAN YEŞİLYURT ORTAOKULU
+[Instagram'da Görüntüle 2](https://www.instagram.com/p/C4dSz6csjOs/)`,
     imageList: [
-      ""
+      "001.webp",
+      "002.webp",
+      "003.webp",
+      "004.webp",
+      "005.webp",
+      "006.webp",
     ],
     description: "",
   },
@@ -280,9 +286,30 @@ Zonguldak’ın en değerli konumlarından biri - 3 yatak odası, ebeveyn banyos
     status: ProjectStatus.Tamamlanan,
     location: "",
     heroImage: "/heroImage/belen.webp",
-    content: "",
+    content: `# 16 DERSLİKLİ BELEN İLK VE ORTAOKULU (Biten)
+
+**Kategori:** Taahhüt okul inşaatı
+
+16 derslikten oluşan ve 2950 m² yerleşkesiyle eğitim geleceğini inşa etmeye devam ediyoruz.
+
+Kaba inşaatı tamamladığımız bu projede:
+- Çok amaçlı salon
+- Basketbol sahası
+- Geri dönüşüm ve doğa dostu bir yaklaşım ile yağmur suyunu depolayarak lavabo ve bahçe sulamalarında kullanacağız.
+
+Ayrıca, güvenli ve sağlam temeller için 5500 m² arsa alanında fore kazık uygulaması gerçekleştirdik.
+
+ASD Yapı olarak, sadece yapılar değil, sürdürülebilir yarınlar inşa ediyoruz.
+
+[Instagram'da Görüntüle 1](https://www.instagram.com/p/DA8erSCMGcD/)  
+[Instagram'da Görüntüle 2](https://www.instagram.com/p/C4dSz6csjOs/)`,
     imageList: [
-      ""
+      "001.webp",
+      "002.webp",
+      "003.webp",
+      "004.webp",
+      "005.webp",
+      "006.webp",
     ],
     description: "",
   },
@@ -492,7 +519,12 @@ Unesco Dünya Mirası Safranbolu’da, Tarihi Çarşı Han Arkası Sokakta bulun
 [Instagram'da Görüntüle 1](https://www.instagram.com/p/Cp7H3LPjfMa/)  
 [Instagram'da Görüntüle 2](https://www.instagram.com/p/CvAQo5ltY6m/)`,
     imageList: [
-      ""
+      "001.webp",
+      "002.webp",
+      "003.webp",
+      "004.webp",
+      "005.webp",
+      "006.webp",
     ],
     description: "",
   },
@@ -614,7 +646,12 @@ Bilginler Yapı ve Beton Grubu ile çözüm ortağı olarak çalıştığımız 
 - C60 Alüminyum Vitrin Doğramaları
 - Ahşap Desenli Fibercement Kaplama`,
     imageList: [
-      ""
+      "001.webp",
+      "002.webp",
+      "003.webp",
+      "004.webp",
+      "005.webp",
+      "006.webp",
     ],
     description: "",
   },
