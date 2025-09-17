@@ -1,12 +1,13 @@
 "use client"
 import LiquiedGlassCard from '@/component/LiquiedGlassPage'
 import TDiv from '@/component/TranslateSpan'
+import ImageGallery from '@/component/ImageGallery'
 import { projects } from '@/utils/data';
 import Markdown from 'react-markdown'
 
-export default function page({ params }: { params: { slug: string } }) {
+export default async function page({ params }: { params: Promise<{ slug: string }> }) {
 
-    const { slug } = params;
+    const { slug } = await params;
 
     console.log(slug);
 
@@ -54,10 +55,6 @@ export default function page({ params }: { params: { slug: string } }) {
 
                 <div className='container'>
                     <div className='flex gap-4'>
-                        <div className='basis-1/2'>
-                            Resim Galerisi
-
-                        </div>
                         <div className='flex-1'>
                             <div className="markdown-content">
                                 <Markdown>
@@ -65,6 +62,13 @@ export default function page({ params }: { params: { slug: string } }) {
                                 </Markdown>
                             </div>
                         </div>
+                        <div className='basis-1/2'>
+                            <ImageGallery
+                                images={projectData?.imageList || []}
+                                projectSlug={slug}
+                            />
+                        </div>
+
                     </div>
                 </div>
 

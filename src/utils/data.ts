@@ -117,7 +117,7 @@ Doğa ile iç içe şehrin gürültüsünden uzak modern yapı elemanları v
 - Ebeveyn Banyosu
 - Isı Yalıtımlı Kış Bahçesi
 
-![Proje Görseli](/project/park-flora/001.webp)
+
 
 
     `,
