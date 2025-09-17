@@ -116,10 +116,6 @@ Doğa ile iç içe şehrin gürültüsünden uzak modern yapı elemanları v
 - Kiler / Çamaşır Odası
 - Ebeveyn Banyosu
 - Isı Yalıtımlı Kış Bahçesi
-
-
-
-
     `,
     imageList: [
       "001.webp",

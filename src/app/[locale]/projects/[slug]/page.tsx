@@ -2,6 +2,7 @@
 import LiquiedGlassCard from '@/component/LiquiedGlassPage'
 import TDiv from '@/component/TranslateSpan'
 import ImageGallery from '@/component/ImageGallery'
+import RelatedProjects from '@/component/RelatedProjects'
 import { projects } from '@/utils/data';
 import Markdown from 'react-markdown'
 
@@ -70,6 +71,19 @@ export default async function page({ params }: { params: Promise<{ slug: string 
                         </div>
 
                     </div>
+                </div>
+
+                <div>
+                    <h2 className='text-3xl font-bold text-white mt-16 mb-8'>
+                        <TDiv>"İlgili Projeler":"Related Projects""</TDiv>
+                    </h2>
+                    {projectData && (
+                        <RelatedProjects
+                            currentProjectType={projectData.type}
+                            currentProjectId={projectData.id}
+                            maxProjects={8}
+                        />
+                    )}
                 </div>
 
                 <style jsx>{`
