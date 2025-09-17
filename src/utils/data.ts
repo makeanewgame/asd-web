@@ -101,9 +101,33 @@ const projects = [
     status: ProjectStatus.Tamamlanan,
     location: "",
     heroImage: "/heroImage/parkflora.webp",
-    content: "",
+    content: `
+
+# Park Flora
+
+Doğa ile iç içe şehrin gürültüsünden uzak modern yapı elemanları ve eşsiz konumuyla Safranbolu'nıun en iyi konsept projesidir.
+## Proje Detayları
+- 3+1 Brüt 158,40m2 Net 126,72m2 Konutlar
+- Açık ve Kapalı Otopark Alanları
+- Bahçe ve Gölet Manzaralı
+- Çocuk Oyun Alanları
+- Kamelya ve Oturma Alanları
+- Giyinme Odası
+- Kiler / Çamaşır Odası
+- Ebeveyn Banyosu
+- Isı Yalıtımlı Kış Bahçesi
+
+![Proje Görseli](/project/park-flora/001.webp)
+
+
+    `,
     imageList: [
-      ""
+      "001.webp",
+      "002.webp",
+      "003.webp",
+      "004.webp",
+      "005.webp",
+      "006.webp",
     ],
     description: "",
   },

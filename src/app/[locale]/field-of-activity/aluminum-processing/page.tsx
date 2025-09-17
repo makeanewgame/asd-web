@@ -7,11 +7,6 @@ import Image from "next/image";
 
 export default function AluminumProcessing() {
 
-
-
-
-
-
     const advantages = [
         {
             id: 1,
@@ -36,7 +31,6 @@ export default function AluminumProcessing() {
     ]
 
     return (
-
         <>
             <div className="relative overflow-hidden">
                 <div className="pointer-events-none absolute inset-x-0 top-0 h-[540px] bg-gradient-to-b from-transparent to-[#0057B3]" />
