@@ -514,7 +514,12 @@ Bu projede birlikte çalışmaktan onur duyduğumuz Uzuner Gıda’ya ve Mimar M
 
 Unesco Dünya Mirası Safranbolu’da, Tarihi Çarşı Han Arkası Sokakta bulunan yapıların cephe restorasyonu ve Han Arkası Sokak Meydan düzenleme çalışması.`,
     imageList: [
-      ""
+      "001.webp",
+      "002.webp",
+      "003.webp",
+      "004.webp",
+      "005.webp",
+      "006.webp",
     ],
     description: "",
   },
@@ -993,7 +998,12 @@ Bu müdahale, Hadrianapolis’in bir açık hava müzesi olarak ziyaretçi deney
 **Konum:** Hacı Ahmetler, 78402 Budaklar/Eskipazar/Karabük Hadrianapolis Antik Kenti
     `,
     imageList: [
-      ""
+      "001.webp",
+      "002.webp",
+      "003.webp",
+      "004.webp",
+      "005.webp",
+      "006.webp",
     ],
     description: "",
   },
@@ -1050,8 +1060,8 @@ Karabük TSO binasının cephesinde kapaklı alüminyum giydirme ve kompozit pan
     type: ProjectType.CepheAluminyum,
     status: ProjectStatus.Tamamlanan,
     location: "",
-    heroImage: "/heroImage/default.webp",
-    content: `# HAYRETTİN AYDIN OFFİCE
+    heroImage: "/heroImage/hayrettinaydin.webp",
+    content: `# HAYRETTİN AYDIN OFFICE
 
 Ofis cephesi tasarımımızda; modern çizgilerle estetik vurguyu öne çıkaran silikon giydirme sistemimiz, yapıya hem zarif bir yüzey hem de su sızıntılarına karşı yüksek dayanıklılık sağlıyor. Ana cephe panellerinde kullanılan alüminyum kompozit malzeme, hafiflik ve mukavemeti bir araya getirerek uzun ömürlü ve bakımı kolay bir dış kabuk sunuyor. Pencere ve kapılarda tercih edilen ısı yalıtımlı alüminyum doğramalar, enerji verimliliğini maksimize ederken iç mekân konforunu ve ses izolasyonunu da güvence altına alıyor. Tüm bu sistemlerin temelini oluşturan EPS ısı yalıtımı ise yapının ısı köprülerini en aza indirerek yıl boyunca konforlu bir çalışma ortamı yaratıyor. Bu bileşim, ofis binasına hem çağdaş bir mimari kimlik kazandırıyor hem de sürdürülebilir performans hedeflerine tam uyum sağlıyor.
 
@@ -1061,7 +1071,10 @@ Ofis cephesi tasarımımızda; modern çizgilerle estetik vurguyu öne çıkaran
 - Isı Yalıtımlı Alüminyum Doğrama
 - EPS Isı Yalıtımı`,
     imageList: [
-      ""
+      "001.webp",
+      "002.webp",
+      "003.webp",
+      "004.webp",
     ],
     description: "",
   },
