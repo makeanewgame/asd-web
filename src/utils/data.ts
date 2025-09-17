@@ -720,7 +720,12 @@ Karabük Belediyesi Kanyon Rekrasyon Projesi Ahşap Desenli Fibercement Kaplama,
 - Alüminyum ısı yalıtımlı doğrama
 - Sinerji cam`,
     imageList: [
-      ""
+      "001.webp",
+      "002.webp",
+      "003.webp",
+      "004.webp",
+      "005.webp",
+      "006.webp",
     ],
     description: "",
   },
@@ -954,7 +959,12 @@ Greenal Alüminyum | [Eskipazar OSB]
 - Teras bazalı cam korkuluk sistemi
 - Fibercement uygulaması`,
     imageList: [
-      ""
+      "001.webp",
+      "002.webp",
+      "003.webp",
+      "004.webp",
+      "005.webp",
+      "006.webp",
     ],
     description: "",
   },
