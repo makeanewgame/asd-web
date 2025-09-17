@@ -114,15 +114,14 @@ export default async function HomePage() {
           background: 'linear-gradient(180deg, rgba(24, 66, 143, 0%), #071329 100%)',
         }}></div>
 
-        <div className='flex container gap-4 relative z-20 mx-auto  -mt-[550px] text-white px-4' style={{
-          height: "calc(100vh / 2 - 100px)",
+        <div className='flex container gap-4 relative z-20 mx-auto -mt-[300px] md:-mt-[550px] text-white px-4' style={{
+          height: "auto",
         }}>
-          <div className='flex flex-col basis-3/5 gap-2'>
-            <div className='text-[20px] text-[#ADD2FF]'><TDiv>{'"ASD GRUP":"ASD GROUP"'}</TDiv></div>
-            <div className='text-[66px] font-bold leading-18 whitespace-pre-line'><TDiv>{'"YARINLAR İÇİN\nİNŞA EDİYORUZ":"WE BUILD FOR TOMORROW"'}</TDiv></div>
-            <div className='text-[28px]'><TDiv>{'"30 yılı aşkın tecrübeyi, ileri cephe teknolojileri ve kusursuz proje yönetim anlayışını birleştirerek, mimari vizyonunuzu estetik, dayanıklı ve enerji verimli yapılara dönüştürür.":"By combining over 30 years of experience, advanced façade technologies and flawless project management approach, it transforms your architectural vision into aesthetic, durable and energy-efficient structures."'}</TDiv></div>
+          <div className='flex flex-col md:basis-3/5 gap-2 md:gap-4'>
+            <div className='text-base md:text-[20px] text-[#ADD2FF]'><TDiv>{'"ASD GRUP":"ASD GROUP"'}</TDiv></div>
+            <div className='text-3xl md:text-[66px] font-bold leading-tight md:leading-18 whitespace-pre-line'><TDiv>{'"YARINLAR İÇİN\nİNŞA EDİYORUZ":"WE BUILD FOR TOMORROW"'}</TDiv></div>
+            <div className='text-lg md:text-[28px] leading-relaxed'><TDiv>{'"30 yılı aşkın tecrübeyi, ileri cephe teknolojileri ve kusursuz proje yönetim anlayışını birleştirerek, mimari vizyonunuzu estetik, dayanıklı ve enerji verimli yapılara dönüştürür.":"By combining over 30 years of experience, advanced façade technologies and flawless project management approach, it transforms your architectural vision into aesthetic, durable and energy-efficient structures."'}</TDiv></div>
             <div className='w-fit'>
-
               <GlassButton>
                 <TDiv>{'"Bize Ulaşın ":"Contact Us"'}</TDiv>
                 <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
@@ -132,7 +131,7 @@ export default async function HomePage() {
               </GlassButton>
             </div>
           </div>
-          <div className='basis-2/5 flex justify-end'>
+          <div className='hidden md:flex basis-2/5 justify-end'>
             <div style={{ position: 'relative' }}>
               <CarouselCard
                 items={cardMock}
@@ -146,11 +145,9 @@ export default async function HomePage() {
           </div>
         </div>
       </div>
-      <div className='container'>
-        <div className='flex justify-between items-center'>
-
-
-          <h2 className='text-[68px] font-bold'><TDiv>"Projelerimiz":"Our Projects"</TDiv></h2>
+      <div className='container px-4 py-8 md:py-16'>
+        <div className='flex flex-col md:flex-row justify-between items-start md:items-center gap-4 md:gap-0'>
+          <h2 className='text-4xl md:text-[68px] font-bold'><TDiv>"Projelerimiz":"Our Projects"</TDiv></h2>
           <GlassButton>
             <Link href="/projects" className='flex gap-2 items-center'>
               <TDiv>"Tüm Projeler ":"All Projects"</TDiv>
@@ -165,76 +162,63 @@ export default async function HomePage() {
         <AccordionComp data={accordionMock} />
       </div>
 
-      <div className='relative h-screen flex items-center'>
-        <div className='absolute w-full h-[1200px] bottom-0 left-0 right-0'>
+      <div className='relative min-h-screen flex items-center py-16 md:py-0'>
+        <div className='absolute w-full h-full md:h-[1200px] bottom-0 left-0 right-0'>
           <Image src={"/aboutus_bg.webp"} alt='aboutus_bg' fill className='mt-8 object-cover mix-blend-overlay absolute' />
         </div>
-        <div className='container flex flex-col relative'>
+        <div className='container flex flex-col relative px-4'>
 
-          <div className='flex justify-between text-sm mt-8'>
+          <div className='flex flex-col md:flex-row justify-between text-xs md:text-sm mt-8 gap-2 md:gap-0'>
             <div><TDiv>"30+ Yıllık Deneyim":"30+ Years of Experience"</TDiv></div>
             <div><TDiv>"Hayatın Kendisinden İlham Alıyoruz":"We Draw Inspiration from Life Itself"</TDiv></div>
           </div>
-          <h2 className='text-[68px] font-bold my-8'><TDiv>"Hakkımızda":"About Us"</TDiv></h2>
-          <div className='text-[40px] leading-10 font-light mb-8'>
-
-            <TDiv>"“tecrübe ve bilginin birbirini tamamladığı bir ortamda, yeniliklere açık bir yaklaşım benimsemektedir. Teknolojiyi sürekli takip eden düşünce yapımız ve alanında uzmanlaşmış seçkin kadromuzla, her geçen gün yeni tasarımlar üzerinde çalışarak sektördeki gelişmelere öncülük ediyoruz.”":""In an environment where experience and knowledge complement each other, we adopt an approach open to innovation. With our mindset that constantly follows technological advancements and our distinguished team of experts in their fields, we are pioneering developments in the sector by working on new designs every day.""</TDiv>
+          <h2 className='text-4xl md:text-[68px] font-bold my-4 md:my-8'><TDiv>"Hakkımızda":"About Us"</TDiv></h2>
+          <div className='text-lg md:text-[40px] leading-6 md:leading-10 font-light mb-6 md:mb-8'>
+            <TDiv>""tecrübe ve bilginin birbirini tamamladığı bir ortamda, yeniliklere açık bir yaklaşım benimsemektedir. Teknolojiyi sürekli takip eden düşünce yapımız ve alanında uzmanlaşmış seçkin kadromuzla, her geçen gün yeni tasarımlar üzerinde çalışarak sektördeki gelişmelere öncülük ediyoruz."":""In an environment where experience and knowledge complement each other, we adopt an approach open to innovation. With our mindset that constantly follows technological advancements and our distinguished team of experts in their fields, we are pioneering developments in the sector by working on new designs every day.""</TDiv>
           </div>
 
-          <div className='flex gap-2'>
-            <Image src="/cert001-asd.webp" alt="cert001-asd" width={256} height={326} />
-            <Image src="/cert002-asd.webp" alt="cert002-asd" width={256} height={326} />
-            <Image src="/cert003-asd.webp" alt="cert003-asd" width={256} height={326} />
+          <div className='flex gap-2 flex-wrap md:flex-nowrap'>
+            <Image src="/cert001-asd.webp" alt="cert001-asd" width={256} height={326} className='w-24 h-auto md:w-64' />
+            <Image src="/cert002-asd.webp" alt="cert002-asd" width={256} height={326} className='w-24 h-auto md:w-64' />
+            <Image src="/cert003-asd.webp" alt="cert003-asd" width={256} height={326} className='w-24 h-auto md:w-64' />
           </div>
-          <div className='absolute right-0 top-100 mt-16'>
-            <LiquiedGlassCard className="flex flex-col relative w-fit p-4" contentClassName="px-6 py-4 z-0" radius="14px">
+          <div className='md:absolute md:right-0 md:top-100 md:mt-16 mt-8'>
+            <LiquiedGlassCard className="flex flex-col relative w-full md:w-fit p-2 md:p-4" contentClassName="px-4 md:px-6 py-4 z-0" radius="14px">
               <AboutUsComp />
             </LiquiedGlassCard>
           </div>
 
         </div>
-
       </div >
 
-      <div className='container py-16'>
-        <h2 className='text-[68px] font-bold my-8'><TDiv>"Rakamlarla Biz":"Us by the Numbers"</TDiv></h2>
+      <div className='container py-8 md:py-16 px-4'>
+        <h2 className='text-4xl md:text-[68px] font-bold my-4 md:my-8'><TDiv>"Rakamlarla Biz":"Us by the Numbers"</TDiv></h2>
         <div>
           <NumbersComp />
         </div>
       </div>
 
-
       <div className='bg-[#F3F9FF]'>
-        <div className='container py-16'>
-          <h2 className='text-[68px] font-bold my-8 text-[#08132A]'><TDiv>"İş Akışımız":"Our Workflow"</TDiv></h2>
-          <div className='text-[28px] text-[#08132A] mb-8 leading-10 font-light'>
-            <TDiv>"“her projeye özel çözümler üretirken standartlarımızdan ödün vermeden sistematik bir iş akışı izliyoruz. Tüm süreçlerimizde müşteri memnuniyetini merkeze alıyor, esnek ve hızlı çözümler sunarak katma değer yaratıyoruz.”":""</TDiv>
+        <div className='container py-8 md:py-16 px-4'>
+          <h2 className='text-4xl md:text-[68px] font-bold my-4 md:my-8 text-[#08132A]'><TDiv>"İş Akışımız":"Our Workflow"</TDiv></h2>
+          <div className='text-lg md:text-[28px] text-[#08132A] mb-6 md:mb-8 leading-6 md:leading-10 font-light'>
+            <TDiv>""her projeye özel çözümler üretirken standartlarımızdan ödün vermeden sistematik bir iş akışı izliyoruz. Tüm süreçlerimizde müşteri memnuniyetini merkeze alıyor, esnek ve hızlı çözümler sunarak katma değer yaratıyoruz."":""</TDiv>
           </div>
-          <div className='flex gap-4'>
-            <div className='basis-1/2'>
+          <div className='flex flex-col lg:flex-row gap-8 lg:gap-4'>
+            <div className='lg:basis-1/2'>
               <AccordionComp data={workflowMock} dark={true} />
             </div>
-            <div className='basis-1/2 p-4'>
-              <Image src="/workflow_image.webp" alt="workflow_image" width={600} height={400} className='mix-blend-multiply' />
+            <div className='lg:basis-1/2 p-4'>
+              <Image src="/workflow_image.webp" alt="workflow_image" width={600} height={400} className='mix-blend-multiply w-full h-auto' />
             </div>
-
           </div>
         </div>
       </div>
 
       <div className='bg-white'>
-        <div className='container flex flex-col overflow-clip py-32'>
+        <div className='container flex flex-col overflow-clip py-16 md:py-32 px-4'>
           <FloatImage data={logos} />
-          {/* <h2 className='text-[68px] text-black font-bold my-8'><TDiv>"Sosyal Medya":"Social Media"</TDiv></h2>
-          <div className='flex justify-between'>
-            <Image src="/instagram-asd.webp" alt="instagram-asd" width={600} height={400} />
-            <Image src="/linkedin-asd.webp" alt="linkedin-asd" width={600} height={400} />
-            <Image src="/twitter-asd.webp" alt="twitter-asd" width={600} height={400} />
-            <Image src="/youtube-asd.webp" alt="youtube-asd" width={600} height={400} />
-
-          </div> */}
         </div>
-
       </div>
 
 
