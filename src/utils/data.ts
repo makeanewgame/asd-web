@@ -204,7 +204,12 @@ Inovia Towers, akıllı ev teknolojisi, estetik tasarım ve çevreci yaklaşım�
 - Değerlenen bölge, kazandıran yatırım
 - ASD Yapı güvencesiyle güvenli bir gelecek`,
     imageList: [
-      ""
+      "001.webp",
+      "002.webp",
+      "003.webp",
+      "004.webp",
+      "005.webp",
+      "006.webp",
     ],
     description: "",
   },
@@ -256,12 +261,26 @@ Zonguldak’ın en değerli konumlarından biri - 3 yatak odası, ebeveyn banyos
     slug: "isiklar",
     title: "Işıklar",
     type: ProjectType.Konut,
-    status: ProjectStatus.Tamamlanan,
+    status: ProjectStatus.DevamEden,
     location: "",
     heroImage: "/heroImage/isiklar.webp",
-    content: "",
+    content: `# ÖZIŞIK A.Ş. (IŞIKLAR) TUNA KONUTLARI (DEVAM)
+
+ASD Yapı olarak, Işıklar Enerji Yapı Holding’in iştiraki Özışık İnşaat Yatırım’ın Bartın Tuna Mahallesi’nde hayata geçirdiği büyük ölçekli konut projesinin çalışmalarına tüm hızımızla devam ediyoruz!
+
+Bu prestijli proje, modern yaşam alanları ve kaliteli yaşam standartlarını sizlerle buluşturacak. Sürecin her adımını titizlikle takip ediyor, güçlü yapılarla geleceğinizi inşa ediyoruz.
+
+Işıklar Enerji Yapı Holding'in iştiraki olan Özışık İnşaat Yatırım, Bartın'ın Tuna Mahallesi'nde hayata geçireceği büyük ölçekli konut projesinin ilk aşamasının çalışmalarına başlandı. Bu proje kapsamında planlanan toplam 200 daireden oluşan konut kompleksinin ilk etabında 36 dairenin inşaat faaliyetlerini ASD İnşaat ve Yapı Grubu tarafından yürütülmesi kararlaştırılırken projenin çalışmalarına başlanmıştır.
+
+[Instagram'da Görüntüle 1](https://www.instagram.com/p/C-kUMtGs1hf/)  
+[Instagram'da Görüntüle 2](https://www.instagram.com/p/C7jvF1MM6Kj/)`,
     imageList: [
-      ""
+      "001.webp",
+      "002.webp",
+      "003.webp",
+      "004.webp",
+      "005.webp",
+      "006.webp",
     ],
     description: "",
   },
@@ -592,7 +611,12 @@ Karabük Kent Meydanı'nın yenilenme çalışmalarına katılıyoruz! ASD Cephe
 - Camlı Alüminyum Korkuluk Sistemleri
 - Fotoselli Kayar Kapı Sistemleri`,
     imageList: [
-      ""
+      "001.webp",
+      "002.webp",
+      "003.webp",
+      "004.webp",
+      "005.webp",
+      "006.webp",
     ],
     description: "",
   },
@@ -1049,7 +1073,12 @@ Karabük TSO binasının cephesinde kapaklı alüminyum giydirme ve kompozit pan
 - Alüminyum kompozit
 - Taş yünü ısı yalıtımı`,
     imageList: [
-      ""
+      "001.webp",
+      "002.webp",
+      "003.webp",
+      "004.webp",
+      "005.webp",
+      "006.webp",
     ],
     description: "",
   },
@@ -1107,7 +1136,12 @@ Ofis cephesi tasarımımızda; modern çizgilerle estetik vurguyu öne çıkaran
 
 Kargisan Villarında, anahtar teslim inşaat faaliyetleri tamamlanmış olup, yaşam başlamıştır.`,
     imageList: [
-      ""
+      "001.webp",
+      "002.webp",
+      "003.webp",
+      "004.webp",
+      "005.webp",
+      "006.webp",
     ],
     description: "",
   },
