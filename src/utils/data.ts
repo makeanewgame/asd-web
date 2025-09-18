@@ -806,7 +806,7 @@ Karabük Belediyesi Kanyon Rekrasyon Projesi Ahşap Desenli Fibercement Kaplama,
     type: ProjectType.CepheAluminyum,
     status: ProjectStatus.Tamamlanan,
     location: "",
-    heroImage: "/heroImage/default.webp",
+    heroImage: "/heroImage/topcugilleropet.webp",
     content: `# HKD PETROL OPET
 
 - Strüktürel Silikon Giydirme Cephe
@@ -816,7 +816,12 @@ Karabük Belediyesi Kanyon Rekrasyon Projesi Ahşap Desenli Fibercement Kaplama,
 - Baffle ve Mesh Asma Tavan
 - Trapez Sac Çatı Kaplamaları`,
     imageList: [
-      ""
+      "001.webp",
+      "002.webp",
+      "003.webp",
+      "004.webp",
+      "005.webp",
+      "006.webp",
     ],
     description: "",
   },
@@ -854,14 +859,19 @@ Akgünler Otomotiv Beypazarı Massey-Ferguson Satış ve Servis Binası
     status: ProjectStatus.Tamamlanan,
     location: "",
     heroImage: "/heroImage/yildizlife.webp",
-    content: `# YILDIZ RESİDENCE
+    content: `# YILDIZ RESIDENCE
 
 - Alüminyum Kompozit
 - Taş yünlü ısı yalıtımı
 - Temperli cam korkuluk sistemi
 - Alüminyum ısı yalıtımlı kapı ve pencere doğramalar`,
     imageList: [
-      ""
+      "001.webp",
+      "002.webp",
+      "003.webp",
+      "004.webp",
+      "005.webp",
+      "006.webp",
     ],
     description: "",
   },
@@ -873,7 +883,7 @@ Akgünler Otomotiv Beypazarı Massey-Ferguson Satış ve Servis Binası
     status: ProjectStatus.Tamamlanan,
     location: "",
     heroImage: "/heroImage/yildizlifepremium.webp",
-    content: `# YILDIZ LİFE PREMİUM
+    content: `# YILDIZ LIFE PREMIUM
 
 Dış cephede estetik ve yüksek performans sunan alüminyum kompozit kaplama ile başlayan tasarım diziliminde, dayanıklı ve şık C60 sınıfı alüminyum doğramalar kullanıyoruz. Camlı kare formda tasarlanmış alüminyum korkuluk sistemleri, ferah bir görünüm ve güvenlik sunarken; EPS ısı yalıtımı ile iç mekânların enerji verimliliğini ve konforunu en üst düzeye çıkarıyoruz. Ayrıca, alüminyum kutu profil güneş kırıcılar sayesinde hem güneş ışınlarının kontrolünü hem de yapı cephesine modern bir dinamizm kazandırıyoruz.
 
@@ -886,7 +896,12 @@ Dış cephede estetik ve yüksek performans sunan alüminyum kompozit kaplama il
 
 [Instagram'da Görüntüle](https://www.instagram.com/p/CmQez0XoQ8X)`,
     imageList: [
-      ""
+      "001.webp",
+      "002.webp",
+      "003.webp",
+      "004.webp",
+      "005.webp",
+      "006.webp",
     ],
     description: "",
   },
@@ -987,7 +1002,12 @@ Açık ve kapalı otopark, çocuk oyun alanları, rahatlatıcı açık oturma al
     heroImage: "/heroImage/yaslibakimmerkezi.webp",
     content: "",
     imageList: [
-      ""
+      "001.webp",
+      "002.webp",
+      "003.webp",
+      "004.webp",
+      "005.webp",
+      "006.webp",
     ],
     description: "",
   },
@@ -1010,7 +1030,12 @@ Açık ve kapalı otopark, çocuk oyun alanları, rahatlatıcı açık oturma al
 - Taş yünlü ısı yalıtımı
 - Çelik uygulamaları`,
     imageList: [
-      ""
+      "001.webp",
+      "002.webp",
+      "003.webp",
+      "004.webp",
+      "005.webp",
+      "006.webp",
     ],
     description: "",
   },

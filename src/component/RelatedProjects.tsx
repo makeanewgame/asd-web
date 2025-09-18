@@ -99,8 +99,8 @@ export default function RelatedProjects({
                             {/* Project Status Badge */}
                             <div className="absolute top-3 right-3">
                                 <span className={`px-2 py-1 rounded-full text-xs font-medium ${project.status === 'Tamamlanan'
-                                        ? 'bg-green-500/20 text-green-300 border border-green-500/30'
-                                        : 'bg-blue-500/20 text-blue-300 border border-blue-500/30'
+                                    ? 'bg-green-500/20 text-green-300 border border-green-500/30'
+                                    : 'bg-blue-500/20 text-blue-300 border border-blue-500/30'
                                     }`}>
                                     {project.status}
                                 </span>
@@ -137,11 +137,11 @@ export default function RelatedProjects({
             </div>
 
             {/* Proje sayısı bilgisi */}
-            <div className="text-center mt-6">
+            {/* <div className="text-center mt-6">
                 <p className="text-gray-400 text-sm">
                     {currentProjectType} kategorisinde {relatedProjects.length} benzer proje
                 </p>
-            </div>
+            </div> */}
         </div>
     )
 }
