@@ -386,7 +386,12 @@ Yeşilyurt Sanayi Sitesi, artık faaliyete hazır.
 [Instagram'da Görüntüle 1](https://www.instagram.com/p/DI58AQxs0Gi/)  
 [Instagram'da Görüntüle 2](https://www.instagram.com/p/C9Ph9DWMhN6/)`,
     imageList: [
-      ""
+      "001.webp",
+      "002.webp",
+      "003.webp",
+      "004.webp",
+      "005.webp",
+      "006.webp",
     ],
     description: "",
   },
@@ -498,7 +503,12 @@ Bu projede birlikte çalışmaktan onur duyduğumuz Uzuner Gıda’ya ve Mimar M
 
 [Instagram'da Görüntüle](https://www.instagram.com/p/DBOoeAHsEiQ/)`,
     imageList: [
-      ""
+      "001.webp",
+      "002.webp",
+      "003.webp",
+      "004.webp",
+      "005.webp",
+      "006.webp",
     ],
     description: "",
   },
@@ -588,7 +598,12 @@ Unesco Dünya Mirası Safranbolu’da, Tarihi Çarşı Han Arkası Sokakta bulun
 - PVC pencere kasa ve kanatlarının ahşap rengine boyanması
 - Halihazırda bulunan ahşap söve ve kat silmelerinin zımparalanıp boyanması`,
     imageList: [
-      ""
+      "001.webp",
+      "002.webp",
+      "003.webp",
+      "004.webp",
+      "005.webp",
+      "006.webp",
     ],
     description: "",
   },
@@ -728,7 +743,12 @@ Karabük Belediyesi Kanyon Rekrasyon Projesi Ahşap Desenli Fibercement Kaplama,
     heroImage: "/heroImage/manisagenclik.webp",
     content: "",
     imageList: [
-      ""
+      "001.webp",
+      "002.webp",
+      "003.webp",
+      "004.webp",
+      "005.webp",
+      "006.webp",
     ],
     description: "",
   },
@@ -922,7 +942,12 @@ Açık ve kapalı otopark, çocuk oyun alanları, rahatlatıcı açık oturma al
 [Instagram'da Görüntüle 1](https://www.instagram.com/p/C1rHSQUs_M4/)  
 [Instagram'da Görüntüle 2](https://www.instagram.com/p/CrfxE8iswua/)`,
     imageList: [
-      ""
+      "001.webp",
+      "002.webp",
+      "003.webp",
+      "004.webp",
+      "005.webp",
+      "006.webp",
     ],
     description: "",
   },
@@ -1054,7 +1079,12 @@ Karabük TSO binasının cephesinde kapaklı alüminyum giydirme ve kompozit pan
 - Alüminyum Güneş Kırıcı Kutu Profil
 - Isı Yalıtımı ve Dekorasyon Uygulamaları`,
     imageList: [
-      ""
+      "001.webp",
+      "002.webp",
+      "003.webp",
+      "004.webp",
+      "005.webp",
+      "006.webp",
     ],
     description: "",
   },
