@@ -357,7 +357,12 @@ Geleceğin liderlerini yetiştirecek bu okul, eğitimde kalitenin temellerini sa
 
 **Konum:** Karabük - 200 Evler`,
     imageList: [
-      ""
+      "001.webp",
+      "002.webp",
+      "003.webp",
+      "004.webp",
+      "005.webp",
+      "006.webp",
     ],
     description: "",
   },
@@ -419,7 +424,12 @@ Dairemiz, sahilin hemen yakınında, plajlara, restoranlara ve alışveriş olan
 
 [Instagram'da Görüntüle](https://www.instagram.com/p/C71BaclMnYI/)`,
     imageList: [
-      ""
+      "001.webp",
+      "002.webp",
+      "003.webp",
+      "004.webp",
+      "005.webp",
+      "006.webp",
     ],
     description: "",
   },
@@ -428,10 +438,10 @@ Dairemiz, sahilin hemen yakınında, plajlara, restoranlara ve alışveriş olan
     slug: "asd-office",
     title: "ASD Office",
     type: ProjectType.Ustyapı,
-    status: ProjectStatus.Tamamlanan,
+    status: ProjectStatus.DevamEden,
     location: "",
     heroImage: "/heroImage/asdoffice.webp",
-    content: `# ASD OFFİCE CENTER (DEVAM)
+    content: `# ASD OFFİCE CENTER
 
 Modern ofislerden oluşan bu iş merkezi, hem prestijli bir çalışma ortamı hem de çok yönlü kullanım imkânları sunuyor.
 
@@ -451,7 +461,12 @@ ASD Office olarak, projelerimizde güçlü bir ilk izlenim için modern ve dikka
 
 [Instagram'da Görüntüle](https://www.instagram.com/p/DC4A03osSy9/)`,
     imageList: [
-      ""
+      "001.webp",
+      "002.webp",
+      "003.webp",
+      "004.webp",
+      "005.webp",
+      "006.webp",
     ],
     description: "",
   },
@@ -527,7 +542,11 @@ Bu projede birlikte çalışmaktan onur duyduğumuz Uzuner Gıda’ya ve Mimar M
 - Açılır kanat giydirme
 - Yönetim binası giriş sundurma`,
     imageList: [
-      ""
+      "001.webp",
+      "002.webp",
+      "003.webp",
+      "004.webp",
+      "005.webp",
     ],
     description: "",
   },
@@ -678,7 +697,9 @@ Karabük Belediyesi Namık Kemal Mah. Asansör Kulesi giydirme cephe, alüminyum
     heroImage: "/heroImage/ahmetlerilkokulu.webp",
     content: "",
     imageList: [
-      ""
+      "001.webp",
+      "002.webp",
+      "003.webp",
     ],
     description: "",
   },
@@ -901,7 +922,7 @@ Dış cephede estetik ve yüksek performans sunan alüminyum kompozit kaplama il
     status: ProjectStatus.Tamamlanan,
     location: "",
     heroImage: "/heroImage/parkdiamond.webp",
-    content: `# PARK DİAMOND
+    content: `# PARK DIAMOND
 
 Karabük, 5000 Evler, Cumhuriyet Mahallesi'nde, çağdaş yaşamın en yüksek standartlarıyla buluştuğu bir proje sizi bekliyor. Park Diamond, lüksün ve modernliğin eşsiz bir birlikteliğini sunan 2 blok, 36 daire ve 7 dükkandan oluşan prestijli bir yaşam alanıdır.
 
@@ -921,7 +942,12 @@ Merkezi konumda, geniş cam cepheli, toplam 100 m²'lik kullanım alanına sahip
 [Instagram'da Görüntüle 1](https://www.instagram.com/p/C-fW6u0JALS/)  
 [Instagram'da Görüntüle 2](https://www.instagram.com/p/C22VxydMiQL/)`,
     imageList: [
-      ""
+      "001.webp",
+      "002.webp",
+      "003.webp",
+      "004.webp",
+      "005.webp",
+      "006.webp",
     ],
     description: "",
   },
@@ -1266,7 +1292,12 @@ Projemizde, yapı cephesine uygulanan stil sahibi silikon giydirme sistemimizle 
 - Isı yalıtımlı alüminyum pencereler ve kapılar ile iç mekan konforunuz bizimle güvende.
 - Camlı korkuluk sistemleriyle güvenliği şıklıkla birleştiriyoruz.`,
     imageList: [
-      ""
+      "001.webp",
+      "002.webp",
+      "003.webp",
+      "004.webp",
+      "005.webp",
+      "006.webp",
     ],
     description: "",
   },

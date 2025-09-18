@@ -26,6 +26,7 @@ export default async function page({ params }: { params: Promise<{ slug: string 
                 style={{
                     backgroundImage: `url('/project/${slug}/001.webp')`,
                     backgroundSize: "cover",
+                    backgroundPosition: "bottom center",
                 }}
             />
 
