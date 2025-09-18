@@ -9,23 +9,23 @@ export default function Construction() {
 
     const advantages = [
         {
-            id: 1,
+            id: "1",
             title: <TDiv>"Konut, ticari ve endüstriyel projelerde tek noktadan çözüm":"One-stop solution for residential, commercial, and industrial projects"</TDiv>
         },
         {
-            id: 2,
+            id: "2",
             title: <TDiv>"Temelden bitirmeye kadar tüm süreç yönetimi":"Comprehensive process management from foundation to finish"</TDiv>
         },
         {
-            id: 3,
+            id: "3",
             title: <TDiv>"Zamanında teslim, kaliteli malzeme garantisi":"On-time delivery, quality material guarantee"</TDiv>
         },
         {
-            id: 4,
+            id: "4",
             title: <TDiv>"İş sağlığı ve güvenliği standartlarına tam uyum":""Full compliance with occupational health and safety standards"</TDiv>
         },
         {
-            id: 5,
+            id: "5",
             title: <TDiv>"Çevre dostu, sürdürülebilir inşaat uygulamaları":"Environmentally friendly, sustainable construction practices"</TDiv>
         },
     ]

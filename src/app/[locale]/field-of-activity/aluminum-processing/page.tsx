@@ -9,23 +9,23 @@ export default function AluminumProcessing() {
 
     const advantages = [
         {
-            id: 1,
+            id: "1",
             title: <TDiv>"CNC kesim, hassas büküm ve profil şekillendirme":"CNC cutting, precision bending, and profile shaping"</TDiv>
         },
         {
-            id: 2,
+            id: "2",
             title: <TDiv>"Ekstrüzyon profil ve levha işleme":"Extrusion profile and sheet processing"</TDiv>
         },
         {
-            id: 3,
+            id: "3",
             title: <TDiv>"UV dayanımlı, uzun ömürlü yüzey işlemleri":"UV-resistant, long-lasting surface treatments"</TDiv>
         },
         {
-            id: 4,
+            id: "4",
             title: <TDiv>"Anodize, toz boyama ve özel kaplama seçenekleri":"Anodizing, powder coating, and special coating options"</TDiv>
         },
         {
-            id: 5,
+            id: "5",
             title: <TDiv>"Proje bazlı kalite kontrol ve zamanında teslimat":"Project-based quality control and timely delivery"</TDiv>
         },
     ]

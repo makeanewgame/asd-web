@@ -9,23 +9,23 @@ export default function Contact() {
 
     const advantages = [
         {
-            id: 1,
+            id: "1",
             title: <TDiv>"Yüksek dayanımlı, uzun ömürlü cephe sistemleri":"Long-lasting, high-strength facade systems"</TDiv>
         },
         {
-            id: 2,
+            id: "2",
             title: <TDiv>"UV ve ısı yalıtımı ile enerji verimliliği":"UV and thermal insulation with energy efficiency"</TDiv>
         },
         {
-            id: 3,
+            id: "3",
             title: <TDiv>"Hızlı montaj, düşük bakım maliyeti":"Fast installation, low maintenance cost"</TDiv>
         },
         {
-            id: 4,
+            id: "4",
             title: <TDiv>"İşletmenizin marka değerini yükselten modern cephe çözümleri":"Modern facade solutions that enhance your business's brand value"</TDiv>
         },
         {
-            id: 5,
+            id: "5",
             title: <TDiv>"Proje özelinde esnek mühendislik ve uzman ekip desteği":"Flexible engineering and expert team support for each project"</TDiv>
         },
     ]

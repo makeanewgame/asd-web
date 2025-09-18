@@ -9,32 +9,32 @@ export default function AluminumProcessing() {
 
     const advantages = [
         {
-            id: 1,
+            id: "1",
             title: <TDiv>"Çelik, paslanmaz ve demir-dışı metal işleme
                 ":"Steel, stainless and non-ferrous metal processing"</TDiv>
         },
         {
-            id: 2,
+            id: "2",
             title: <TDiv>"CNC freze, talaşlı imalat, sac şekillendirme
                 ":"CNC milling, machining, sheet metal forming"</TDiv>
         },
         {
-            id: 3,
+            id: "3",
             title: <TDiv>"MIG / MAG ve TIG kaynak çözümleri
                 ":"MIG / MAG and TIG welding solutions"</TDiv>
         },
         {
-            id: 4,
+            id: "4",
             title: <TDiv>"Galvaniz, toz boyama ve krom kaplama
                 ":"Galvanizing, powder coating, and chrome plating"</TDiv>
         },
         {
-            id: 5,
+            id: "5",
             title: <TDiv>"Prototipten seri üretime esnek süreç yönetimi
                 ":"Flexible process management from prototype to mass production"</TDiv>
         },
         {
-            id: 6,
+            id: "6",
             title: <TDiv>"Hassas ölçüm ve detaylı kalite raporlama
                 ":"Precise measurement and detailed quality reporting"</TDiv>
         },

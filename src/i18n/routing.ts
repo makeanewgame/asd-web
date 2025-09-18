@@ -11,7 +11,31 @@ export const routing = defineRouting({
     pathnames: {
         '/': '/',
         '/about': {
-            tr: '/hakkinda',
+            tr: '/hakkimizda',
+        },
+        '/projects': {
+            tr: '/projeler',
+        },
+        '/field-of-activity': {
+            tr: '/faaliyet-alanlari',
+        },
+        '/field-of-activity/industrial-facilities': {
+            tr: '/faaliyet-alanlari/endustriyel-yapilar',
+        },
+        '/field-of-activity/construction': {
+            tr: '/faaliyet-alanlari/insaat',
+        },
+        '/field-of-activity/building-real-estate': {
+            tr: '/faaliyet-alanlari/bina-emlak',
+        },
+        '/field-of-activity/facade-systems': {
+            tr: '/faaliyet-alanlari/cephe-sistemleri',
+        },
+        '/field-of-activity/aluminum-processing': {
+            tr: '/faaliyet-alanlari/aluminyum-isleme',
+        },
+        '/field-of-activity/metal-processing': {
+            tr: '/faaliyet-alanlari/metal-isleme',
         },
         '/contact': {
             tr: '/iletisim',

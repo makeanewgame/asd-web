@@ -9,23 +9,23 @@ export default function RealEstate() {
 
     const advantages = [
         {
-            id: 1,
+            id: "1",
             title: <TDiv>"Konut, ofis ve ticari gayrimenkul geliştirme":"Residential, office and commercial real estate development"</TDiv>
         },
         {
-            id: 2,
+            id: "2",
             title: <TDiv>"Anahtar teslim proje yönetimi":"Key turn project management"</TDiv>
         },
         {
-            id: 3,
+            id: "3",
             title: <TDiv>"Yatırımcıya değer katan satış ve pazarlama desteği":"Sales and marketing support that adds value to the investor"</TDiv>
         },
         {
-            id: 4,
+            id: "4",
             title: <TDiv>"Çevre dostu, sürdürülebilir tasarımlar":"Environmentally friendly, sustainable designs"</TDiv>
         },
         {
-            id: 5,
+            id: "5",
             title: <TDiv>"Yüksek getiri ve prestij sağlayan projeler":"High-return and prestigious projects"</TDiv>
         },
     ]

@@ -9,23 +9,23 @@ export default function RealEstate() {
 
     const advantages = [
         {
-            id: 1,
+            id: "1",
             title: <TDiv>"Silikon giydirme cepheler ile su geçirmez, modern yüzeyler":"Waterproof, modern surfaces with silicone cladding facades"</TDiv>
         },
         {
-            id: 2,
+            id: "2",
             title: <TDiv>"Alüminyum kompozit paneller ile hafiflik ve dayanıklılık":"Lightweight and durable with aluminum composite panels"</TDiv>
         },
         {
-            id: 3,
+            id: "3",
             title: <TDiv>"Havalandırmalı cephe mantolama ile enerji tasarrufu":"Energy savings with ventilated facade insulation"</TDiv>
         },
         {
-            id: 4,
+            id: "4",
             title: <TDiv>"Modüler cam cepheler ile doğal ışık ve modern görünüm":"Modular glass facades with natural light and modern appearance"</TDiv>
         },
         {
-            id: 5,
+            id: "5",
             title: <TDiv>"Uzun ömürlü, bakım gereksinimi düşük mühendislik çözümleri":"Long-lasting, low-maintenance engineering solutions"</TDiv>
         },
     ]

@@ -71,7 +71,7 @@ export default async function page({ params }: { params: Promise<{ slug: string 
 
                 <div>
                     <h2 className='text-3xl font-bold text-white mt-16 mb-8'>
-                        <TDiv>"İlgili Projeler":"Related Projects""</TDiv>
+                        <TDiv>"İlgili Projeler":"Related Projects"</TDiv>
                     </h2>
                     {projectData && (
                         <RelatedProjects
