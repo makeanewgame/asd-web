@@ -1,7 +1,6 @@
 import React from 'react'
 import LiquiedGlassCard from './LiquiedGlassPage'
 import { Link } from '@/i18n/navigation'
-import { sitePaths } from '@/i18n/routing'
 export default function SocialMediaBar() {
 
     const facebook = '';
@@ -12,13 +11,33 @@ export default function SocialMediaBar() {
 
 
     const miniBtn = ({ children, href }: { children: React.ReactNode, href: string }) => {
+        const isInternal = href.startsWith('/') && !href.startsWith('//');
+        if (!href) {
+            return (
+                <span className='w-[22px] h-[22px] d-block flex justify-center items-center bg-[#071329] rounded-full opacity-50 cursor-not-allowed'>
+                    <LiquiedGlassCard className="relative" contentClassName="p-1" radius="200px">
+                        {children}
+                    </LiquiedGlassCard>
+                </span>
+            );
+        }
+        if (isInternal) {
+            return (
+                // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                <Link href={href as any} className='w-[22px] h-[22px] d-block flex justify-center items-center bg-[#071329] rounded-full'>
+                    <LiquiedGlassCard className="relative" contentClassName="p-1" radius="200px">
+                        {children}
+                    </LiquiedGlassCard>
+                </Link>
+            );
+        }
         return (
-            <Link href={href as keyof typeof sitePaths} className='w-[22px] h-[22px] d-block flex justify-center items-center bg-[#071329] rounded-full'>
+            <a href={href} target="_blank" rel="noopener noreferrer" className='w-[22px] h-[22px] d-block flex justify-center items-center bg-[#071329] rounded-full'>
                 <LiquiedGlassCard className="relative" contentClassName="p-1" radius="200px">
                     {children}
                 </LiquiedGlassCard>
-            </Link>
-        )
+            </a>
+        );
     }
 
     const Space = () => {

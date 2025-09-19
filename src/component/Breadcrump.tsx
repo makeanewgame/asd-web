@@ -32,8 +32,6 @@ export default function Breadcrump() {
     // Get translated label
     const translationKey = segmentMap[part.toLowerCase()] || part.toLowerCase();
 
-    console.log(`Translation key for part "${part}": ${translationKey}`);
-
     const label = t.has(translationKey) ? t(translationKey) : part.charAt(0).toUpperCase() + part.slice(1);
     return { href, label };
   });

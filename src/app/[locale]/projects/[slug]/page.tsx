@@ -9,14 +9,11 @@ export default async function page({ params }: { params: Promise<{ slug: string 
 
     const { slug } = await params;
 
-    console.log(slug);
-
     if (!slug || Array.isArray(slug)) {
         return <div>Loading...</div>;
     }
 
     const projectData = projects.find(project => project.slug === slug);
-    console.log(projectData);
 
     return (
         <div className="relative overflow-hidden">
