@@ -16,6 +16,9 @@ export const routing = defineRouting({
         '/projects': {
             tr: '/projeler',
         },
+        '/projects/[slug]': {
+            tr: '/projeler/[slug]',
+        },
         '/field-of-activity': {
             tr: '/faaliyet-alanlari',
         },
