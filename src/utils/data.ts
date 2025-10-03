@@ -58,10 +58,15 @@ const projects = [
     type: ProjectType.Konut,
     status: ProjectStatus.YeniProje,
     location: "",
-    heroImage: "/heroImage/default.webp",
+    heroImage: "/heroImage/mirador.webp",
     content: "",
     imageList: [
-      ""
+      "001.webp",
+      "002.webp",
+      "003.webp",
+      "004.webp",
+      "005.webp",
+      "006.webp",
     ],
     description: "",
   },
@@ -72,51 +77,8 @@ const projects = [
     type: ProjectType.Konut,
     status: ProjectStatus.YeniProje,
     location: "",
-    heroImage: "/heroImage/default.webp",
+    heroImage: "/heroImage/vianor.webp",
     content: "",
-    imageList: [
-      ""
-    ],
-    description: "",
-  },
-  {
-    id: 3,
-    slug: "5000-evler-okul",
-    title: "5000 Evler Okul",
-    type: ProjectType.Ustyapı,
-    status: ProjectStatus.YeniProje,
-    location: "",
-    heroImage: "/heroImage/default.webp",
-    content: "",
-    imageList: [
-      ""
-    ],
-    description: "",
-  },
-  {
-    id: 4,
-    slug: "park-flora",
-    title: "Park Flora",
-    type: ProjectType.Konut,
-    status: ProjectStatus.Tamamlanan,
-    location: "",
-    heroImage: "/heroImage/parkflora.webp",
-    content: `
-
-# Park Flora
-
-Doğa ile iç içe şehrin gürültüsünden uzak modern yapı elemanları ve eşsiz konumuyla Safranbolu'nıun en iyi konsept projesidir.
-## Proje Detayları
-- 3+1 Brüt 158,40m2 Net 126,72m2 Konutlar
-- Açık ve Kapalı Otopark Alanları
-- Bahçe ve Gölet Manzaralı
-- Çocuk Oyun Alanları
-- Kamelya ve Oturma Alanları
-- Giyinme Odası
-- Kiler / Çamaşır Odası
-- Ebeveyn Banyosu
-- Isı Yalıtımlı Kış Bahçesi
-    `,
     imageList: [
       "001.webp",
       "002.webp",
@@ -256,6 +218,159 @@ Zonguldak’ın en değerli konumlarından biri - 3 yatak odası, ebeveyn banyos
     ],
     description: "",
   },
+  {
+    id: 34,
+    slug: "park-diamond-2",
+    title: "Park Diamond",
+    type: ProjectType.Konut,
+    status: ProjectStatus.Tamamlanan,
+    location: "",
+    heroImage: "/heroImage/parkdiamond.webp",
+    content: `# PARK DIAMOND
+
+Karabük, 5000 Evler, Cumhuriyet Mahallesi'nde, çağdaş yaşamın en yüksek standartlarıyla buluştuğu bir proje sizi bekliyor. Park Diamond, lüksün ve modernliğin eşsiz bir birlikteliğini sunan 2 blok, 36 daire ve 7 dükkandan oluşan prestijli bir yaşam alanıdır.
+
+Merkezi konumda, geniş cam cepheli, toplam 100 m²'lik kullanım alanına sahip bu sıfır dükkan, işletmeler için ideal bir fırsat sunuyor. Yeni ve modern bir binada yer alan dükkan, şıklığı ve fonksiyonelliği bir araya getiriyor. Dükkanımız kurumsal firmalar, küçük marketler ve çeşitli mağaza konseptleri için uygundur. Merkezi konumuyla müşteri trafiği yüksek olan bu bölgede işletmeniz için önemli bir görünürlük elde edeceksiniz.
+
+## Özellikler
+- Toplam Alan: 100 m²
+- Zemin Kat
+- Yeni ve Modern Bina
+- Geniş Cam Cephe
+- Merkezi Konumda
+- Kurumsal Kullanıma Uygun
+- Market ve Mağaza İçin İdeal
+- Yeni ve Modern Bina
+- Geniş Cam Cepheli
+
+[Instagram'da Görüntüle 1](https://www.instagram.com/p/C-fW6u0JALS/)  
+[Instagram'da Görüntüle 2](https://www.instagram.com/p/C22VxydMiQL/)`,
+    imageList: [
+      "001.webp",
+      "002.webp",
+      "003.webp",
+      "004.webp",
+      "005.webp",
+      "006.webp",
+    ],
+    description: "",
+  },
+  {
+    id: 13,
+    slug: "regnum-hill",
+    title: "Regnum Hill",
+    type: ProjectType.Konut,
+    status: ProjectStatus.Tamamlanan,
+    location: "",
+    heroImage: "/heroImage/regnumhill.webp",
+    content: `# REGNUM HİLL FİLYOS
+
+Sakin ve huzurlu bir yaşamın kapılarını aralayan bu benzersiz daire, deniz manzarasıyla bütünleşen modern tasarımıyla sizleri bekliyor. İster yazlık bir tatil yeri, ister kalıcı bir ikametgah arayışında olun, bu dairede aradığınız tüm özellikleri bulabileceksiniz.
+
+## Özellikler
+- Geniş pencerelerden gelen doğal ışıkla aydınlatılan ferah ve modern bir yaşam alanı
+- Yerden ısıtmalı zeminler, soğuk kış günlerinde bile konforlu bir atmosfer sunar
+- Tam donanımlı açık plan mutfak, modern tasarımı ve kaliteli beyaz eşyalarıyla mutfağınızı bir şefin mutfağına dönüştürür
+- Geniş balkon, deniz manzarasının tadını çıkarmanız için mükemmel bir mekan
+- Lüks ve şık banyo olanakları, günün yorgunluğunu üzerinizden atmanızı sağlar
+- Eşsiz yatırım fırsatıyla ASD Yapı & Gayrimenkul güvencesiyle sizlerle
+
+Dairemiz, sahilin hemen yakınında, plajlara, restoranlara ve alışveriş olanaklarına kolay erişim sunan ayrıcalıklı bir konumda yer almaktadır. Hem denizin hem de doğanın tadını çıkarabileceğiniz bu konum, hem tatilciler hem de sakin bir yaşam arayışındakiler için idealdir.
+
+[Instagram'da Görüntüle](https://www.instagram.com/p/C71BaclMnYI/)`,
+    imageList: [
+      "001.webp",
+      "002.webp",
+      "003.webp",
+      "004.webp",
+      "005.webp",
+      "006.webp",
+    ],
+    description: "",
+  },
+
+  {
+    id: 35,
+    slug: "verona-garden-2",
+    title: "Verona Garden",
+    type: ProjectType.Konut,
+    status: ProjectStatus.Tamamlanan,
+    location: "",
+    heroImage: "/heroImage/veronagarden.webp",
+    content: `# VERONA GARDEN
+
+Modern ve ayrıcalıklı bir yaşamın alanı Verona Garden.
+
+Açık ve kapalı otopark, çocuk oyun alanları, rahatlatıcı açık oturma alanları gibi birçok özelliği bünyesinde barındıran Verona Garden projemizde sona geldik.
+
+[Instagram'da Görüntüle 1](https://www.instagram.com/p/C1rHSQUs_M4/)  
+[Instagram'da Görüntüle 2](https://www.instagram.com/p/CrfxE8iswua/)`,
+    imageList: [
+      "001.webp",
+      "002.webp",
+      "003.webp",
+      "004.webp",
+      "005.webp",
+      "006.webp",
+    ],
+    description: "",
+  },
+  {
+    id: 3,
+    slug: "5000-evler-okul",
+    title: "5000 Evler Okul",
+    type: ProjectType.Ustyapı,
+    status: ProjectStatus.YeniProje,
+    location: "",
+    heroImage: "/heroImage/5000evlerokul.webp",
+    content: "",
+    imageList: [
+      "001.webp",
+      "002.webp",
+      "003.webp",
+      "004.webp",
+      "005.webp",
+      "006.webp",
+    ],
+    description: "",
+  },
+  {
+    id: 4,
+    slug: "park-flora",
+    title: "Park Flora",
+    type: ProjectType.Konut,
+    status: ProjectStatus.Tamamlanan,
+    location: "",
+    heroImage: "/heroImage/parkflora.webp",
+    content: `
+
+# Park Flora
+
+Doğa ile iç içe şehrin gürültüsünden uzak modern yapı elemanları ve eşsiz konumuyla Safranbolu'nıun en iyi konsept projesidir.
+## Proje Detayları
+- 3+1 Brüt 158,40m2 Net 126,72m2 Konutlar
+- Açık ve Kapalı Otopark Alanları
+- Bahçe ve Gölet Manzaralı
+- Çocuk Oyun Alanları
+- Kamelya ve Oturma Alanları
+- Giyinme Odası
+- Kiler / Çamaşır Odası
+- Ebeveyn Banyosu
+- Isı Yalıtımlı Kış Bahçesi
+    `,
+    imageList: [
+      "001.webp",
+      "002.webp",
+      "003.webp",
+      "004.webp",
+      "005.webp",
+      "006.webp",
+    ],
+    description: "",
+  },
+
+
+
   {
     id: 8,
     slug: "isiklar",
@@ -400,39 +515,7 @@ Yeşilyurt Sanayi Sitesi, artık faaliyete hazır.
     ],
     description: "",
   },
-  {
-    id: 13,
-    slug: "regnum-hill",
-    title: "Regnum Hill",
-    type: ProjectType.Konut,
-    status: ProjectStatus.Tamamlanan,
-    location: "",
-    heroImage: "/heroImage/regnumhill.webp",
-    content: `# REGNUM HİLL FİLYOS
 
-Sakin ve huzurlu bir yaşamın kapılarını aralayan bu benzersiz daire, deniz manzarasıyla bütünleşen modern tasarımıyla sizleri bekliyor. İster yazlık bir tatil yeri, ister kalıcı bir ikametgah arayışında olun, bu dairede aradığınız tüm özellikleri bulabileceksiniz.
-
-## Özellikler
-- Geniş pencerelerden gelen doğal ışıkla aydınlatılan ferah ve modern bir yaşam alanı
-- Yerden ısıtmalı zeminler, soğuk kış günlerinde bile konforlu bir atmosfer sunar
-- Tam donanımlı açık plan mutfak, modern tasarımı ve kaliteli beyaz eşyalarıyla mutfağınızı bir şefin mutfağına dönüştürür
-- Geniş balkon, deniz manzarasının tadını çıkarmanız için mükemmel bir mekan
-- Lüks ve şık banyo olanakları, günün yorgunluğunu üzerinizden atmanızı sağlar
-- Eşsiz yatırım fırsatıyla ASD Yapı & Gayrimenkul güvencesiyle sizlerle
-
-Dairemiz, sahilin hemen yakınında, plajlara, restoranlara ve alışveriş olanaklarına kolay erişim sunan ayrıcalıklı bir konumda yer almaktadır. Hem denizin hem de doğanın tadını çıkarabileceğiniz bu konum, hem tatilciler hem de sakin bir yaşam arayışındakiler için idealdir.
-
-[Instagram'da Görüntüle](https://www.instagram.com/p/C71BaclMnYI/)`,
-    imageList: [
-      "001.webp",
-      "002.webp",
-      "003.webp",
-      "004.webp",
-      "005.webp",
-      "006.webp",
-    ],
-    description: "",
-  },
   {
     id: 14,
     slug: "asd-office",
@@ -929,69 +1012,7 @@ Dış cephede estetik ve yüksek performans sunan alüminyum kompozit kaplama il
     ],
     description: "",
   },
-  {
-    id: 34,
-    slug: "park-diamond-2",
-    title: "Park Diamond",
-    type: ProjectType.Konut,
-    status: ProjectStatus.Tamamlanan,
-    location: "",
-    heroImage: "/heroImage/parkdiamond.webp",
-    content: `# PARK DIAMOND
 
-Karabük, 5000 Evler, Cumhuriyet Mahallesi'nde, çağdaş yaşamın en yüksek standartlarıyla buluştuğu bir proje sizi bekliyor. Park Diamond, lüksün ve modernliğin eşsiz bir birlikteliğini sunan 2 blok, 36 daire ve 7 dükkandan oluşan prestijli bir yaşam alanıdır.
-
-Merkezi konumda, geniş cam cepheli, toplam 100 m²'lik kullanım alanına sahip bu sıfır dükkan, işletmeler için ideal bir fırsat sunuyor. Yeni ve modern bir binada yer alan dükkan, şıklığı ve fonksiyonelliği bir araya getiriyor. Dükkanımız kurumsal firmalar, küçük marketler ve çeşitli mağaza konseptleri için uygundur. Merkezi konumuyla müşteri trafiği yüksek olan bu bölgede işletmeniz için önemli bir görünürlük elde edeceksiniz.
-
-## Özellikler
-- Toplam Alan: 100 m²
-- Zemin Kat
-- Yeni ve Modern Bina
-- Geniş Cam Cephe
-- Merkezi Konumda
-- Kurumsal Kullanıma Uygun
-- Market ve Mağaza İçin İdeal
-- Yeni ve Modern Bina
-- Geniş Cam Cepheli
-
-[Instagram'da Görüntüle 1](https://www.instagram.com/p/C-fW6u0JALS/)  
-[Instagram'da Görüntüle 2](https://www.instagram.com/p/C22VxydMiQL/)`,
-    imageList: [
-      "001.webp",
-      "002.webp",
-      "003.webp",
-      "004.webp",
-      "005.webp",
-      "006.webp",
-    ],
-    description: "",
-  },
-  {
-    id: 35,
-    slug: "verona-garden-2",
-    title: "Verona Garden",
-    type: ProjectType.Konut,
-    status: ProjectStatus.Tamamlanan,
-    location: "",
-    heroImage: "/heroImage/veronagarden.webp",
-    content: `# VERONA GARDEN
-
-Modern ve ayrıcalıklı bir yaşamın alanı Verona Garden.
-
-Açık ve kapalı otopark, çocuk oyun alanları, rahatlatıcı açık oturma alanları gibi birçok özelliği bünyesinde barındıran Verona Garden projemizde sona geldik.
-
-[Instagram'da Görüntüle 1](https://www.instagram.com/p/C1rHSQUs_M4/)  
-[Instagram'da Görüntüle 2](https://www.instagram.com/p/CrfxE8iswua/)`,
-    imageList: [
-      "001.webp",
-      "002.webp",
-      "003.webp",
-      "004.webp",
-      "005.webp",
-      "006.webp",
-    ],
-    description: "",
-  },
   {
     id: 36,
     slug: "yasli-bakim-merkezi-karabuk",
@@ -1299,13 +1320,44 @@ Anadolu Otomotiv OPET Akaryakıt İstasyonu Yönetim ve Market Binası’nda asi
     id: 48,
     slug: "zalifre",
     title: "Zalifre Otel",
-    type: ProjectType.Konut,
+    type: ProjectType.Ustyapı,
     status: ProjectStatus.Tamamlanan,
     location: "",
     heroImage: "/heroImage/zalifre.webp",
     content: `# ZALİFRE OTEL
 
 ASD Cephe Sistemleri olarak Safranbolu Zalifre Oteli'nin cephesi için işbaşı yaptık!
+
+Projemizde, yapı cephesine uygulanan stil sahibi silikon giydirme sistemimizle modern ve şık bir duruş sağlıyoruz. Taşyünü ısı yalıtımıyla konforunuz en üst düzeye çıkarılırken; dış cephede Boardex ve kompozit kaplamalar, uzun ömürlü dayanıklılık ile estetiği bir arada sunuyor. Kenet çelik çatı uygulamamız, yapıyı hem suya hem de dış etkenlere karşı koruyan zarif bir koruma katmanı oluşturuyor. İç mekânda ise ısı yalıtımlı alüminyum pencere ve kapılarımız, enerji verimliliği ve konforu güvence altına alıyor; camlı korkuluk sistemlerimizle güvenliği en ince ayrıntısına kadar şıklıkla buluşturuyoruz.
+
+## Proje Detayları
+- Silikon giydirme cephe ile modern ve şık bir görünüm!
+- Taşyünü ısı yalıtımıyla konforunuzu üst seviyeye taşıyoruz.
+- Boardex kaplama ve kompozit kaplama ile dayanıklılığı ve estetiği bir arada sunuyoruz.
+- Kenet çelik çatı uygulaması ile gökyüzüne yakışan bir koruma katmanı.
+- Isı yalıtımlı alüminyum pencereler ve kapılar ile iç mekan konforunuz bizimle güvende.
+- Camlı korkuluk sistemleriyle güvenliği şıklıkla birleştiriyoruz.`,
+    imageList: [
+      "001.webp",
+      "002.webp",
+      "003.webp",
+      "004.webp",
+      "005.webp",
+      "006.webp",
+    ],
+    description: "",
+  },
+  {
+    id: 50,
+    slug: "acik-hava-sinemasi",
+    title: "Açık Hava Sineması Restorasyonu",
+    type: ProjectType.Restorasyon,
+    status: ProjectStatus.DevamEden,
+    location: "",
+    heroImage: "/heroImage/acikhavasinemasi.webp",
+    content: `# AÇIK HAVA SİNEMASI RESTORASYONU
+
+ASD Cephe Sistemleri olarak Safranbolu Açık Hava Sineması'nın cephesi için işbaşı yaptık!
 
 Projemizde, yapı cephesine uygulanan stil sahibi silikon giydirme sistemimizle modern ve şık bir duruş sağlıyoruz. Taşyünü ısı yalıtımıyla konforunuz en üst düzeye çıkarılırken; dış cephede Boardex ve kompozit kaplamalar, uzun ömürlü dayanıklılık ile estetiği bir arada sunuyor. Kenet çelik çatı uygulamamız, yapıyı hem suya hem de dış etkenlere karşı koruyan zarif bir koruma katmanı oluşturuyor. İç mekânda ise ısı yalıtımlı alüminyum pencere ve kapılarımız, enerji verimliliği ve konforu güvence altına alıyor; camlı korkuluk sistemlerimizle güvenliği en ince ayrıntısına kadar şıklıkla buluşturuyoruz.
 

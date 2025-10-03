@@ -22,16 +22,23 @@ export default async function HomePage() {
 
   const cardMock = [
     {
-      title: <TDiv>{'"Didabra Villas Safranbolu":"Didabra Villas Safranbolu"'}</TDiv>,
+      title: <TDiv>{'"Mirador"'}</TDiv>,
       description: <TDiv>{'"Ultra lüks detayları ile tasarlanmış olan DADİBRA VILLAS SAFRANBOLU, en yüksek standartlarda konfor ve güzellik sunuyor.":"Designed with ultra-luxury details, DADİBRA VILLAS SAFRANBOLU offers the highest standards of comfort and beauty."'}</TDiv>,
       id: 3,
-      image: "/didabra_card.webp"
+      image: "/heroImage/mirador_card.webp"
+
+    },
+    {
+      title: <TDiv>{'"Vianor"'}</TDiv>,
+      description: <TDiv>{'"Ultra lüks detayları ile tasarlanmış olan DADİBRA VILLAS SAFRANBOLU, en yüksek standartlarda konfor ve güzellik sunuyor.":"Designed with ultra-luxury details, DADİBRA VILLAS SAFRANBOLU offers the highest standards of comfort and beauty."'}</TDiv>,
+      id: 3,
+      image: "/heroImage/vianor_card.webp"
     },
     {
       title: <TDiv>{'"Didabra Villas Safranbolu":"Didabra Villas Safranbolu"'}</TDiv>,
       description: <TDiv>{'"Ultra lüks detayları ile tasarlanmış olan DADİBRA VILLAS SAFRANBOLU, en yüksek standartlarda konfor ve güzellik sunuyor.":"Designed with ultra-luxury details, DADİBRA VILLAS SAFRANBOLU offers the highest standards of comfort and beauty."'}</TDiv>,
       id: 2,
-      image: "/didabra_card.webp"
+      image: "/heroImage/dadibra_card.webp"
     },
   ]
 

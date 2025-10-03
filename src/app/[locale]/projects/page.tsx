@@ -10,23 +10,22 @@ import { ProjectBanners, projects } from "@/utils/data";
 import Image from "next/image";
 
 export default function AluminumProcessing() {
-
-
     return (
-
         <>
             <div className="relative overflow-hidden">
                 <div className="pointer-events-none absolute inset-x-0 top-0 h-[540px] bg-gradient-to-b from-transparent to-[#0057B3]" />
-                <div
+                {/* <div
                     className="pointer-events-none absolute right-0 top-0 h-[540px] w-[950px] bg-no-repeat"
                     style={{
                         backgroundImage: `url('/projectsbanner.webp')`,
                         backgroundSize: "cover",
                     }}
-                />
+                /> */}
 
-                <div className="container pt-[480px]">
+                <div className="container pt-[122px]">
                     <div className="flex flex-col">
+                        {/* <div className="h-[200px]"></div> */}
+
                         <LiquiedGlassCard className="flex flex-col relative w-fit p-4" contentClassName="px-6 py-4 z-0" radius="14px">
                             <div className="text-4xl md:text-5xl font-extrabold tracking-tight">
                                 <TDiv>&quot;Projeler&quot;:&quot;Projects&quot;</TDiv>
@@ -65,7 +64,7 @@ function ProjectsContent() {
 
             {/* Tabs Section */}
             <div className="container">
-                <div className="flex justify-start my-8">
+                <div className="flex justify-start mb-8">
                     <Tabs
                         selectedKey={selectedTab}
                         onSelectionChange={(key) => setSelectedTab(key as string)}
@@ -102,7 +101,7 @@ function ProjectBanner({ selectedType }: { selectedType: string }) {
     if (!banner) return null;
 
     return (
-        <div className="relative h-[449px] overflow-hidden">
+        <div className="relative h-[449px] overflow-hidden -mt-[100px]">
             {/* Background Image */}
             <div
                 className="absolute inset-0 bg-contain bg-right "
@@ -110,7 +109,7 @@ function ProjectBanner({ selectedType }: { selectedType: string }) {
             />
 
             {/* Overlay */}
-            <div className="absolute inset-0 bg-black/20" />
+            <div className="absolute inset-0 " />
 
             {/* Content */}
             <div className="relative z-10 container mx-auto px-4 h-full flex items-center">
