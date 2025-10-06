@@ -70,10 +70,20 @@ export default function page() {
     ]
 
     const personMockup = [
-        { id: 1, img: "/person001.webp", name: "Ahmet Yılmaz", position: "Yönetim Kurulu Başkanı", description: "İnşaat sektöründe 30 yılı aşkın deneyime sahip olan Ahmet Yılmaz, mühendislik ve proje yönetimi alanındaki uzmanlığını ASD Yapı’ya taşıdı. Stratejik vizyonu ve liderlik anlayışı ile firmanın büyüme hedeflerini yönlendiriyor." },
-        { id: 2, img: "/person002.webp", name: "Mehmet Demir", position: "Genel Müdür", description: "Mehmet Demir, inşaat sektöründe 20 yılı aşkın deneyime sahip bir uzmandır. Proje yönetimi konusundaki derin bilgisi ile ASD Yapı'nın başarılı projelerine imza atmıştır." },
-        { id: 3, img: "/person003.webp", name: "Ayşe Yılmaz", position: "Finans Müdürü", description: "Ayşe Yılmaz, finansal yönetim alanında uzmanlaşmış bir profesyoneldir. ASD Yapı'nın mali stratejilerini belirlemede önemli bir rol oynamaktadır." },
-        { id: 4, img: "/person004.webp", name: "Fatma Kara", position: "Pazarlama Müdürü", description: "Fatma Kara, pazarlama ve marka yönetimi konularında deneyimli bir uzmandır. ASD Yapı'nın pazarlama stratejilerini başarıyla uygulamaktadır." },
+        { id: 8, img: "/person/frame_108.webp", name: "Çelen Uygar AS ", position: "Kurucu Ortak", },
+        { id: 9, img: "/person/frame_109.webp", name: "Hakkı Selcan DEMİRCAN ", position: "Kurucu Ortak", },
+        { id: 10, img: "/person/frame_110.webp", name: "Bilal AYDIN", position: "Üst Düzey Yönetici", },
+        { id: 11, img: "/person/frame_111.webp", name: "Mertcan DEMİRCAN", position: "Üst Düzey Yönetici", },
+        { id: 1, img: "/person/frame_101.webp", name: "Soner Sarıkaya ", position: "İç Mimar" },
+        { id: 2, img: "/person/frame_102.webp", name: "İrem Aleyna Işık", position: "Mimar", },
+        { id: 3, img: "/person/frame_103.webp", name: "Cansel Dereli ", position: "İç Mekan Teknikeri", },
+        { id: 4, img: "/person/frame_104.webp", name: "Feyzanur Özkur ", position: "Restorasyon Teknikeri", },
+        { id: 5, img: "/person/frame_105.webp", name: "Buse Tepe", position: "Grafik Tasarımcı" },
+        { id: 6, img: "/person/frame_106.webp", name: "Akın Yiğit", position: "Mimar", },
+        { id: 7, img: "/person/frame_107.webp", name: "İbrahim Şahinoğlu", position: "İnşaat Teknikeri", },
+
+
+
 
     ]
 
@@ -140,24 +150,25 @@ export default function page() {
             <div className='overflow-hidden' style={{
                 background: "url('/about-us-bg.webp') no-repeat center",
                 backgroundSize: "contain",
-                backgroundPosition: "left",
-                height: "calc(100vh - 400px)"
+                backgroundPosition: "left bottom",
+                //height: "calc(100vh - 100px)"
             }}>
                 <div className='container'>
 
                     <h2 className='text-[68px] text-white font-bold my-8'>
                         <TDiv>"Yönetim Kadromuz":"Our Management Team"</TDiv>
                     </h2>
-                    <div className='flex gap-4'>
+                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-between items-center pb-8'>
                         {personMockup.map((person, index) => (
-                            <div key={index} className='flex flex-col items-center justify-center gap-4 my-4 basis-1/4 backdrop-blur-3xl border-1 border-white/10 p-4 bg-blue-950/50 rounded-xl'>
-                                <Image src={person.img} alt={person.name} width={100} height={100} className='rounded-full' />
-                                <div className='flex flex-col gap-2'>
-                                    <div className='flex flex-col gap-1'>
-                                        <h3 className='text-xl font-semibold'>{person.name}</h3>
-                                        <p className='text text-white'>{person.position}</p>
+                            <div className='flex w-full' key={index}>
+                                <div className='flex flex-col items-center justify-stretch gap-2 w-full  backdrop-blur-3xl border-1 border-white/10 p-4 bg-blue-950/50 rounded-xl'>
+                                    <Image src={person.img} alt={person.name} width={160} height={160} className='rounded-full' />
+                                    <div className='flex flex-col'>
+                                        <div className='flex flex-col gap-1'>
+                                            <h3 className='text-xl font-semibold'>{person.name}</h3>
+                                            <p className='text text-white'>{person.position}</p>
+                                        </div>
                                     </div>
-                                    <p className='text-sm text-[#849DBC]'>{person.description}</p>
                                 </div>
                             </div>
                         ))}
