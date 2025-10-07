@@ -109,7 +109,8 @@ export default async function HomePage() {
     { id: 8, logo: "/logos/logo008.webp", name: "logo008" },
     { id: 9, logo: "/logos/logo009.webp", name: "logo009" },
     { id: 10, logo: "/logos/logo010.webp", name: "logo010" },
-
+    { id: 11, logo: "/logos/logo011.webp", name: "logo011" },
+    { id: 12, logo: "/logos/logo012.webp", name: "logo012" },
   ]
 
   return (
