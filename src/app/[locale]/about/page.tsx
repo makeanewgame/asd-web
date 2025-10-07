@@ -81,11 +81,7 @@ export default function page() {
         { id: 5, img: "/person/frame_105.webp", name: "Buse Tepe", position: "Grafik Tasarımcı" },
         { id: 6, img: "/person/frame_106.webp", name: "Akın Yiğit", position: "Mimar", },
         { id: 7, img: "/person/frame_107.webp", name: "İbrahim Şahinoğlu", position: "İnşaat Teknikeri", },
-
-
-
-
-    ]
+    ];
 
     return (
         <div className='overflow-hidden'>
@@ -123,7 +119,7 @@ export default function page() {
                 </LiquiedGlassCard>
 
                 <div className='w-[70%]'>
-                    <div className='text-[22px] font-default leading-[40px] whitespace-pre-line'><TDiv>"ASD İnşaat, tecrübe ve bilginin birbirini tamamladığı bir ortamda, yeniliklere açık bir yaklaşım benimsemektedir. Teknolojiyi sürekli takip eden düşünce yapımız ve alanında uzmanlaşmış seçkin kadromuzla, her geçen gün yeni tasarımlar üzerinde çalışarak sektördeki gelişmelere öncülük ediyoruz.\n\n Müşteri memnuniyetini her zaman ön planda tutarak, estetik ve fonksiyonelliği bir araya getiren modern cephe sistemleri sunmaktayız.\n\n Yenilikçi bakış açımız ve sürdürülebilir tasarım felsefemizle, projelerimizde en yüksek standartları hedefliyoruz.\n\n ASD Cephe Sistemleri olarak, her tasarımın arkasında yatan mühendislik ve estetik anlayışı ile sektörde fark yaratmaya devam ediyoruz.":"ASD Construction embraces an innovative approach in an environment where experience and knowledge complement each other. With our constantly evolving technological mindset and our distinguished team of experts, we pioneer developments in the sector by constantly working on new designs. Prioritizing customer satisfaction, we offer modern façade systems that combine aesthetics and functionality. With our innovative perspective and sustainable design philosophy, we aim for the highest standards in our projects. As ASD Façade Systems, we continue to differentiate ourselves in the sector with the engineering and aesthetics that underlie every design."</TDiv></div>
+                    <div className='text-[22px] font-default leading-[40px] whitespace-pre-line'><TDiv>"ASD İnşaat, tecrübe ve bilginin birbirini tamamladığı bir ortamda, yeniliklere açık bir yaklaşım benimsemektedir. Teknolojiyi sürekli takip eden düşünce yapımız ve alanında uzmanlaşmış seçkin kadromuzla, her geçen gün yeni tasarımlar üzerinde çalışarak sektördeki gelişmelere öncülük ediyoruz.Müşteri memnuniyetini her zaman ön planda tutarak, estetik ve fonksiyonelliği bir araya getiren modern cephe sistemleri sunmaktayız.Yenilikçi bakış açımız ve sürdürülebilir tasarım felsefemizle, projelerimizde en yüksek standartları hedefliyoruz.ASD Cephe Sistemleri olarak, her tasarımın arkasında yatan mühendislik ve estetik anlayışı ile sektörde fark yaratmaya devam ediyoruz.":"ASD Construction embraces an innovative approach in an environment where experience and knowledge complement each other. With our constantly evolving technological mindset and our distinguished team of experts, we pioneer developments in the sector by constantly working on new designs. Prioritizing customer satisfaction, we offer modern façade systems that combine aesthetics and functionality. With our innovative perspective and sustainable design philosophy, we aim for the highest standards in our projects. As ASD Façade Systems, we continue to differentiate ourselves in the sector with the engineering and aesthetics that underlie every design."</TDiv></div>
                 </div>
                 <h2 className='text-[68px] text-white font-bold my-8'>
                     <TDiv>"Tarihçe":"History"</TDiv>
