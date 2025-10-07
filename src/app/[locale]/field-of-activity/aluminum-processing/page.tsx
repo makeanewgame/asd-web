@@ -38,7 +38,8 @@ export default function AluminumProcessing() {
                     className="pointer-events-none absolute right-0 top-0 h-[540px] w-[950px] bg-no-repeat"
                     style={{
                         backgroundImage: `url('/alu_banner.webp')`,
-                        backgroundSize: "cover",
+                        backgroundSize: "contain",
+                        backgroundPosition: "right bottom",
                     }}
                 />
 

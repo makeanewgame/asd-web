@@ -39,7 +39,8 @@ export default function Contact() {
                     className="pointer-events-none absolute right-0 top-0 h-[540px] w-[1200px] bg-no-repeat"
                     style={{
                         backgroundImage: `url('/endustriyel_tesisler_banner.webp')`,
-                        backgroundSize: "cover",
+                        backgroundSize: "contain    ",
+                        backgroundPosition: "right bottom",
                     }}
                 />
 
