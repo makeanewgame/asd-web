@@ -86,10 +86,6 @@ function ProjectsContent() {
 
                 {/* Projects Gallery */}
                 <ProjectGallery selectedType={selectedTab} />
-
-                <h2 className="text-3xl my-16 font-bold">
-                    <TDiv>"Satıştaki Projelerimiz":"Projects on Sale"</TDiv>
-                </h2>
             </div>
         </div>
     );

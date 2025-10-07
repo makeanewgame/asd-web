@@ -60,7 +60,40 @@ const projects = [
     status: ProjectStatus.YeniProje,
     location: "",
     heroImage: "/heroImage/mirador.webp",
-    content: "",
+    content: `# MIRADOR VILLA & LOFTS
+
+Safranbolu’nun yükseklerinde, şehre hâkim bir tepede yükselen Mirador, yaşamı yalnızca
+sürdürmek için değil; seyretmek, hissetmek ve değer katmak için tasarlandı.
+İspanyolca’da “seyir noktası” anlamına gelen Mirador, manzarayı, ufku ve özgürlüğü simgeler.
+Bu isim; konutlarımızın bulunduğu konumun doğal kimliğini, ufka bakan duruşunu ve sunduğu
+geniş perspektifi yansıtır.
+Burada hayat, modern mimarinin şıklığıyla doğanın huzurunu bir araya getirir. Mirador, sizi
+sadece bir eve değil; manzarayla bütünleşen, her anı farklı bir pencereden seyretme ayrıcalığına
+davet eder.
+
+## Doğanın Kalbinde, Lüksün Zirvesinde
+
+
+Safranbolu girişinde, kanyonu gören yüksek bir arazide konumlanan Mirador Villas &
+Lofts, modern mimarisi ve doğayla bütünleşen tasarımıyla benzersiz bir yaşam sunuyor.
+Her villada geniş bahçeler ve özel kullanım alanları ile konfor, estetik ve ayrıcalık bir
+arada. Doğanın dinginliğini şehir hayatının olanaklarıyla buluşturan bu seçkin proje,
+sadece bir ev değil, yeni bir yaşam biçimi vadediyor.
+
+`
+    ,
+    floorPlans: [
+      "001.webp",
+      "002.webp",
+      "003.webp",
+      "004.webp",
+      "005.webp",
+      "006.webp",
+      "007.webp",
+      "008.webp",
+      "009.webp",
+    ],
+
     imageList: [
       "001.webp",
       "002.webp",
@@ -81,6 +114,9 @@ const projects = [
     onSale: true,
     heroImage: "/heroImage/vianor.webp",
     content: "",
+    floorPlans: [
+      "001.webp",
+    ],
     imageList: [
       "001.webp",
       "002.webp",
@@ -96,6 +132,19 @@ const projects = [
     slug: "dadibra-villas",
     title: "Dadibra Villas",
     onSale: true,
+
+    saleLinks: [
+      {
+        platform: "sahibinden.com",
+        url: "https://shbd.io/s/D2xEJpV6",
+        description: "DADİBRA VİLLAS Projesi 6+1 587m2 Balkonlu Satılık Villa"
+      },
+      {
+        platform: "sahibinden.com",
+        url: "https://shbd.io/s/FGuQIAqP",
+        description: "DADİBRA VİLLAS SAFRANBOLU ASD YAPI GÜVENCESİYLE SİZLERLE"
+      },
+    ],
     type: ProjectType.Konut,
     status: ProjectStatus.DevamEden,
     location: "",
@@ -144,6 +193,13 @@ Yaşamın En İyisi İçin Hazır Mısınız? DADİBRA VILLAS, Safranbolu'nun en
     type: ProjectType.Konut,
     status: ProjectStatus.DevamEden,
     onSale: true,
+    saleLinks: [
+      {
+        platform: "sahibinden.com",
+        url: "https://shbd.io/s/AcMkFKr6",
+        description: "INOVIA TOWERS Projesi 3+1 115m2 Bahçeli Satılık Daire"
+      }
+    ],
     location: "",
     heroImage: "/heroImage/inovia.webp",
     content: `# INOVIA TOWERS
@@ -378,7 +434,7 @@ Doğa ile iç içe şehrin gürültüsünden uzak modern yapı elemanları v
   {
     id: 8,
     slug: "isiklar",
-    title: "Işıklar",
+    title: "Tuna Konutları",
     type: ProjectType.Konut,
     status: ProjectStatus.DevamEden,
     location: "",
@@ -748,7 +804,7 @@ Karabük Kent Meydanı'nın yenilenme çalışmalarına katılıyoruz! ASD Cephe
     type: ProjectType.Ustyapı,
     status: ProjectStatus.Tamamlanan,
     location: "",
-    heroImage: "/heroImage/default.webp",
+    heroImage: "/heroImage/sanatmerkezi.webp",
     content: "",
     imageList: [
       ""
@@ -994,13 +1050,13 @@ Dış cephede estetik ve yüksek performans sunan alüminyum kompozit kaplama il
   },
   {
     id: 33,
-    slug: "azipirano",
-    title: "Azipirano",
+    slug: "azupirano",
+    title: "Azupirano",
     type: ProjectType.CepheAluminyum,
     status: ProjectStatus.Tamamlanan,
     location: "",
-    heroImage: "/heroImage/azipirano.webp",
-    content: `# AZİPİRANO
+    heroImage: "/heroImage/azupirano.webp",
+    content: `# AZUPIRANO
 
 - Kenet Sac Çatı ve Cephe Kaplamaları
 - Taşyünü Isı Yalıtımı ve Tyvek Su Yalıtımı

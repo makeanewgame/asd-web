@@ -63,9 +63,11 @@ export default function Navbar() {
                 <Image src={"/phone.svg"} alt="Chevron Right" width={24} height={24} />
               </GlassButton>
 
-              <GlassButton size="large">
-                <TDiv>{'"Satışdaki Projeler":"Projects On Sale"'}</TDiv>
-              </GlassButton>
+              <Link href="/projects-on-sale" className="hidden xl:flex">
+                <GlassButton size="large">
+                  <TDiv>{'"Satışdaki Projeler":"Projects On Sale"'}</TDiv>
+                </GlassButton>
+              </Link>
             </div>
 
             {/* Mobile Menu Button */}

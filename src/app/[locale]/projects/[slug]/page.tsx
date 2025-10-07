@@ -60,6 +60,7 @@ export default async function page({ params }: { params: Promise<{ slug: string 
                             <ImageGallery
                                 images={projectData?.imageList || []}
                                 projectSlug={slug}
+                                folder='project'
                             />
                         </div>
 

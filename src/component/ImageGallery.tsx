@@ -7,9 +7,10 @@ interface ImageGalleryProps {
     images: string[]
     projectSlug: string
     className?: string
+    folder: string
 }
 
-export default function ImageGallery({ images, projectSlug, className = "" }: ImageGalleryProps) {
+export default function ImageGallery({ images, projectSlug, folder, className = "" }: ImageGalleryProps) {
     const [selectedImage, setSelectedImage] = useState<string | null>(null)
 
     // Filter out empty strings
@@ -42,7 +43,7 @@ export default function ImageGallery({ images, projectSlug, className = "" }: Im
                             onClick={() => setSelectedImage(image)}
                         >
                             <Image
-                                src={`/project/${projectSlug}/${image}`}
+                                src={`/${folder}/${projectSlug}/${image}`}
                                 alt={`${projectSlug} Proje görseli ${index + 1}`}
                                 width={320}
                                 height={180}
@@ -83,7 +84,7 @@ export default function ImageGallery({ images, projectSlug, className = "" }: Im
                         {/* Image Container */}
                         <div className="relative w-full h-full max-w-full max-h-full">
                             <Image
-                                src={`/project/${projectSlug}/${selectedImage}`}
+                                src={`/${folder}/${projectSlug}/${selectedImage}`}
                                 alt="Tam ekran proje görseli"
                                 fill
                                 className="object-contain"

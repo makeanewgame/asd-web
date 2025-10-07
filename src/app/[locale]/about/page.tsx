@@ -86,16 +86,15 @@ export default function page() {
     return (
         <div className='overflow-hidden'>
 
-            {/* <div className='w-full absolute z-0 top-0 left-0' style={{
+            <div className='w-full absolute z-0 top-0 left-0' style={{
                 height: "calc(100vh - 280px)"
             }}>
-                <Image src={"/about-text.svg"} alt="text-bg" fill className='object-cover object-bottom' />
+                <Image src={"/about-banner.webp"} alt="text-bg" fill className='object-cover object-bottom' />
             </div>
             <div className='w-full absolute z-1 top-0 left-0' style={{
                 height: "calc(100vh - 380px)"
             }}>
-                <Image src={"/asd-smile.svg"} alt="text-bg" fill className='object-contain' />
-            </div> */}
+            </div>
 
             <div className='container z-10 relative pt-[400px] flex gap-4 flex-col'>
 
