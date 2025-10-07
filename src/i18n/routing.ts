@@ -13,6 +13,12 @@ export const routing = defineRouting({
         '/about': {
             tr: '/hakkimizda',
         },
+        '/projects-on-sale': {
+            tr: '/satistaki-projeler',
+        },
+        '/projects-on-sale/[slug]': {
+            tr: '/satistaki-projeler/[slug]',
+        },
         '/projects': {
             tr: '/projeler',
         },

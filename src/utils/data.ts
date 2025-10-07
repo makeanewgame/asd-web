@@ -56,6 +56,7 @@ const projects = [
     slug: "mirador-villa-lofts",
     title: "Mirador Villa & Lofts",
     type: ProjectType.Konut,
+    onSale: true,
     status: ProjectStatus.YeniProje,
     location: "",
     heroImage: "/heroImage/mirador.webp",
@@ -77,6 +78,7 @@ const projects = [
     type: ProjectType.Konut,
     status: ProjectStatus.YeniProje,
     location: "",
+    onSale: true,
     heroImage: "/heroImage/vianor.webp",
     content: "",
     imageList: [
@@ -93,6 +95,7 @@ const projects = [
     id: 5,
     slug: "dadibra-villas",
     title: "Dadibra Villas",
+    onSale: true,
     type: ProjectType.Konut,
     status: ProjectStatus.DevamEden,
     location: "",
@@ -140,6 +143,7 @@ Yaşamın En İyisi İçin Hazır Mısınız? DADİBRA VILLAS, Safranbolu'nun en
     title: "Inovia Towers",
     type: ProjectType.Konut,
     status: ProjectStatus.DevamEden,
+    onSale: true,
     location: "",
     heroImage: "/heroImage/inovia.webp",
     content: `# INOVIA TOWERS
