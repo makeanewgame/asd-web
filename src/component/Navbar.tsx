@@ -59,9 +59,11 @@ export default function Navbar() {
             })}
 
             <div className="flex gap-2">
-              <GlassButton size="large">
-                <Image src={"/phone.svg"} alt="Chevron Right" width={24} height={24} />
-              </GlassButton>
+              <a href="tel:903704152667" target="_blank" className="hidden xl:flex">
+                <GlassButton size="large">
+                  <Image src={"/phone.svg"} alt="Chevron Right" width={24} height={24} />
+                </GlassButton>
+              </a>
 
               <Link href="/projects-on-sale" className="hidden xl:flex">
                 <GlassButton size="large">

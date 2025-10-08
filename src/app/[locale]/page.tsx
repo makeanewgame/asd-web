@@ -23,19 +23,19 @@ export default async function HomePage() {
   const cardMock = [
     {
       title: <TDiv>{'"Mirador"'}</TDiv>,
-      description: <TDiv>{'"Ultra lüks detayları ile tasarlanmış olan DADİBRA VILLAS SAFRANBOLU, en yüksek standartlarda konfor ve güzellik sunuyor.":"Designed with ultra-luxury details, DADİBRA VILLAS SAFRANBOLU offers the highest standards of comfort and beauty."'}</TDiv>,
+      description: <TDiv>{'"Doğayla iç içe, modern yaşamın konforunu bir arada sunan Mirador Villa & Lofts, ferah mimarisiyle öne çıkıyor. ":"Offering the comfort of modern living while being surrounded by nature, Mirador Villa & Lofts stands out with its spacious architecture."'}</TDiv>,
       id: 3,
       image: "/heroImage/mirador_card.webp"
 
     },
     {
       title: <TDiv>{'"Vianor"'}</TDiv>,
-      description: <TDiv>{'"Ultra lüks detayları ile tasarlanmış olan DADİBRA VILLAS SAFRANBOLU, en yüksek standartlarda konfor ve güzellik sunuyor.":"Designed with ultra-luxury details, DADİBRA VILLAS SAFRANBOLU offers the highest standards of comfort and beauty."'}</TDiv>,
+      description: <TDiv>{'"Kente değer katan güçlü bir yapı anlayışıyla yükselen Vianor, estetik ve işlevselliği bir araya getiriyor":"Rising with a strong building approach that adds value to the city, Vianor brings together aesthetics and functionality."'}</TDiv>,
       id: 3,
       image: "/heroImage/vianor_card.webp"
     },
     {
-      title: <TDiv>{'"Didabra Villas Safranbolu":"Didabra Villas Safranbolu"'}</TDiv>,
+      title: <TDiv>{'"Dadibra Villas Safranbolu":"Dadibra Villas Safranbolu"'}</TDiv>,
       description: <TDiv>{'"Ultra lüks detayları ile tasarlanmış olan DADİBRA VILLAS SAFRANBOLU, en yüksek standartlarda konfor ve güzellik sunuyor.":"Designed with ultra-luxury details, DADİBRA VILLAS SAFRANBOLU offers the highest standards of comfort and beauty."'}</TDiv>,
       id: 2,
       image: "/heroImage/dadibra_card.webp"
@@ -130,13 +130,15 @@ export default async function HomePage() {
             <div className='text-3xl md:text-[66px] font-bold leading-tight md:leading-18 whitespace-pre-line'><TDiv>{'"YARINLAR İÇİN\nİNŞA EDİYORUZ":"WE BUILD FOR TOMORROW"'}</TDiv></div>
             <div className='text-lg md:text-[28px] leading-relaxed'><TDiv>{'"30 yılı aşkın tecrübeyi, ileri cephe teknolojileri ve kusursuz proje yönetim anlayışını birleştirerek, mimari vizyonunuzu estetik, dayanıklı ve enerji verimli yapılara dönüştürür.":"By combining over 30 years of experience, advanced façade technologies and flawless project management approach, it transforms your architectural vision into aesthetic, durable and energy-efficient structures."'}</TDiv></div>
             <div className='w-fit'>
-              <GlassButton>
-                <TDiv>{'"Bize Ulaşın ":"Contact Us"'}</TDiv>
-                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
-                  <path d="M31 15.5C31 24.0604 24.0604 31 15.5 31C6.93959 31 0 24.0604 0 15.5C0 6.93959 6.93959 0 15.5 0C24.0604 0 31 6.93959 31 15.5Z" fill="#2587EF" />
-                  <path d="M9 15H19.844L15.737 10.146L17.263 8.854L23.31 16L17.263 23.146L15.737 21.854L19.844 17H9V15Z" fill="#08132A" />
-                </svg>
-              </GlassButton>
+              <Link href="/contact" className='mb-8 md:mb-0'>
+                <GlassButton>
+                  <TDiv>{'"Bize Ulaşın ":"Contact Us"'}</TDiv>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                    <path d="M31 15.5C31 24.0604 24.0604 31 15.5 31C6.93959 31 0 24.0604 0 15.5C0 6.93959 6.93959 0 15.5 0C24.0604 0 31 6.93959 31 15.5Z" fill="#2587EF" />
+                    <path d="M9 15H19.844L15.737 10.146L17.263 8.854L23.31 16L17.263 23.146L15.737 21.854L19.844 17H9V15Z" fill="#08132A" />
+                  </svg>
+                </GlassButton>
+              </Link>
             </div>
           </div>
           <div className='hidden md:flex basis-2/5 justify-end'>

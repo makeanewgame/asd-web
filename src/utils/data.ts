@@ -1,3 +1,5 @@
+import { on } from "events";
+
 enum ProjectType {
   Konut = "Konut",
   Ustyapı = "Üstyapı",
@@ -113,7 +115,11 @@ sadece bir ev değil, yeni bir yaşam biçimi vadediyor.
     location: "",
     onSale: true,
     heroImage: "/heroImage/vianor.webp",
-    content: "",
+    content: `# VIANOR SUPREME
+
+Kente değer katan güçlü bir yapı anlayışıyla yükselen Vianor, estetik ve işlevselliği bir araya getiriyor. Modern çizgiler, güçlü altyapı ve nitelikli malzeme kullanımıyla fark yaratıyor. Şehrin merkezinde zamana meydan okuyan bir mimari anlayış sunuyor.
+
+`,
     floorPlans: [
       "001.webp",
     ],
@@ -241,6 +247,7 @@ Inovia Towers, akıllı ev teknolojisi, estetik tasarım ve çevreci yaklaşım�
     title: "Azure Park",
     type: ProjectType.Konut,
     status: ProjectStatus.DevamEden,
+    onSale: true,
     location: "",
     heroImage: "/heroImage/azurepark.webp",
     content: `# AZURE PARK RESIDANCE BAHÇELİEVLER (DEVAM)
@@ -582,6 +589,7 @@ Yeşilyurt Sanayi Sitesi, artık faaliyete hazır.
     title: "ASD Office",
     type: ProjectType.Ustyapı,
     status: ProjectStatus.DevamEden,
+    onSale: true,
     location: "",
     heroImage: "/heroImage/asdoffice.webp",
     content: `# ASD OFFİCE CENTER

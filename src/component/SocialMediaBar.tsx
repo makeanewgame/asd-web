@@ -3,10 +3,10 @@ import LiquiedGlassCard from './LiquiedGlassPage'
 import { Link } from '@/i18n/navigation'
 export default function SocialMediaBar() {
 
-    const facebook = '';
-    const linkedin = '';
-    const instagram = '';
-    const youtube = '';
+    const facebook = 'https://www.facebook.com/asdcephesistemleri/';
+    const linkedin = 'https://tr.linkedin.com/company/asd-cephe-sistemleri-ve-i%CC%87n%C5%9Faat';
+    const instagram = 'https://www.instagram.com/asdcephesistemleri/';
+    const youtube = 'https://www.youtube.com/channel/UCxOjWBnGxQPxpeme2aSuhgw';
 
 
 
@@ -45,7 +45,7 @@ export default function SocialMediaBar() {
     }
 
     return (
-        <div className='h-screen flex flex-col justify-center items-center w-[22px] gap-2 absolute left-0 top-0 p-8 z-10'>
+        <div className='h-screen flex flex-col justify-center items-center w-[22px] gap-2 absolute left-0 top-0 p-8 z-20'>
 
 
             {miniBtn({
