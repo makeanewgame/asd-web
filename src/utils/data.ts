@@ -1,5 +1,3 @@
-import { on } from "events";
-
 enum ProjectType {
   Konut = "Konut",
   Ustyapı = "Üstyapı",
