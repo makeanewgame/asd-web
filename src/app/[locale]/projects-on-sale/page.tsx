@@ -1,12 +1,11 @@
 "use client";
 
-import { useState } from "react";
 import { useRouter, usePathname } from "next/navigation";
-import { Tabs, Tab, Card, CardBody } from "@heroui/react";
+import { Card, CardBody } from "@heroui/react";
 import { motion } from "motion/react";
 import LiquiedGlassCard from "@/component/LiquiedGlassPage";
 import TDiv from "@/component/TranslateSpan";
-import { ProjectBanners, projects } from "@/utils/data";
+import { projects } from "@/utils/data";
 import Image from "next/image";
 
 export default function AluminumProcessing() {
@@ -55,13 +54,12 @@ export default function AluminumProcessing() {
 }
 
 function ProjectsContent() {
-    const [selectedTab, setSelectedTab] = useState("Konut");
 
     return (
         <div className="-mt-[84px]">
             <div className="container mt-32">
                 {/* Projects Gallery */}
-                <ProjectGallery selectedType={selectedTab} />
+                <ProjectGallery />
 
                 <h2 className="text-3xl my-16 font-bold">
                     <TDiv>"Satıştaki Projelerimiz":"Projects on Sale"</TDiv>
@@ -71,7 +69,7 @@ function ProjectsContent() {
     );
 }
 
-function ProjectGallery({ selectedType }: { selectedType: string }) {
+function ProjectGallery() {
     // Filter projects by selected type
     const filteredProjects = projects.filter(project => project.onSale === true);
 
