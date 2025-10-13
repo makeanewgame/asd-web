@@ -248,7 +248,7 @@ Inovia Towers, akıllı ev teknolojisi, estetik tasarım ve çevreci yaklaşım�
     onSale: true,
     location: "",
     heroImage: "/heroImage/azurepark.webp",
-    content: `# AZURE PARK RESIDANCE BAHÇELİEVLER (DEVAM)
+    content: `# AZURE PARK RESIDANCE
 
 DENİZİN MAVİSİYLE BULUŞAN YENİ BİR YAŞAM: AZURE PARK
 
@@ -277,9 +277,6 @@ Zonguldak’ın en değerli konumlarından biri - 3 yatak odası, ebeveyn banyos
       "001.webp",
       "002.webp",
       "003.webp",
-      "004.webp",
-      "005.webp",
-      "006.webp",
     ],
     description: "",
   },
@@ -366,7 +363,11 @@ Dairemiz, sahilin hemen yakınında, plajlara, restoranlara ve alışveriş olan
 
 Modern ve ayrıcalıklı bir yaşamın alanı Verona Garden.
 
-Açık ve kapalı otopark, çocuk oyun alanları, rahatlatıcı açık oturma alanları gibi birçok özelliği bünyesinde barındıran Verona Garden projemizde sona geldik.
+Modern yaşamın konforunu ve ayrıcalığını bir araya getiren Verona Garden, şehirde huzurlu ve estetik bir yaşam alanı sunuyor.
+
+Projede yer alan açık ve kapalı otopark alanları, araç kullanımını güvenli ve pratik hale getirirken, küçük misafirler için tasarlanmış çocuk oyun alanları, ailelerin keyifli vakit geçirmesini sağlıyor. Ayrıca, rahatlatıcı açık oturma alanları ile doğayla bütünleşmiş dinlenme mekanları sunuluyor.
+
+Tüm bu detaylarıyla Verona Garden, modern yaşamın konforunu, estetiğini ve ayrıcalığını bir arada sunan tamamlanmış seçkin bir projedir.
 
 [Instagram'da Görüntüle 1](https://www.instagram.com/p/C1rHSQUs_M4/)  
 [Instagram'da Görüntüle 2](https://www.instagram.com/p/CrfxE8iswua/)`,
@@ -813,7 +814,12 @@ Karabük Kent Meydanı'nın yenilenme çalışmalarına katılıyoruz! ASD Cephe
     heroImage: "/heroImage/sanatmerkezi.webp",
     content: "",
     imageList: [
-      ""
+      "001.webp",
+      "002.webp",
+      "003.webp",
+      "004.webp",
+      "005.webp",
+      "006.webp",
     ],
     description: "",
   },
@@ -1301,8 +1307,16 @@ Ofis cephesi tasarımımızda; modern çizgilerle estetik vurguyu öne çıkaran
     location: "",
     heroImage: "/heroImage/kargisan.webp",
     content: `# KARGİSAN
+Kargisan Villaları projesinde, anahtar teslim inşaat faaliyetleri başarıyla tamamlanmış olup, modern ve konforlu yaşam alanları sizleri bekliyor. Estetik tasarım, kaliteli malzemeler ve fonksiyonel kullanımın bir araya geldiği villalar, hayallerinizdeki yaşamı gerçeğe dönüştürüyor.
+    
+## Öne Çıkan Özellikler: 
+- Anahtar teslim konfor ve kullanım kolaylığı
+- Modern mimari ve estetik detaylar
+- Konforlu ve fonksiyonel yaşam alanları
+- Güvenli ve hazır yaşam ortamı
 
-Kargisan Villarında, anahtar teslim inşaat faaliyetleri tamamlanmış olup, yaşam başlamıştır.`,
+Kargisan Villaları — modern yaşamın tüm ayrıcalıklarını sunan, hazır ve prestijli bir yaşam alanı.
+`,
     imageList: [
       "001.webp",
       "002.webp",

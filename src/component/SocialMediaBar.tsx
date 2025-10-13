@@ -5,7 +5,7 @@ export default function SocialMediaBar() {
 
     const facebook = 'https://www.facebook.com/asdcephesistemleri/';
     const linkedin = 'https://tr.linkedin.com/company/asd-cephe-sistemleri-ve-i%CC%87n%C5%9Faat';
-    const instagram = 'https://www.instagram.com/asdcephesistemleri/';
+    const instagram = 'https://www.instagram.com/asdyapi/';
     const youtube = 'https://www.youtube.com/channel/UCxOjWBnGxQPxpeme2aSuhgw';
 
 
