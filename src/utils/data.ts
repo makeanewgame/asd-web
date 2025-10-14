@@ -54,32 +54,39 @@ const projects = [
   {
     id: 1,
     slug: "mirador-villa-lofts",
-    title: "Mirador Villa & Lofts",
+    title: "Mirador Villas & Lofts",
     type: ProjectType.Konut,
     onSale: true,
     status: ProjectStatus.YeniProje,
+    customHeaderImage: "/customheader/miradorheader.webp",
     location: "",
     heroImage: "/heroImage/mirador.webp",
-    content: `# MIRADOR VILLA & LOFTS
+    content: `# MIRADOR VILLAS & LOFTS
 
-Safranbolu’nun yükseklerinde, şehre hâkim bir tepede yükselen Mirador, yaşamı yalnızca
-sürdürmek için değil; seyretmek, hissetmek ve değer katmak için tasarlandı.
-İspanyolca’da “seyir noktası” anlamına gelen Mirador, manzarayı, ufku ve özgürlüğü simgeler.
-Bu isim; konutlarımızın bulunduğu konumun doğal kimliğini, ufka bakan duruşunu ve sunduğu
-geniş perspektifi yansıtır.
-Burada hayat, modern mimarinin şıklığıyla doğanın huzurunu bir araya getirir. Mirador, sizi
-sadece bir eve değil; manzarayla bütünleşen, her anı farklı bir pencereden seyretme ayrıcalığına
-davet eder.
+## Şehrin Üstünde Yeni Bir Bakış
+Safranbolu’nun yükseklerinde, şehre hâkim bir tepede yükselen Mirador Villas & Lofts, yaşamı yalnızca sürdürmek için değil; seyretmek, hissetmek ve değer katmak için tasarlandı.
 
-## Doğanın Kalbinde, Lüksün Zirvesinde
+İspanyolca’da “seyir noktası” anlamına gelen Mirador, manzarayı, ufku ve özgürlüğü simgeler. Bu isim; konutların bulunduğu arazinin doğal kimliğini, ufka bakan duruşunu ve sunduğu geniş perspektifi yansıtır.
 
+Safranbolu girişinde, kanyonu gören yüksek bir noktada konumlanan Mirador, modern mimarisi ve doğayla bütünleşen tasarımıyla benzersiz bir yaşam sunar.
 
-Safranbolu girişinde, kanyonu gören yüksek bir arazide konumlanan Mirador Villas &
-Lofts, modern mimarisi ve doğayla bütünleşen tasarımıyla benzersiz bir yaşam sunuyor.
-Her villada geniş bahçeler ve özel kullanım alanları ile konfor, estetik ve ayrıcalık bir
-arada. Doğanın dinginliğini şehir hayatının olanaklarıyla buluşturan bu seçkin proje,
-sadece bir ev değil, yeni bir yaşam biçimi vadediyor.
+Doğanın dinginliğini şehir hayatının olanaklarıyla buluşturan bu seçkin proje; sadece bir ev değil, yeni bir yaşam biçimi vadediyor.
+Mirador Villa konsepti, geniş bahçeleri ve özel kullanım alanlarıyla konfor, estetik ve ayrıcalığı bir araya getirirken,
+Mirador Loft modern mimarinin yalın çizgilerini ferah iç mekânlarla tamamlar.
 
+Güneşin doğuşunu, kanyonun sessizliğini ve şehrin ışıklarını aynı pencereden izleme ayrıcalığı Mirador’da günlük bir ritüele dönüşür.
+
+Toplamda
+
+5,5+1 villa: 16 adet
+4,5+1 villa: 24 adet
+3,5+1 villa: 6 adet
+3,5+1 loft: 36 adet
+
+olarak planlanan bu özel proje, geniş seçenekleriyle farklı yaşam stillerine hitap eder.
+Doğal malzemelerin sıcaklığıyla şekillenen her detay, modern yaşamın estetiğiyle buluşur.
+Mirador, manzaranın, mimarinin ve yaşamın kesiştiği noktada;
+size yalnızca bir ev değil, bakış açınızı değiştiren bir deneyim sunar.
 `
     ,
     floorPlans: [
@@ -113,11 +120,18 @@ sadece bir ev değil, yeni bir yaşam biçimi vadediyor.
     location: "",
     onSale: true,
     heroImage: "/heroImage/vianor.webp",
+    customHeaderImage: "/customheader/vianorheader.webp",
     content: `# VIANOR SUPREME
 
-Kente değer katan güçlü bir yapı anlayışıyla yükselen Vianor, estetik ve işlevselliği bir araya getiriyor. Modern çizgiler, güçlü altyapı ve nitelikli malzeme kullanımıyla fark yaratıyor. Şehrin merkezinde zamana meydan okuyan bir mimari anlayış sunuyor.
+Safranbolu – Göztepe – Barış Mahallesi
 
-`,
+Safranbolu’nun gözde semtlerinden Göztepe’de yükselen Vianor Supreme, modern mimarisi ve ayrıcalıklı konumuyla prestijli bir yaşam sunuyor. Aileniz için tasarlanmış geniş ve ferah 3,5+1 daireleriyle Vianor, konforu estetikle buluşturuyor.
+
+Sosyal alanları ile çocuklarınız güvenle oynarken, basketbol sahası ve yeşil alanlarıyla keyifli anlara ev sahipliği yapıyor. Güvenlik ve otopark imkânları sayesinde huzurlu bir yaşamın kapıları Vianor’da sizleri bekliyor.
+
+Konum avantajıyla okullara, sağlık kurumlarına, alışveriş merkezlerine ve şehrin ana ulaşım yollarına birkaç dakikada erişim sağlayabilir; Safranbolu’nun tarihi çarşısına ve doğal güzelliklerine kolayca ulaşabilirsiniz.
+
+Vianor Supreme yalnızca bir konut değil, Safranbolu’da yükselen değerli bir yatırım fırsatıdır.`,
     floorPlans: [
       "001.webp",
     ],

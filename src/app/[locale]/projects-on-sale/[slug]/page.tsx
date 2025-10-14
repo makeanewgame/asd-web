@@ -19,17 +19,25 @@ export default async function page({ params }: { params: Promise<{ slug: string 
 
     return (
         <div className="relative overflow-hidden">
-            <div className="pointer-events-none absolute inset-x-0 top-0 h-[540px] bg-gradient-to-t from-transparent to-[#01152a] z-1" />
-            <div
-                className="pointer-events-none absolute right-0 left-0 top-0 h-[540px] bg-no-repeat"
-                style={{
-                    backgroundImage: `url('/project/${slug}/001.webp')`,
-                    backgroundSize: "cover",
-                    backgroundPosition: "bottom center",
-                }}
-            />
+            <div className="pointer-events-none absolute inset-x-0 top-0 h-[440px] bg-gradient-to-b from-transparent to-[#0057B3]" />
+            {
+                projectData && projectData.customHeaderImage ? (
+                    <div
+                        className="pointer-events-none absolute right-0 left-0 top-0 h-[440px] bg-no-repeat"
+                        style={{
+                            backgroundImage: `url(${projectData.customHeaderImage})`,
+                            backgroundSize: "contain",
+                            backgroundPosition: "center center",
+                        }}
+                    />
+                ) : (
+                    <div
+                        className="pointer-events-none absolute right-0 left-0 top-0 h-[440px] bg-no-repeat"
+                    />
+                )
+            }
 
-            <div className='container pt-[480px] pb-16'>
+            <div className='container pt-[340px] pb-16'>
                 <LiquiedGlassCard className="flex flex-col relative w-fit p-4" contentClassName="px-6 py-4 z-0" radius="14px">
                     <div className="text-4xl md:text-5xl font-extrabold tracking-tight">
                         <TDiv>&quot;Satıştaki Projeler&quot;:&quot;Projects on Sale&quot;</TDiv>

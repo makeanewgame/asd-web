@@ -22,21 +22,21 @@ export default async function HomePage() {
 
   const cardMock = [
     {
-      title: <TDiv>{'"Mirador"'}</TDiv>,
-      description: <TDiv>{'"Doğayla iç içe, modern yaşamın konforunu bir arada sunan Mirador Villa & Lofts, ferah mimarisiyle öne çıkıyor. ":"Offering the comfort of modern living while being surrounded by nature, Mirador Villa & Lofts stands out with its spacious architecture."'}</TDiv>,
+      title: <TDiv>{'"Mirador Villas & Lofts":"Mirador Villas & Lofts"'}</TDiv>,
+      description: <TDiv>{'"Kanyona hâkim konumu ve modern mimarisiyle Mirador, doğayla iç içe ayrıcalıklı bir yaşam sunuyor. Keşfetmeye Değer Bir Yaşam...":"With its commanding location overlooking the canyon and modern architecture, Mirador offers a privileged life intertwined with nature. A Life Worth Exploring..."'}</TDiv>,
       id: 3,
       image: "/heroImage/mirador_card.webp"
 
     },
     {
-      title: <TDiv>{'"Vianor"'}</TDiv>,
-      description: <TDiv>{'"Kente değer katan güçlü bir yapı anlayışıyla yükselen Vianor, estetik ve işlevselliği bir araya getiriyor":"Rising with a strong building approach that adds value to the city, Vianor brings together aesthetics and functionality."'}</TDiv>,
+      title: <TDiv>{'"Vianor Supreme":"Vianor Supreme"'}</TDiv>,
+      description: <TDiv>{'"Safranbolu’nun en prestijli noktasında, estetik ve konforu bir araya getiren özel bir yaşam alanı. Şimdi keşfedin.":"A special living space combining aesthetics and comfort in the most prestigious location of Safranbolu. Discover it now."'}</TDiv>,
       id: 3,
       image: "/heroImage/vianor_card.webp"
     },
     {
       title: <TDiv>{'"Dadibra Villas Safranbolu":"Dadibra Villas Safranbolu"'}</TDiv>,
-      description: <TDiv>{'"Ultra lüks detayları ile tasarlanmış olan DADİBRA VILLAS SAFRANBOLU, en yüksek standartlarda konfor ve güzellik sunuyor.":"Designed with ultra-luxury details, DADİBRA VILLAS SAFRANBOLU offers the highest standards of comfort and beauty."'}</TDiv>,
+      description: <TDiv>{'"Safranbolu’nun en özel noktasında, ihtişam ve konforu doğayla buluşturan seçkin bir yaşam sizi bekliyor.Hayalinizdeki yaşamı şimdi keşfedin.":"An exclusive lifestyle that combines splendor and comfort with nature awaits you in Safranbolus most exclusive location. Discover your dream life now."'}</TDiv>,
       id: 2,
       image: "/heroImage/dadibra_card.webp"
     },
