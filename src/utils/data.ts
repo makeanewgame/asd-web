@@ -904,11 +904,11 @@ Bilginler Yapı ve Beton Grubu ile çözüm ortağı olarak çalıştığımız 
   {
     id: 26,
     slug: "kanyon-dugoon-salonu-restaurant",
-    title: "Kanyon(düğün,salonu,restaurant)",
+    title: "Kanyon (düğün salonu & restaurant)",
     type: ProjectType.Ustyapı,
     status: ProjectStatus.Tamamlanan,
     location: "",
-    heroImage: "/heroImage/default.webp",
+    heroImage: "/heroImage/kanyon.webp",
     content: `# Karabük Belediyesi Kanyon Rekrasyon Projesi Restaurant Binası
 
 Karabük Belediyesi Kanyon Rekrasyon Projesi Ahşap Desenli Fibercement Kaplama, Alüminyum Kapaklı Giydirme Cephe Uygulaması, Alüminyum Kompozit Kaplama, Isı Yalıtımlı Alüminyum Doğrama Uygulamaları tamamlanmıştır.
@@ -919,7 +919,12 @@ Karabük Belediyesi Kanyon Rekrasyon Projesi Ahşap Desenli Fibercement Kaplama,
 - Ahşap Desenli Fibercement Kaplama
 - Isı Yalıtımı ve Dekorasyon`,
     imageList: [
-      ""
+      "001.webp",
+      "002.webp",
+      "003.webp",
+      "004.webp",
+      "005.webp",
+      "006.webp",
     ],
     description: "",
   },
@@ -1462,6 +1467,37 @@ Projemizde, yapı cephesine uygulanan stil sahibi silikon giydirme sistemimizle 
 - Kenet çelik çatı uygulaması ile gökyüzüne yakışan bir koruma katmanı.
 - Isı yalıtımlı alüminyum pencereler ve kapılar ile iç mekan konforunuz bizimle güvende.
 - Camlı korkuluk sistemleriyle güvenliği şıklıkla birleştiriyoruz.`,
+    imageList: [
+      "001.webp",
+      "002.webp",
+      "003.webp",
+      "004.webp",
+      "005.webp",
+      "006.webp",
+    ],
+    description: "",
+  },
+  {
+    id: 51,
+    slug: "karoto-depo-ve-ofis-binasi",
+    title: "Karoto Depo ve Ofis Binası",
+    type: ProjectType.EndüstriyelYapi,
+    status: ProjectStatus.Tamamlanan,
+    location: "",
+    heroImage: "/heroImage/karoto.webp",
+    content: `# KAROTO DEPO VE OFİS BİNASI
+Karoto Depo ve Ofis Binası projesi, modern tasarım anlayışı ve işlevselliği bir araya getirerek başarıyla tamamlanmıştır. ASD Yapı olarak, proje kapsamında yüksek kalite ve estetik standartları ön planda tutarak uygulamalarımızı gerçekleştirdik.
+
+## Proje Uygulamaları: 
+- FC50 kapaklı alüminyum giydirme cephe sistemleri, modern ve dayanıklı dış cephe 
+- TH55 ısı yalıtımlı alüminyum kapı ve pencereler, enerji verimliliği ve konfor sağlar
+- Alüminyum kompozit kaplama uygulamaları, estetik ve uzun ömürlü çözüm 
+- Otomatik kepenk sistemleri, güvenlik ve kullanım kolaylığı sunar 
+- Alüminyum camlı korkuluk sistemleri, şıklık ve güvenliği bir arada sunar 
+- Taşyünü ısı yalıtımı, konforlu iç mekanlar sağlar 
+- Tyvek su yalıtımı, yapının dayanıklılığını artırır  
+    
+  `,
     imageList: [
       "001.webp",
       "002.webp",
