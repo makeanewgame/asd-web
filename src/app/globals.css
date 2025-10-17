@@ -4,13 +4,12 @@
 @source '../../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
 @custom-variant dark (&:is(.dark *));
 
-
 :root {
   --background: #071229;
   --foreground: #ffffff;
-  --primary: #1F2A44;
-  --secondary: #956C58;
-  --textgray: #7C7C7C;
+  --primary: #1f2a44;
+  --secondary: #956c58;
+  --textgray: #7c7c7c;
 }
 
 @theme inline {
@@ -21,9 +20,8 @@
   --color-textgray: var(--textgray);
   --font-sans: "Onest", sans-serif;
   --font-display: "Roboto", sans-serif;
-  --current-color: "#ffffff"
+  --current-color: "#ffffff";
 }
-
 
 @utility container {
   padding-inline: 10px;
@@ -63,179 +61,185 @@ body {
   animation: fadeIn 0.2s ease-out;
 }
 
-.glass-card-full{
-      /* filter: drop-shadow(-8px -10px 46px #0000005f); */
-    backdrop-filter: brightness(1.1) 
-        blur(20px)
-        url(#displacementFilter);
+.glass-card-full {
+  /* filter: drop-shadow(-8px -10px 46px #0000005f); */
+  backdrop-filter: brightness(1.1) blur(20px) url(#displacementFilter);
 }
 
-.glass-card-full::before{
-  content: '';
-    position: absolute;
-    inset: 0;
-    z-index: 0;
-    overflow: hidden;
-    border-radius: 100px;
-    -webkit-box-shadow: inset 1px 1px 0px -1px rgba(255, 255, 255, 0.7), 
-                        inset 0 0 10px 1px rgba(255, 255, 255, 0.4);
-    /* box-shadow: inset 6px 6px 0px -6px rgba(255, 255, 255, 0.7), 
+.glass-card-full::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  border-radius: 100px;
+  -webkit-box-shadow: inset 1px 1px 0px -1px rgba(255, 255, 255, 0.7),
+    inset 0 0 10px 1px rgba(255, 255, 255, 0.4);
+  /* box-shadow: inset 6px 6px 0px -6px rgba(255, 255, 255, 0.7), 
                 inset 0 0 8px 1px rgba(255, 255, 255, 0.7); */
 }
 
-.glass-card-md{
-      /* filter: drop-shadow(-8px -10px 46px #0000005f); */
-    backdrop-filter: brightness(1.1) 
-        blur(20px)
-        url(#displacementFilter);
+.glass-card-md {
+  /* filter: drop-shadow(-8px -10px 46px #0000005f); */
+  backdrop-filter: brightness(1.1) blur(20px) url(#displacementFilter);
 }
 
-.glass-card-md::before{
-  content: '';
-    position: absolute;
-    inset: 0;
-    z-index: 0;
-    overflow: hidden;
-    border-radius: 20px;
-    -webkit-box-shadow: inset 0.5px 0.5px 0px 0.5px rgba(255, 255, 255, 0.4),
-                        inset -0.5px -0.5px 0px 0.5px rgba(255, 255, 255, 0.4), 
-                        inset 0 0 20px 4px rgba(255, 255, 255, 0.2);
-    /* box-shadow: inset 6px 6px 0px -6px rgba(255, 255, 255, 0.7), 
+.glass-card-md::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  border-radius: 20px;
+  -webkit-box-shadow: inset 0.5px 0.5px 0px 0.5px rgba(255, 255, 255, 0.4),
+    inset -0.5px -0.5px 0px 0.5px rgba(255, 255, 255, 0.4),
+    inset 0 0 20px 4px rgba(255, 255, 255, 0.2);
+  /* box-shadow: inset 6px 6px 0px -6px rgba(255, 255, 255, 0.7), 
                 inset 0 0 8px 1px rgba(255, 255, 255, 0.7); */
 }
-
 
 .GlassContainer {
-    --corner-radius: 54px;
-    --base-strength: 28px;
-    --extra-blur: 10px;
-    --softness: 20px;
-    --tint-amount: 0.19;
-    --tint-saturation: 0;
-    --tint-hue: 0deg;
-    --contrast: 0;
-    --brightness: 0.83;
-    --invert: 10%;
+  --corner-radius: 54px;
+  --base-strength: 28px;
+  --extra-blur: 10px;
+  --softness: 20px;
+  --tint-amount: 0.19;
+  --tint-saturation: 0;
+  --tint-hue: 0deg;
+  --contrast: 0;
+  --brightness: 0.83;
+  --invert: 10%;
 
-    --total-strength: calc(var(--base-strength) + var(--extra-blur));
-    --edge-width: calc(0.3px + (var(--softness) * 0.1));
-    --emboss-width: calc((var(--softness) * 0.38));
-    --refraction-width: calc((var(--softness) * 0.3));
+  --total-strength: calc(var(--base-strength) + var(--extra-blur));
+  --edge-width: calc(0.3px + (var(--softness) * 0.1));
+  --emboss-width: calc((var(--softness) * 0.38));
+  --refraction-width: calc((var(--softness) * 0.3));
 
-
-    overflow: visible;
-    pointer-events: none;
+  overflow: visible;
+  pointer-events: none;
 }
 .GlassContent {
-    position: relative;
-    z-index: 20;
-    border-radius: var(--corner-radius);
-    pointer-events: auto;
+  position: relative;
+  z-index: 20;
+  border-radius: var(--corner-radius);
+  pointer-events: auto;
 }
 .GlassMaterial {
-    position: absolute;
-    inset: 0;
-    z-index: 1;
-    overflow: visible;
-    pointer-events: none;
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  overflow: visible;
+  pointer-events: none;
 }
 .GlassMaterial:after {
-    content: '';
-    display: block;
-    position: absolute;
-    inset: 0;
-    z-index: 3;
-    overflow: hidden;
-    border-radius: var(--corner-radius);
-    background-color: rgba(128, 128, 128, 0);
+  content: "";
+  display: block;
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  overflow: hidden;
+  border-radius: var(--corner-radius);
+  background-color: rgba(128, 128, 128, 0);
 }
 .GlassMaterial > div {
-    position: absolute;
-    inset: 0;
-    box-sizing: border-box;
-    border-radius: var(--corner-radius);
-    z-index: 2;
-    overflow: hidden;
+  position: absolute;
+  inset: 0;
+  box-sizing: border-box;
+  border-radius: var(--corner-radius);
+  z-index: 2;
+  overflow: hidden;
 }
 .GlassMaterial .GlassEdgeReflection {
-    z-index: 4;
-    margin: calc(var(--total-strength) * -1);
-    border-radius: calc(var(--corner-radius) + var(--total-strength));
-    backdrop-filter: blur(var(--total-strength)) brightness(1.2) saturate(1.2);
-    padding: var(--edge-width);
-    border: var(--total-strength) solid transparent;
-    mask: 
-        linear-gradient(white 0 0) padding-box,
-        linear-gradient(white 0 0) content-box;
-    mask-composite: exclude, exclude;
+  z-index: 4;
+  margin: calc(var(--total-strength) * -1);
+  border-radius: calc(var(--corner-radius) + var(--total-strength));
+  backdrop-filter: blur(var(--total-strength)) brightness(1.2) saturate(1.2);
+  padding: var(--edge-width);
+  border: var(--total-strength) solid transparent;
+  mask: linear-gradient(white 0 0) padding-box,
+    linear-gradient(white 0 0) content-box;
+  mask-composite: exclude, exclude;
 }
+@media (max-width: 768px) {
+  .GlassMaterial .GlassEdgeReflection {
+    margin: 0 !important;
+  }
+}
+
 .GlassMaterial .GlassEmbossReflection {
-    backdrop-filter: blur(calc(var(--total-strength) * 1.5)) invert(0.25) brightness(1.11) saturate(1.2) hue-rotate(-10deg) contrast(2.3);
-    padding: var(--emboss-width);
-    border: 0 solid transparent;
-    mask: 
-        linear-gradient(white 0 0) padding-box,
-        linear-gradient(white 0 0) content-box;
-    mask-composite: exclude, exclude;
+  backdrop-filter: blur(calc(var(--total-strength) * 1.5)) invert(0.25)
+    brightness(1.11) saturate(1.2) hue-rotate(-10deg) contrast(2.3);
+  padding: var(--emboss-width);
+  border: 0 solid transparent;
+  mask: linear-gradient(white 0 0) padding-box,
+    linear-gradient(white 0 0) content-box;
+  mask-composite: exclude, exclude;
 }
 .GlassMaterial .GlassRefraction {
-    backdrop-filter: invert(0.1) brightness(1.2) contrast(1.5);
-    padding: var(--refraction-width);
-    border: calc(var(--emboss-width)) solid transparent;
-    mask: 
-        linear-gradient(white 0 0) padding-box,
-        linear-gradient(white 0 0) content-box;
-    mask-composite: exclude, exclude;
+  backdrop-filter: invert(0.1) brightness(1.2) contrast(1.5);
+  padding: var(--refraction-width);
+  border: calc(var(--emboss-width)) solid transparent;
+  mask: linear-gradient(white 0 0) padding-box,
+    linear-gradient(white 0 0) content-box;
+  mask-composite: exclude, exclude;
 }
 .GlassMaterial .GlassBlur {
-    backdrop-filter: blur(var(--extra-blur)) brightness(1.25);
-    border-radius: calc(var(--corner-radius) - (var(--emboss-width) + var(--refraction-width)));
-    margin: calc(var(--emboss-width) + var(--refraction-width));
+  backdrop-filter: blur(var(--extra-blur)) brightness(1.25);
+  border-radius: calc(
+    var(--corner-radius) - (var(--emboss-width) + var(--refraction-width))
+  );
+  margin: calc(var(--emboss-width) + var(--refraction-width));
 }
 .GlassMaterial .BlendLayers {
-    z-index: 3;
-    backdrop-filter: blur(calc((var(--softness) * 0.2) + (var(--extra-blur) * 0.2)));
+  z-index: 3;
+  backdrop-filter: blur(
+    calc((var(--softness) * 0.2) + (var(--extra-blur) * 0.2))
+  );
 }
 .GlassMaterial .BlendEdge {
-    z-index: 8;
-    backdrop-filter: blur(calc(var(--edge-width) * 0.4)) contrast(1.6) saturate(1.5);
+  z-index: 8;
+  backdrop-filter: blur(calc(var(--edge-width) * 0.4)) contrast(1.6)
+    saturate(1.5);
 }
 .GlassContainer:before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    z-index: 20;
-    display: block;
-    border-radius: var(--corner-radius);
-    backdrop-filter: invert(var(--invert));
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+  display: block;
+  border-radius: var(--corner-radius);
+  backdrop-filter: invert(var(--invert));
 }
 .GlassMaterial:before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    z-index: 11;
-    display: block;
-    border-radius: var(--corner-radius);
-    padding: 1px;
-    border: 0 solid transparent;
-    background: linear-gradient(155deg, hsla(0, 0%, 100%, 0.15) 0%, hsla(0, 0%, 0%, 0.2) 50%, hsla(0, 0%, 100%, 0.15) 100%);
-    backdrop-filter: invert(0.15) opacity(1);
-    mask: 
-        linear-gradient(white 0 0) padding-box,
-        linear-gradient(white 0 0) content-box;
-    mask-composite: exclude, exclude;
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 11;
+  display: block;
+  border-radius: var(--corner-radius);
+  padding: 1px;
+  border: 0 solid transparent;
+  background: linear-gradient(
+    155deg,
+    hsla(0, 0%, 100%, 0.15) 0%,
+    hsla(0, 0%, 0%, 0.2) 50%,
+    hsla(0, 0%, 100%, 0.15) 100%
+  );
+  backdrop-filter: invert(0.15) opacity(1);
+  mask: linear-gradient(white 0 0) padding-box,
+    linear-gradient(white 0 0) content-box;
+  mask-composite: exclude, exclude;
 }
 .GlassMaterial .Highlight {
-    z-index: 12;
-    display: block;
-    border-radius: var(--corner-radius);
-    padding: 1px;
-    border: 0 solid transparent;
-    backdrop-filter: brightness(1.2) contrast(1.6) saturate(1.2) opacity(1);
-    mask: 
-        linear-gradient(white 0 0) padding-box,
-        linear-gradient(white 0 0) content-box;
-    mask-composite: exclude, exclude;
+  z-index: 12;
+  display: block;
+  border-radius: var(--corner-radius);
+  padding: 1px;
+  border: 0 solid transparent;
+  backdrop-filter: brightness(1.2) contrast(1.6) saturate(1.2) opacity(1);
+  mask: linear-gradient(white 0 0) padding-box,
+    linear-gradient(white 0 0) content-box;
+  mask-composite: exclude, exclude;
 }
 
 .slider {
@@ -257,9 +261,7 @@ body {
   left: 100%;
   animation: autoRun 30s linear infinite;
   transition: filter 0.8s;
-  animation-delay: calc(
-    (30s / 12) * (var(--position) - 1) - 30s
-  ) !important;
+  animation-delay: calc((30s / 12) * (var(--position) - 1) - 30s) !important;
   padding-right: 40px;
 }
 .slider .list .item img {
@@ -323,4 +325,9 @@ body {
 
 .animate-scroll:hover {
   animation-play-state: paused;
+}
+@media (max-width: 768px) {
+  .GlassMaterial .GlassEdgeReflection {
+    margin: 0 !important;
+  }
 }
