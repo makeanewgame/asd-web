@@ -31,9 +31,11 @@ export default function SocialMediaBar() {
     }
     if (isInternal) {
       return (
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         <Link
-          href={href as any}
+          href={{
+            //eslint-disable-next-line @typescript-eslint/no-explicit-any
+            pathname: href as any
+          }}
           className="w-[22px] h-[22px] d-block flex justify-center items-center bg-[#071329] rounded-full"
         >
           <LiquiedGlassCard
