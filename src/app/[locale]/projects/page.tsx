@@ -73,7 +73,7 @@ function ProjectsContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
   const pathname = usePathname();
-  
+
   // URL'deki tab parametresini oku, yoksa "Konut" kullan
   const [selectedTab, setSelectedTab] = useState(
     searchParams.get("tab") || "Konut"
@@ -189,7 +189,7 @@ function ProjectCard({ project }: { project: (typeof projects)[0] }) {
     const currentTab = searchParams.get("tab");
     const baseUrl = `${pathname}/${project.slug}`;
     const url = currentTab ? `${baseUrl}?returnTab=${currentTab}` : baseUrl;
-    
+
     router.push(url);
   };
 
@@ -219,15 +219,14 @@ function ProjectCard({ project }: { project: (typeof projects)[0] }) {
                 {project.type}
               </span>
               <span
-                className={`text-sm px-3 py-1 rounded-full ${
-                  project.status === "Tamamlanan"
+                className={`text-sm px-3 py-1 rounded-full ${project.status === "Tamamlanan"
                     ? "bg-green-500/20 text-green-400"
                     : project.status === "Devam Eden"
-                    ? "bg-yellow-500/20 text-yellow-400"
-                    : project.status === "Satışta"
-                    ? "bg-blue-500/20 text-blue-400"
-                    : "bg-purple-500/20 text-purple-400"
-                }`}
+                      ? "bg-yellow-500/20 text-yellow-400"
+                      : project.status === "Satışta"
+                        ? "bg-blue-500/20 text-blue-400"
+                        : "bg-purple-500/20 text-purple-400"
+                  }`}
               >
                 {project.status}
               </span>

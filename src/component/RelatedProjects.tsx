@@ -43,11 +43,11 @@ export default function RelatedProjects({
     const handleProjectClick = (project: Project) => {
         // Mevcut returnTab parametresini al veya proje tipinden bir tab oluştur
         const returnTab = searchParams.get('returnTab') || currentProjectType;
-        
+
         // Locale'i pathname'den çıkar
         const pathSegments = pathname.split('/').filter(Boolean);
         const locale = pathSegments[0];
-        
+
         // Yeni proje URL'ini oluştur
         router.push(`/${locale}/projects/${project.slug}?returnTab=${returnTab}`)
     }

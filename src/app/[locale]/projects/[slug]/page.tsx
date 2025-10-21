@@ -28,9 +28,9 @@ export default function Page({ params }: { params: Promise<{ slug: string; local
     }
 
     const projectData = projects.find(project => project.slug === slug);
-    
+
     // Projeler sayfasına geri dönüş URL'i
-    const projectsUrl = returnTab 
+    const projectsUrl = returnTab
         ? `/${locale}/projects?tab=${returnTab}`
         : `/${locale}/projects`;
 
