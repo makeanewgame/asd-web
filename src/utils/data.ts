@@ -1045,7 +1045,6 @@ Akgünler Otomotiv Beypazarı Massey-Ferguson Satış ve Servis Binası
       "003.webp",
       "004.webp",
       "005.webp",
-      "006.webp",
     ],
     description: "",
   },
@@ -1505,6 +1504,360 @@ Karoto Depo ve Ofis Binası projesi, modern tasarım anlayışı ve işlevselli�
       "004.webp",
       "005.webp",
       "006.webp",
+    ],
+    description: "",
+  }, {
+    id: 52,
+    slug: "universite-laboratuvar",
+    title: "Üniversite Laboratuvarı",
+    type: ProjectType.CepheAluminyum,
+    status: ProjectStatus.Tamamlanan,
+    location: "",
+    heroImage: "/heroImage/universite-laboratuvar.webp",
+    content: `# ÜNİVERSİTE LABORATUVARI
+Üniversite Laboratuvarı projesi, modern tasarım anlayışı ve işlevselliği bir araya getirerek başarıyla tamamlanmıştır. ASD Yapı olarak, proje kapsamında yüksek kalite ve estetik standartları ön planda tutarak uygulamalarımızı gerçekleştirdik.
+
+## Proje Uygulamaları: 
+- FC50 kapaklı alüminyum giydirme cephe sistemleri, modern ve dayanıklı dış cephe 
+- TH55 ısı yalıtımlı alüminyum kapı ve pencereler, enerji verimliliği ve konfor sağlar
+- Alüminyum kompozit kaplama uygulamaları, estetik ve uzun ömürlü çözüm 
+- Otomatik kepenk sistemleri, güvenlik ve kullanım kolaylığı sunar 
+- Alüminyum camlı korkuluk sistemleri, şıklık ve güvenliği bir arada sunar 
+- Taşyünü ısı yalıtımı, konforlu iç mekanlar sağlar 
+- Tyvek su yalıtımı, yapının dayanıklılığını artırır  
+    
+  `,
+    imageList: [
+      "001.webp",
+      "002.webp",
+      "003.webp",
+      "004.webp",
+      "005.webp",
+      "006.webp",
+    ],
+    description: "",
+  }, {
+    id: 53,
+    slug: "final-okullari",
+    title: "Final Okulları",
+    type: ProjectType.CepheAluminyum,
+    status: ProjectStatus.Tamamlanan,
+    location: "",
+    heroImage: "/heroImage/final-okullari.webp",
+    content: `# FINAL OKULLARI
+Final Okulları projesi, modern tasarım anlayışı ve işlevselliği bir araya getirerek başarıyla tamamlanmıştır. ASD Yapı olarak, proje kapsamında yüksek kalite ve estetik standartları ön planda tutarak uygulamalarımızı gerçekleştirdik.
+
+## Proje Uygulamaları: 
+- FC50 kapaklı alüminyum giydirme cephe sistemleri, modern ve dayanıklı dış cephe 
+- TH55 ısı yalıtımlı alüminyum kapı ve pencereler, enerji verimliliği ve konfor sağlar
+- Alüminyum kompozit kaplama uygulamaları, estetik ve uzun ömürlü çözüm 
+- Otomatik kepenk sistemleri, güvenlik ve kullanım kolaylığı sunar 
+- Alüminyum camlı korkuluk sistemleri, şıklık ve güvenliği bir arada sunar 
+- Taşyünü ısı yalıtımı, konforlu iç mekanlar sağlar 
+- Tyvek su yalıtımı, yapının dayanıklılığını artırır  
+    
+  `,
+    imageList: [
+      "001.webp",
+      "002.webp",
+      "003.webp",
+    ],
+    description: "",
+  }, {
+    id: 54,
+    slug: "imam-hatip-lisesi",
+    title: "İmam Hatip Lisesi",
+    type: ProjectType.CepheAluminyum,
+    status: ProjectStatus.Tamamlanan,
+    location: "",
+    heroImage: "/heroImage/imam-hatip-lisesi.webp",
+    content: `# İMAM HATİP LİSESİ
+İmam Hatip Lisesi projesi, modern tasarım anlayışı ve işlevselliği bir araya getirerek başarıyla tamamlanmıştır. ASD Yapı olarak, proje kapsamında yüksek kalite ve estetik standartları ön planda tutarak uygulamalarımızı gerçekleştirdik.
+
+## Proje Uygulamaları: 
+- FC50 kapaklı alüminyum giydirme cephe sistemleri, modern ve dayanıklı dış cephe 
+- TH55 ısı yalıtımlı alüminyum kapı ve pencereler, enerji verimliliği ve konfor sağlar
+- Alüminyum kompozit kaplama uygulamaları, estetik ve uzun ömürlü çözüm 
+- Otomatik kepenk sistemleri, güvenlik ve kullanım kolaylığı sunar 
+- Alüminyum camlı korkuluk sistemleri, şıklık ve güvenliği bir arada sunar 
+- Taşyünü ısı yalıtımı, konforlu iç mekanlar sağlar 
+- Tyvek su yalıtımı, yapının dayanıklılığını artırır  
+    
+  `,
+    imageList: [
+      "001.webp",
+      "002.webp",
+      "003.webp",
+      "004.webp",
+      "005.webp",
+      "006.webp",
+    ],
+    description: "",
+  },
+
+  {
+    id: 55,
+    slug: "demircelik-lisesi",
+    title: "Demir Çelik Lisesi",
+    type: ProjectType.CepheAluminyum,
+    status: ProjectStatus.DevamEden,
+    location: "",
+    heroImage: "/heroImage/demircelik-lisesi.webp",
+    content: `# DEMİR ÇELİK LİSESİ
+Demir Çelik Lisesi projesi, modern tasarım anlayışı ve işlevselliği bir araya getirerek başarıyla tamamlanmıştır. ASD Yapı olarak, proje kapsamında yüksek kalite ve estetik standartları ön planda tutarak uygulamalarımızı gerçekleştirdik.
+
+## Proje Uygulamaları: 
+- FC50 kapaklı alüminyum giydirme cephe sistemleri, modern ve dayanıklı dış cephe 
+- TH55 ısı yalıtımlı alüminyum kapı ve pencereler, enerji verimliliği ve konfor sağlar
+- Alüminyum kompozit kaplama uygulamaları, estetik ve uzun ömürlü çözüm 
+- Otomatik kepenk sistemleri, güvenlik ve kullanım kolaylığı sunar 
+- Alüminyum camlı korkuluk sistemleri, şıklık ve güvenliği bir arada sunar 
+- Taşyünü ısı yalıtımı, konforlu iç mekanlar sağlar 
+- Tyvek su yalıtımı, yapının dayanıklılığını artırır  
+    
+  `,
+    imageList: [
+      "001.webp",
+      "002.webp",
+      "003.webp",
+    ],
+    description: "",
+  },
+  {
+    id: 56,
+    slug: "emek-erkul-ofis-binasi",
+    title: "Emek Erkul Ofis Binası",
+    type: ProjectType.Ustyapı,
+    status: ProjectStatus.Tamamlanan,
+    location: "",
+    heroImage: "/heroImage/emekerkul.webp",
+    content: `# EMEK ERKUL OFİS BİNASI
+Emek Erkul Ofis Binası projesi, modern tasarım anlayışı ve işlevselliği bir araya getirerek başarıyla tamamlanmıştır. ASD Yapı olarak, proje kapsamında yüksek kalite ve estetik standartları ön planda tutarak uygulamalarımızı gerçekleştirdik.
+
+## Proje Uygulamaları: 
+- FC50 kapaklı alüminyum giydirme cephe sistemleri, modern ve dayanıklı dış cephe 
+- TH55 ısı yalıtımlı alüminyum kapı ve pencereler, enerji verimliliği ve konfor sağlar
+- Alüminyum kompozit kaplama uygulamaları, estetik ve uzun ömürlü çözüm 
+- Otomatik kepenk sistemleri, güvenlik ve kullanım kolaylığı sunar 
+- Alüminyum camlı korkuluk sistemleri, şıklık ve güvenliği bir arada sunar 
+- Taşyünü ısı yalıtımı, konforlu iç mekanlar sağlar 
+- Tyvek su yalıtımı, yapının dayanıklılığını artırır  
+    
+  `,
+    imageList: [
+      "001.webp",
+      "002.webp",
+      "003.webp",
+      "004.webp",
+    ],
+    description: "",
+  },
+  {
+    id: 57,
+    slug: "karoto",
+    title: "Karoto",
+    type: ProjectType.Ustyapı,
+    status: ProjectStatus.Tamamlanan,
+    location: "",
+    heroImage: "/heroImage/karoto.webp",
+    content: `# KAROTO
+Karoto projesi, modern tasarım anlayışı ve işlevselliği bir araya getirerek başarıyla tamamlanmıştır. ASD Yapı olarak, proje kapsamında yüksek kalite ve estetik standartları ön planda tutarak uygulamalarımızı gerçekleştirdik.
+
+## Proje Uygulamaları: 
+- FC50 kapaklı alüminyum giydirme cephe sistemleri, modern ve dayanıklı dış cephe 
+- TH55 ısı yalıtımlı alüminyum kapı ve pencereler, enerji verimliliği ve konfor sağlar
+- Alüminyum kompozit kaplama uygulamaları, estetik ve uzun ömürlü çözüm 
+- Otomatik kepenk sistemleri, güvenlik ve kullanım kolaylığı sunar 
+- Alüminyum camlı korkuluk sistemleri, şıklık ve güvenliği bir arada sunar 
+- Taşyünü ısı yalıtımı, konforlu iç mekanlar sağlar 
+- Tyvek su yalıtımı, yapının dayanıklılığını artırır  
+    
+  `,
+    imageList: [
+      "001.webp",
+      "002.webp",
+      "003.webp",
+      "004.webp",
+      "005.webp",
+      "006.webp",
+    ],
+    description: "",
+  },
+  {
+    id: 58,
+    slug: "dis-hastanesi",
+    title: "Diş Hastanesi",
+    type: ProjectType.Ustyapı,
+    status: ProjectStatus.Tamamlanan,
+    location: "",
+    heroImage: "/heroImage/dis-hastanesi.webp",
+    content: `# DİŞ HASTANESİ
+Diş Hastanesi projesi, modern tasarım anlayışı ve işlevselliği bir araya getirerek başarıyla tamamlanmıştır. ASD Yapı olarak, proje kapsamında yüksek kalite ve estetik standartları ön planda tutarak uygulamalarımızı gerçekleştirdik.
+
+## Proje Uygulamaları: 
+- FC50 kapaklı alüminyum giydirme cephe sistemleri, modern ve dayanıklı dış cephe 
+- TH55 ısı yalıtımlı alüminyum kapı ve pencereler, enerji verimliliği ve konfor sağlar
+- Alüminyum kompozit kaplama uygulamaları, estetik ve uzun ömürlü çözüm 
+- Otomatik kepenk sistemleri, güvenlik ve kullanım kolaylığı sunar 
+- Alüminyum camlı korkuluk sistemleri, şıklık ve güvenliği bir arada sunar 
+- Taşyünü ısı yalıtımı, konforlu iç mekanlar sağlar 
+- Tyvek su yalıtımı, yapının dayanıklılığını artırır  
+    
+  `,
+    imageList: [
+      "001.webp",
+      "002.webp",
+      "003.webp",
+      "004.webp",
+    ],
+    description: "",
+  },
+  {
+    id: 59,
+    slug: "karabuk-final-okullari",
+    title: "Karabük Final Okulları",
+    type: ProjectType.Ustyapı,
+    status: ProjectStatus.Tamamlanan,
+    location: "",
+    heroImage: "/heroImage/karabuk-final-okullari.webp",
+    content: `# KARABÜK FİNAL OKULLARI
+Karabük Final Okulları projesi, modern tasarım anlayışı ve işlevselliği bir araya getirerek başarıyla tamamlanmıştır. ASD Yapı olarak, proje kapsamında yüksek kalite ve estetik standartları ön planda tutarak uygulamalarımızı gerçekleştirdik.
+
+## Proje Uygulamaları: 
+- FC50 kapaklı alüminyum giydirme cephe sistemleri, modern ve dayanıklı dış cephe 
+- TH55 ısı yalıtımlı alüminyum kapı ve pencereler, enerji verimliliği ve konfor sağlar
+- Alüminyum kompozit kaplama uygulamaları, estetik ve uzun ömürlü çözüm 
+- Otomatik kepenk sistemleri, güvenlik ve kullanım kolaylığı sunar 
+- Alüminyum camlı korkuluk sistemleri, şıklık ve güvenliği bir arada sunar 
+- Taşyünü ısı yalıtımı, konforlu iç mekanlar sağlar 
+- Tyvek su yalıtımı, yapının dayanıklılığını artırır  
+    
+  `,
+    imageList: [
+      "001.webp",
+      "002.webp",
+      "003.webp",
+      "004.webp",
+    ],
+    description: "",
+  },
+  {
+    id: 60,
+    slug: "safranbolu-spor-salonu",
+    title: "Safranbolu Spor Salonu",
+    type: ProjectType.Ustyapı,
+    status: ProjectStatus.Tamamlanan,
+    location: "",
+    heroImage: "/heroImage/safranbolu-spor-salonu.webp",
+    content: `# SAFRANBOLU SPOR SALONU
+Safranbolu Spor Salonu projesi, modern tasarım anlayışı ve işlevselliği bir araya getirerek başarıyla tamamlanmıştır. ASD Yapı olarak, proje kapsamında yüksek kalite ve estetik standartları ön planda tutarak uygulamalarımızı gerçekleştirdik.
+
+## Proje Uygulamaları: 
+- FC50 kapaklı alüminyum giydirme cephe sistemleri, modern ve dayanıklı dış cephe 
+- TH55 ısı yalıtımlı alüminyum kapı ve pencereler, enerji verimliliği ve konfor sağlar
+- Alüminyum kompozit kaplama uygulamaları, estetik ve uzun ömürlü çözüm 
+- Otomatik kepenk sistemleri, güvenlik ve kullanım kolaylığı sunar 
+- Alüminyum camlı korkuluk sistemleri, şıklık ve güvenliği bir arada sunar 
+- Taşyünü ısı yalıtımı, konforlu iç mekanlar sağlar 
+- Tyvek su yalıtımı, yapının dayanıklılığını artırır  
+    
+  `,
+    imageList: [
+      "001.webp",
+      "002.webp",
+      "003.webp",
+      "004.webp",
+      "005.webp",
+    ],
+    description: "",
+  },
+  {
+    id: 61,
+    slug: "karabuk-yas-alma-merkezi",
+    title: "Karabük Yaş Alma Merkezi",
+    type: ProjectType.Ustyapı,
+    status: ProjectStatus.DevamEden,
+    location: "",
+    heroImage: "/heroImage/karabuk-yas-alma-merkezi.webp",
+    content: `# KARABÜK YAŞ ALMA MERKEZİ
+Karabük Yaş Alma Merkezi projesi, modern tasarım anlayışı ve işlevselliği bir araya getirerek başarıyla tamamlanmıştır. ASD Yapı olarak, proje kapsamında yüksek kalite ve estetik standartları ön planda tutarak uygulamalarımızı gerçekleştirdik.
+
+## Proje Uygulamaları: 
+- FC50 kapaklı alüminyum giydirme cephe sistemleri, modern ve dayanıklı dış cephe 
+- TH55 ısı yalıtımlı alüminyum kapı ve pencereler, enerji verimliliği ve konfor sağlar
+- Alüminyum kompozit kaplama uygulamaları, estetik ve uzun ömürlü çözüm 
+- Otomatik kepenk sistemleri, güvenlik ve kullanım kolaylığı sunar 
+- Alüminyum camlı korkuluk sistemleri, şıklık ve güvenliği bir arada sunar 
+- Taşyünü ısı yalıtımı, konforlu iç mekanlar sağlar 
+- Tyvek su yalıtımı, yapının dayanıklılığını artırır  
+    
+  `,
+    imageList: [
+      "001.webp",
+      "002.webp",
+      "003.webp",
+      "004.webp",
+      "005.webp",
+      "006.webp",
+    ],
+    description: "",
+  },
+  {
+    id: 62,
+    slug: "acarlar",
+    title: "Acarlar",
+    type: ProjectType.CepheAluminyum,
+    status: ProjectStatus.Tamamlanan,
+    location: "",
+    heroImage: "/heroImage/acarlar.webp",
+    content: `# ACARLAR
+Acarlar projesi, modern tasarım anlayışı ve işlevselliği bir araya getirerek başarıyla tamamlanmıştır. ASD Yapı olarak, proje kapsamında yüksek kalite ve estetik standartları ön planda tutarak uygulamalarımızı gerçekleştirdik.
+
+## Proje Uygulamaları: 
+- FC50 kapaklı alüminyum giydirme cephe sistemleri, modern ve dayanıklı dış cephe 
+- TH55 ısı yalıtımlı alüminyum kapı ve pencereler, enerji verimliliği ve konfor sağlar
+- Alüminyum kompozit kaplama uygulamaları, estetik ve uzun ömürlü çözüm 
+- Otomatik kepenk sistemleri, güvenlik ve kullanım kolaylığı sunar 
+- Alüminyum camlı korkuluk sistemleri, şıklık ve güvenliği bir arada sunar 
+- Taşyünü ısı yalıtımı, konforlu iç mekanlar sağlar 
+- Tyvek su yalıtımı, yapının dayanıklılığını artırır  
+    
+  `,
+    imageList: [
+      "001.webp",
+      "002.webp",
+      "003.webp",
+      "004.webp",
+      "005.webp",
+      "006.webp",
+    ],
+    description: "",
+  },
+  {
+    id: 63,
+    slug: "safranbolu-meslek-yuksekokulu",
+    title: "Safranbolu Meslek Yüksekokulu (MYO)",
+    type: ProjectType.CepheAluminyum,
+    status: ProjectStatus.Tamamlanan,
+    location: "",
+    heroImage: "/heroImage/safranbolu-meslek-yuksek-okulu.webp",
+    content: `# SAFRANBOLU MESLEK YÜKSEKOKULU (MYO)
+İmam Hatip Lisesi projesi, modern tasarım anlayışı ve işlevselliği bir araya getirerek başarıyla tamamlanmıştır. ASD Yapı olarak, proje kapsamında yüksek kalite ve estetik standartları ön planda tutarak uygulamalarımızı gerçekleştirdik.
+
+## Proje Uygulamaları: 
+- FC50 kapaklı alüminyum giydirme cephe sistemleri, modern ve dayanıklı dış cephe 
+- TH55 ısı yalıtımlı alüminyum kapı ve pencereler, enerji verimliliği ve konfor sağlar
+- Alüminyum kompozit kaplama uygulamaları, estetik ve uzun ömürlü çözüm 
+- Otomatik kepenk sistemleri, güvenlik ve kullanım kolaylığı sunar 
+- Alüminyum camlı korkuluk sistemleri, şıklık ve güvenliği bir arada sunar 
+- Taşyünü ısı yalıtımı, konforlu iç mekanlar sağlar 
+- Tyvek su yalıtımı, yapının dayanıklılığını artırır  
+    
+  `,
+    imageList: [
+      "001.webp",
+      "002.webp",
+      "003.webp",
     ],
     description: "",
   },
