@@ -1,7 +1,7 @@
 'use client'
 import React, { useMemo } from 'react'
 import { ProjectType, projects } from '@/utils/data'
-import { useRouter } from 'next/navigation'
+import { useRouter, useSearchParams, usePathname } from 'next/navigation'
 import Image from 'next/image'
 
 interface Project {
@@ -29,6 +29,8 @@ export default function RelatedProjects({
     maxProjects = 8
 }: RelatedProjectsProps) {
     const router = useRouter()
+    const pathname = usePathname()
+    const searchParams = useSearchParams()
 
     // Aynı türdeki diğer projeleri filtrele (mevcut projeyi hariç tut)
     const relatedProjects = useMemo(() => {
@@ -39,7 +41,15 @@ export default function RelatedProjects({
 
     // Proje tıklama handler'ı
     const handleProjectClick = (project: Project) => {
-        router.push(`/projects/${project.slug}`)
+        // Mevcut returnTab parametresini al veya proje tipinden bir tab oluştur
+        const returnTab = searchParams.get('returnTab') || currentProjectType;
+        
+        // Locale'i pathname'den çıkar
+        const pathSegments = pathname.split('/').filter(Boolean);
+        const locale = pathSegments[0];
+        
+        // Yeni proje URL'ini oluştur
+        router.push(`/${locale}/projects/${project.slug}?returnTab=${returnTab}`)
     }
 
     // Video/resim render fonksiyonu

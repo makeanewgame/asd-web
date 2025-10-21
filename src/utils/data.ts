@@ -1745,7 +1745,7 @@ Karabük Final Okulları projesi, modern tasarım anlayışı ve işlevselliği 
     id: 60,
     slug: "safranbolu-spor-salonu",
     title: "Safranbolu Spor Salonu",
-    type: ProjectType.Ustyapı,
+    type: ProjectType.CepheAluminyum,
     status: ProjectStatus.Tamamlanan,
     location: "",
     heroImage: "/heroImage/safranbolu-spor-salonu.webp",

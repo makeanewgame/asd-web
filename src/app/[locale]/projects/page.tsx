@@ -1,7 +1,7 @@
 "use client";
 
-import { useState } from "react";
-import { useRouter, usePathname } from "next/navigation";
+import { useState, useEffect } from "react";
+import { useRouter, usePathname, useSearchParams } from "next/navigation";
 import { Tabs, Tab, Card, CardBody } from "@heroui/react";
 import { motion } from "motion/react";
 import LiquiedGlassCard from "@/component/LiquiedGlassPage";
@@ -70,7 +70,30 @@ export default function AluminumProcessing() {
 }
 
 function ProjectsContent() {
-  const [selectedTab, setSelectedTab] = useState("Konut");
+  const searchParams = useSearchParams();
+  const router = useRouter();
+  const pathname = usePathname();
+  
+  // URL'deki tab parametresini oku, yoksa "Konut" kullan
+  const [selectedTab, setSelectedTab] = useState(
+    searchParams.get("tab") || "Konut"
+  );
+
+  // Tab değiştiğinde URL'i güncelle
+  const handleTabChange = (key: string) => {
+    setSelectedTab(key);
+    const params = new URLSearchParams(searchParams.toString());
+    params.set("tab", key);
+    router.push(`${pathname}?${params.toString()}`, { scroll: false });
+  };
+
+  // URL parametresi değiştiğinde state'i güncelle
+  useEffect(() => {
+    const tabParam = searchParams.get("tab");
+    if (tabParam && tabParam !== selectedTab) {
+      setSelectedTab(tabParam);
+    }
+  }, [searchParams, selectedTab]);
 
   return (
     <div className="-mt-[84px]">
@@ -83,7 +106,7 @@ function ProjectsContent() {
           <div className="overflow-x-auto -mx-4 px-4 scrollbar-hide">
             <Tabs
               selectedKey={selectedTab}
-              onSelectionChange={(key) => setSelectedTab(key as string)}
+              onSelectionChange={(key) => handleTabChange(key as string)}
               variant="underlined"
               classNames={{
                 tabList: "gap-6 w-full relative rounded-none p-0",
@@ -159,15 +182,15 @@ function ProjectGallery({ selectedType }: { selectedType: string }) {
 function ProjectCard({ project }: { project: (typeof projects)[0] }) {
   const router = useRouter();
   const pathname = usePathname();
+  const searchParams = useSearchParams();
 
   const handleProjectClick = () => {
-    // Create slug from project title
-    // const slug = project.title
-    //     .toLowerCase()
-    //     .replace(/\s+/g, '-')
-    //     .replace(/[^a-z0-9-]/g, '');
-
-    router.push(`${pathname}/${project.slug}`);
+    // Mevcut tab parametresini koruyarak proje sayfasına git
+    const currentTab = searchParams.get("tab");
+    const baseUrl = `${pathname}/${project.slug}`;
+    const url = currentTab ? `${baseUrl}?returnTab=${currentTab}` : baseUrl;
+    
+    router.push(url);
   };
 
   return (

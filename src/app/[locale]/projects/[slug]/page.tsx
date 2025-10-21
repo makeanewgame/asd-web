@@ -1,3 +1,8 @@
+"use client";
+
+import { useEffect, useState } from 'react';
+import { useSearchParams } from 'next/navigation';
+import Link from 'next/link';
 import LiquiedGlassCard from '@/component/LiquiedGlassPage'
 import TDiv from '@/component/TranslateSpan'
 import ImageGallery from '@/component/ImageGallery'
@@ -5,15 +10,29 @@ import RelatedProjects from '@/component/RelatedProjects'
 import MarkdownRenderer from '@/component/MarkdownRenderer'
 import { projects } from '@/utils/data';
 
-export default async function page({ params }: { params: Promise<{ slug: string }> }) {
+export default function Page({ params }: { params: Promise<{ slug: string; locale: string }> }) {
+    const [slug, setSlug] = useState<string>("");
+    const [locale, setLocale] = useState<string>("");
+    const searchParams = useSearchParams();
+    const returnTab = searchParams.get("returnTab");
 
-    const { slug } = await params;
+    useEffect(() => {
+        params.then(({ slug, locale }) => {
+            setSlug(slug);
+            setLocale(locale);
+        });
+    }, [params]);
 
     if (!slug || Array.isArray(slug)) {
         return <div>Loading...</div>;
     }
 
     const projectData = projects.find(project => project.slug === slug);
+    
+    // Projeler sayfasına geri dönüş URL'i
+    const projectsUrl = returnTab 
+        ? `/${locale}/projects?tab=${returnTab}`
+        : `/${locale}/projects`;
 
     return (
         <div className="relative overflow-hidden">
@@ -45,13 +64,13 @@ export default async function page({ params }: { params: Promise<{ slug: string 
                             <path d="M21 19V12.267C21 11.7245 20.8896 11.1876 20.6756 10.689C20.4616 10.1905 20.1483 9.74069 19.755 9.36701L13.378 3.31001C13.0063 2.9569 12.5132 2.76001 12.0005 2.76001C11.4878 2.76001 10.9947 2.9569 10.623 3.31001L4.245 9.36701C3.85165 9.74069 3.53844 10.1905 3.3244 10.689C3.11037 11.1876 3 11.7245 3 12.267V19C3 19.5304 3.21071 20.0392 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H19C19.5304 21 20.0391 20.7893 20.4142 20.4142C20.7893 20.0392 21 19.5304 21 19Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
                         <span className="opacity-70">›</span>
-                        <span className="opacity-80">
+                        <Link href={`/${locale}`} className="opacity-80 hover:opacity-100 transition-opacity">
                             <TDiv>&quot;Anasayfa&quot;:&quot;Home&quot;</TDiv>
-                        </span>
+                        </Link>
                         <span className="opacity-70">›</span>
-                        <span className="opacity-100">
+                        <Link href={projectsUrl} className="opacity-80 hover:opacity-100 transition-opacity">
                             <TDiv>&quot;Projeler&quot;:&quot;Projects&quot;</TDiv>
-                        </span>
+                        </Link>
                         <span className="opacity-70">›</span>
                         <span className="opacity-100">
                             {projectData ? projectData.title : 'Loading...'}
