@@ -1352,7 +1352,7 @@ Kargisan Villaları — modern yaşamın tüm ayrıcalıklarını sunan, hazır
     type: ProjectType.CepheAluminyum,
     status: ProjectStatus.Tamamlanan,
     location: "",
-    heroImage: "/heroImage/default.webp",
+    heroImage: "/heroImage/kgm.webp",
     content: `# KGM 53. BAKIM ŞEFLİĞİ
 
 - Fibercement Kaplama
@@ -1360,7 +1360,15 @@ Kargisan Villaları — modern yaşamın tüm ayrıcalıklarını sunan, hazır
 - Alüminyum Giydirme Cephe
 - Taş Yünü Isı Yalıtımı`,
     imageList: [
-      ""
+      "001.webp",
+      "002.webp",
+      "003.webp",
+      "004.webp",
+      "005.webp",
+      "006.webp",
+      "007.webp",
+      "008.webp",
+      "009.webp",
     ],
     description: "",
   },
