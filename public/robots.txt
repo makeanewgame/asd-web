@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.asdgrup.com.tr
+
+# Sitemaps
+Sitemap: https://www.asdgrup.com.tr/sitemap.xml

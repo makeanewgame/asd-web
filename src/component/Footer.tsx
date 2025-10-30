@@ -14,12 +14,12 @@ export default function Footer() {
   ]
 
   const services = [
-    { id: 1, title: <TDiv>"Endüstriyel Tesisler":"Industrial Facilities"</TDiv>, link: "/services#cephe" },
-    { id: 2, title: <TDiv>"İnşaat":"Construction"</TDiv>, link: "/services#cambalkon" },
-    { id: 3, title: <TDiv>"Yapı-Gayrimenkul":"Real Estate"</TDiv>, link: "/services#kışbahçesi" },
-    { id: 4, title: <TDiv>"Cephe Sistemleri":"Facade Systems"</TDiv>, link: "/services#aluminyum" },
-    { id: 5, title: <TDiv>"Alüminyum İşleme":"Aluminum Processing"</TDiv>, link: "/services#pvc" },
-    { id: 6, title: <TDiv>"Metal İşleme":"Metal Processing"</TDiv>, link: "/services#panjur" },
+    { id: 1, title: <TDiv>"Endüstriyel Tesisler":"Industrial Facilities"</TDiv>, link: "/faaliyet-alanlari/endustriyel-yapilar" },
+    { id: 2, title: <TDiv>"İnşaat":"Construction"</TDiv>, link: "/faaliyet-alanlari/insaat" },
+    { id: 3, title: <TDiv>"Yapı-Gayrimenkul":"Real Estate"</TDiv>, link: "/faaliyet-alanlari/bina-emlak" },
+    { id: 4, title: <TDiv>"Cephe Sistemleri":"Facade Systems"</TDiv>, link: "/faaliyet-alanlari/cephe-sistemleri" },
+    { id: 5, title: <TDiv>"Alüminyum İşleme":"Aluminum Processing"</TDiv>, link: "/faaliyet-alanlari/aluminyum-isleme" },
+    { id: 6, title: <TDiv>"Metal İşleme":"Metal Processing"</TDiv>, link: "/faaliyet-alanlari/metal-isleme" },
   ]
 
   return (
@@ -88,8 +88,11 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="text-[#ADD2FF] mt-6 md:mt-8 border-t border-t-[#ADD2FF]/20 pt-4 text-xs md:text-sm text-center md:text-left">
+          <div className="text-[#ADD2FF] flex justify-between items-center mt-6 md:mt-8 border-t border-t-[#ADD2FF]/20 pt-4 text-xs md:text-sm text-center md:text-left">
             <TDiv>"© Copyright ASDGRUP 2025. Tüm Hakları Saklıdır..":"© Copyright ASDGRUP 2025. All Rights Reserved."</TDiv>
+              <Link target="_Blank"  href="https://www.fovimarlo.com/?gad_source=1&gad_campaignid=22465080613&gbraid=0AAAAABZUjNhLpIBJVTHIe0O-OGAgO2jFs&gclid=Cj0KCQjwsPzHBhDCARIsALlWNG0P-0Xe4tqWyKd9vG2gSU73PGLQItf7Pz-FJkN4j3IQpzglZmch7wAaArVKEALw_wcB"  className="text-[#ADD2FF] hover:scale-105 transition-transform duration-200 text-sm md:text-base">
+                  © developed by FOVIMARLO
+                    </Link>
           </div>
         </LiquiedGlassCard>
       </div>
