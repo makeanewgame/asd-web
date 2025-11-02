@@ -1,6 +1,7 @@
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
+// @ts-ignore: Ignore missing type declarations for CSS side-effect import
 import "../globals.css";
 import { Metadata } from "next";
 import { Onest, Roboto } from "next/font/google";

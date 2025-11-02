@@ -28,7 +28,6 @@ export default function Contact() {
           phone,
           message,
           subject: "Contact Form",
-          companyName: "",
         }),
       });
 
