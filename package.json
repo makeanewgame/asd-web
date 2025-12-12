@@ -1,51 +1,51 @@
 {
-   "name": "asd-web",
-   "version": "1.0.0",
-   "type": "module",
-   "private": true,
-   "scripts": {
-      "dev": "next dev --turbopack",
-      "build": "next build",
-      "sitemap": "next-sitemap",
-      "start": "next start",
-      "lint": "next lint"
-   },
-   "dependencies": {
-      "@heroui/react": "^2.8.4",
-      "@react-three/drei": "^10.7.4",
-      "@react-three/fiber": "^9.3.0",
-      "@specy/liquid-glass-react": "^1.0.2",
-      "@supabase/ssr": "^0.6.1",
-      "@supabase/supabase-js": "^2.55.0",
-      "@types/three": "^0.179.0",
-      "axios": "^1.13.1",
-      "framer-motion": "^12.23.12",
-      "motion": "^12.23.12",
-      "next": "^15.5.7",
-      "next-intl": "^4.1.0",
-      "nodemailer": "^7.0.5",
-      "postcss": "^8.5.6",
-      "react": "^19.1.1",
-      "react-dom": "^19.1.1",
-      "react-icons": "^5.5.0",
-      "react-markdown": "^10.1.0",
-      "three": "^0.179.1"
-   },
-   "devDependencies": {
-      "@eslint/eslintrc": "^3",
-      "@tailwindcss/postcss": "^4.1.13",
-      "@types/node": "^20",
-      "@types/nodemailer": "^6.4.17",
-      "@types/react": "^19",
-      "@types/react-dom": "^19",
-      "eslint": "^9",
-      "eslint-config-next": "15.3.3",
-      "next-sitemap": "^4.2.3",
-      "tailwindcss": "^4.1.13",
-      "ts-node": "^10.9.2",
-      "typescript": "^5"
-   },
-   "overrides": {
-      "simple-swizzle": "0.2.4"
-   }
+  "name": "asd-web",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "sitemap": "next-sitemap",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@heroui/react": "^2.8.4",
+    "@react-three/drei": "^10.7.4",
+    "@react-three/fiber": "^9.3.0",
+    "@specy/liquid-glass-react": "^1.0.2",
+    "@supabase/ssr": "^0.6.1",
+    "@supabase/supabase-js": "^2.55.0",
+    "@types/three": "^0.179.0",
+    "axios": "^1.13.1",
+    "framer-motion": "^12.23.12",
+    "motion": "^12.23.12",
+    "next": "15.5.9",
+    "next-intl": "^4.1.0",
+    "nodemailer": "^7.0.5",
+    "postcss": "^8.5.6",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-icons": "^5.5.0",
+    "react-markdown": "^10.1.0",
+    "three": "^0.179.1"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4.1.13",
+    "@types/node": "^20",
+    "@types/nodemailer": "^6.4.17",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.3.3",
+    "next-sitemap": "^4.2.3",
+    "tailwindcss": "^4.1.13",
+    "ts-node": "^10.9.2",
+    "typescript": "^5"
+  },
+  "overrides": {
+    "simple-swizzle": "0.2.4"
+  }
 }
