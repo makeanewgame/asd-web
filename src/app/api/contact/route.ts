@@ -6,19 +6,42 @@ export async function POST(request: Request) {
     const data = await request.json();
     const { name, email, message, phone } = data;
 
+    const mailHost = process.env.MAIL_HOST;
+    const mailPort = process.env.MAIL_PORT;
+    const mailSecure = process.env.MAIL_SECURE;
+    const nodemailerEmail = process.env.NODEMAILER_EMAIL;
+    const nodemailerPassword = process.env.NODEMAILER_PW;
+    const mailFrom = process.env.MAIL_FROM;
+    const mailTo = process.env.MAIL_TO;
+
+    if (
+      !mailHost ||
+      !mailPort ||
+      !mailSecure ||
+      !nodemailerEmail ||
+      !nodemailerPassword ||
+      !mailFrom ||
+      !mailTo
+    ) {
+      return NextResponse.json(
+        { message: "Mail ayarlari eksik" },
+        { status: 500 }
+      );
+    }
+
     const transporter = nodemailer.createTransport({
-      host: process.env.MAIL_HOST,
-      port: process.env.MAIL_PORT ? parseInt(process.env.MAIL_PORT, 10) : 465,
-      secure: true,
+      host: mailHost,
+      port: parseInt(mailPort, 10),
+      secure: mailSecure === "true",
       auth: {
-        user: process.env.NODEMAILER_EMAIL,
-        pass: process.env.NODEMAILER_PW,
+        user: nodemailerEmail,
+        pass: nodemailerPassword,
       },
     });
 
     const mailData = {
-      from: process.env.MAIL_FROM,
-      to: `${process.env.MAIL_TO}`,
+      from: mailFrom,
+      to: mailTo,
       subject: `ASD İletişim Formu`,
       text: `
                 Full Name : ${name || ""}
