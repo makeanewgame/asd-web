@@ -64,7 +64,7 @@ export default async function HomePage() {
         <div>
             Elektrostatik Toz Boya Tesisi projesi kapsamında mal alımı ihalesi gerçekleştirilecektir. 
             Son teklif verme: 30.03.2026, Saat 11:00. <a href="https://gelen-evrak-ihale-su-rec-leri-17-03-2026.tiiny.site/" target="_blank" >Detaylar için tıklayın.</a>
-        <div>
+        </div>
       ),
       id: 3,
       image: "asd-duyuru.png",
