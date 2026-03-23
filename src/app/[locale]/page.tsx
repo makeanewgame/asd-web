@@ -56,6 +56,19 @@ export default async function HomePage() {
       id: 2,
       image: "/heroImage/dadibra_card.webp",
     },
+    {
+            title: (
+        <TDiv>{'"Mal Alımı İhale İlanı (BAKKA Projesi)":"Mal Alımı İhale İlanı (BAKKA Projesi)"'}</TDiv>
+      ),
+      description: (
+        <div>
+            Elektrostatik Toz Boya Tesisi projesi kapsamında mal alımı ihalesi gerçekleştirilecektir. 
+            Son teklif verme: 30.03.2026, Saat 11:00. <a href="https://gelen-evrak-ihale-su-rec-leri-17-03-2026.tiiny.site/" target="_blank" >Detaylar için tıklayın.</a>
+        <div>
+      ),
+      id: 3,
+      image: "asd-duyuru.png",
+    }
   ];
 
   const accordionMock = [
