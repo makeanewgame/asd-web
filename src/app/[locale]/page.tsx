@@ -58,7 +58,7 @@ export default async function HomePage() {
     },
     {
             title: (
-        <TDiv>{'"BAKKA Projesi Mal Alımı İhale Sonucu":"Mal Alımı İhale İlanı (BAKKA Projesi)"'}</TDiv>
+        <TDiv>{'"Mal Alımı İhale İlanı (BAKKA Projesi)":"Mal Alımı İhale İlanı (BAKKA Projesi)"'}</TDiv>
       ),
       description: (
         <div>
@@ -71,7 +71,7 @@ export default async function HomePage() {
     },
     {
             title: (
-        <TDiv>{"BAKKA Projesi Mal Alımı İhale Sonucu":"BAKKA Projesi Mal Alımı İhale Sonucu"}</TDiv>
+                   <TDiv>{'"BAKKA Projesi Mal Alımı İhale Sonucu":"BAKKA Projesi Mal Alımı İhale Sonucu"'}</TDiv>
       ),
       description: (
         <div>
