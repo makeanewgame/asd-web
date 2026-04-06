@@ -58,7 +58,7 @@ export default async function HomePage() {
     },
     {
             title: (
-        <TDiv>{'"Mal Alımı İhale İlanı (BAKKA Projesi)":"Mal Alımı İhale İlanı (BAKKA Projesi)"'}</TDiv>
+        <TDiv>{'"BAKKA Projesi Mal Alımı İhale Sonucu":"Mal Alımı İhale İlanı (BAKKA Projesi)"'}</TDiv>
       ),
       description: (
         <div>
@@ -67,6 +67,18 @@ export default async function HomePage() {
         </div>
       ),
       id: 3,
+      image: "asd.webp",
+    },
+    {
+            title: (
+        <TDiv>{"BAKKA Projesi Mal Alımı İhale Sonucu":"BAKKA Projesi Mal Alımı İhale Sonucu"}</TDiv>
+      ),
+      description: (
+        <div>
+        <a href="https://i-hale-sonu-i-lan-metni.tiiny.site/" target="_blank" > İhale sonucu detayları için tıklayınız.</a>
+        </div>
+      ),
+      id: 4,
       image: "asd.webp",
     }
   ];
