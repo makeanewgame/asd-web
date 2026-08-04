@@ -158,24 +158,24 @@ export default function page() {
       name: "İrem Aleyna Işık",
       position: "Mimar",
     },
-    {
-      id: 3,
-      img: "/person/frame_103.webp",
-      name: "Cansel Dereli ",
-      position: "İç Mekan Teknikeri",
-    },
+    // {
+    //   id: 3,
+    //   img: "/person/frame_103.webp",
+    //   name: "Cansel Dereli ",
+    //   position: "İç Mekan Teknikeri",
+    // },
     {
       id: 4,
       img: "/person/frame_104.webp",
       name: "Feyzanur Özkur ",
       position: "Restorasyon Teknikeri",
     },
-    {
-      id: 5,
-      img: "/person/frame_105.webp",
-      name: "Buse Tepe",
-      position: "Grafik Tasarımcı",
-    },
+    // {
+    //   id: 5,
+    //   img: "/person/frame_105.webp",
+    //   name: "Buse Tepe",
+    //   position: "Grafik Tasarımcı",
+    // },
     {
       id: 6,
       img: "/person/frame_106.webp",
