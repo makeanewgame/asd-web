@@ -182,12 +182,12 @@ export default function page() {
       name: "Akın Yiğit",
       position: "Mimar",
     },
-    {
-      id: 7,
-      img: "/person/frame_107.webp",
-      name: "İbrahim Şahinoğlu",
-      position: "İnşaat Teknikeri",
-    },
+    // {
+    //   id: 7,
+    //   img: "/person/frame_107.webp",
+    //   name: "İbrahim Şahinoğlu",
+    //   position: "İnşaat Teknikeri",
+    // },
   ];
 
   return (
